@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#F5F5F6">
+<title>코덕 체험단</title>
+<meta name="description" content="지금 신청할 수 있는 뷰티 체험단 모음">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+  :root{
+    --ink:#111111;
+    --sub:#666666;
+    --mute:#9a9a9a;
+    --faint:#c2c2c2;
+    --line:#ececec;
+    --line2:#e0e0e0;
+    --bg:#f5f5f6;
+    --surface:#ffffff;
+    --accent:#ff2e63;
+    --r:12px;
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  html,body{margin:0;padding:0}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:"Pretendard Variable",Pretendard,-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
+    font-size:14px;
+    line-height:1.45;
+    letter-spacing:-.014em;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 14px}
+  @media (min-width:760px){ .wrap{padding:0 24px} }
+  [hidden]{display:none!important}
+
+  /* ── head ── */
+  .head{padding:20px 0 10px}
+  .head-row{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+  h1{margin:0;font-size:21px;line-height:1.15;font-weight:800;letter-spacing:-.05em}
+  .sum{margin:0;font-size:11.5px;color:var(--sub);white-space:nowrap;letter-spacing:0}
+  .sum b{font-weight:800;color:var(--ink);font-variant-numeric:tabular-nums}
+  .sum b.hot{color:var(--accent)}
+  .sum i{font-style:normal;color:var(--faint);margin:0 3px}
+  .handle{display:inline-block;margin-top:4px;font-size:11.5px;color:var(--mute);text-decoration:none;letter-spacing:0}
+  .handle:hover{color:var(--ink)}
+
+  /* ── filters ── */
+  .filters{
+    position:sticky;top:0;z-index:20;
+    margin:0 -14px;padding:6px 14px 8px;
+    background:rgba(245,245,246,.94);
+    -webkit-backdrop-filter:saturate(180%) blur(12px);
+    backdrop-filter:saturate(180%) blur(12px);
+    border-bottom:1px solid var(--line);
+  }
+  @media (min-width:760px){ .filters{margin:0 -24px;padding:6px 24px 8px} }
+  .tabs{display:flex;gap:16px;overflow-x:auto;scrollbar-width:none;padding:2px 0 0}
+  .tabs::-webkit-scrollbar{display:none}
+  .tab{
+    appearance:none;border:0;background:none;padding:4px 0 8px;font:inherit;
+    font-size:13px;font-weight:600;color:var(--mute);white-space:nowrap;cursor:pointer;
+    position:relative;letter-spacing:-.01em;
+  }
+  .tab b{margin-left:3px;font-size:10px;font-weight:700;color:var(--faint);font-variant-numeric:tabular-nums}
+  .tab:hover{color:var(--ink)}
+  .tab.is-active{color:var(--ink);font-weight:800}
+  .tab.is-active b{color:var(--accent)}
+  .tab.is-active::after{content:"";position:absolute;left:0;right:0;bottom:2px;height:2px;border-radius:2px;background:var(--ink)}
+
+  .row2{display:flex;align-items:center;gap:8px;padding-top:8px}
+  .cats{display:flex;gap:5px;overflow-x:auto;scrollbar-width:none;flex:1;min-width:0;padding:1px 0;
+    -webkit-mask-image:linear-gradient(to right,#000 calc(100% - 18px),transparent 100%);
+    mask-image:linear-gradient(to right,#000 calc(100% - 18px),transparent 100%)}
+  .cats::-webkit-scrollbar{display:none}
+  .cat{
+    appearance:none;flex:0 0 auto;border:1px solid var(--line2);background:var(--surface);
+    padding:5px 10px;border-radius:999px;font:inherit;font-size:11px;font-weight:600;
+    color:#6c6c6c;cursor:pointer;letter-spacing:-.01em;line-height:1.3;
+  }
+  .cat:hover{color:var(--ink);border-color:#cfcfcf}
+  .cat.is-active{background:var(--ink);border-color:var(--ink);color:#fff}
+  .iconbtn{
+    appearance:none;flex:0 0 auto;width:30px;height:30px;border:1px solid var(--line2);
+    background:var(--surface);border-radius:8px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;padding:0;
+  }
+  .iconbtn svg{width:13px;height:13px;stroke:#555;fill:none;stroke-width:2;stroke-linecap:round}
+  .iconbtn[aria-expanded="true"]{border-color:var(--ink)}
+  #sort{
+    appearance:none;-webkit-appearance:none;flex:0 0 auto;height:30px;
+    border:1px solid var(--line2);background:var(--surface);border-radius:8px;
+    padding:0 20px 0 8px;font:inherit;font-size:11px;font-weight:600;color:#555;
+    cursor:pointer;outline:none;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='5' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%23888' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat:no-repeat;background-position:right 7px center;
+  }
+  .searchrow{display:flex;gap:6px;padding-top:8px}
+  .searchrow input{
+    flex:1;min-width:0;height:32px;border:1px solid var(--line2);border-radius:8px;
+    background:var(--surface);padding:0 10px;font:inherit;font-size:12.5px;color:var(--ink);outline:none;
+  }
+  .searchrow input::placeholder{color:var(--faint)}
+  .searchrow input:focus{border-color:var(--ink)}
+  .searchrow button{
+    appearance:none;border:0;background:none;padding:0 4px;font:inherit;font-size:11.5px;color:var(--mute);cursor:pointer;
+  }
+
+  /* ── result line ── */
+  .resultline{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 2px 2px}
+  .resultline .cnt{font-size:11.5px;color:var(--mute);letter-spacing:0}
+  .resultline .cnt b{color:var(--ink);font-weight:800;font-variant-numeric:tabular-nums}
+  .hidebtn{
+    appearance:none;border:1px solid var(--line2);background:var(--surface);border-radius:999px;
+    padding:4px 9px;font:inherit;font-size:10.5px;font-weight:600;color:var(--sub);cursor:pointer;letter-spacing:-.01em;
+  }
+  .hidebtn[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+
+  /* ── list ── */
+  .list{display:grid;grid-template-columns:1fr;gap:10px;padding:8px 0 4px}
+  @media (min-width:720px){ .list{grid-template-columns:1fr 1fr;gap:12px} }
+  @media (min-width:1040px){ .list{grid-template-columns:1fr 1fr 1fr} }
+  .empty{padding:64px 12px;text-align:center;color:var(--mute);font-size:12.5px;line-height:1.7}
+  .empty b{display:block;margin-bottom:4px;font-size:14px;color:var(--ink);font-weight:700}
+
+  /* ── card ── */
+  .card{
+    position:relative;display:flex;flex-direction:column;
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--r);
+    padding:13px 13px 12px;
+    box-shadow:0 1px 2px rgba(17,17,17,.035);
+    transition:box-shadow .16s ease,transform .16s ease,border-color .16s ease;
+  }
+  @media (hover:hover){ .card:hover{box-shadow:0 4px 14px rgba(17,17,17,.07);border-color:#dedede;transform:translateY(-1px)} }
+  .card.is-over{background:#fafafa;box-shadow:none}
+  .card.is-over .ctitle{color:#8a8a8a}
+
+  .ctop{display:flex;align-items:center;gap:6px;min-height:18px}
+  .src{display:inline-flex;align-items:center;gap:5px;font-size:10.5px;font-weight:700;color:#3f3f3f;letter-spacing:-.01em}
+  .src i{width:5px;height:5px;border-radius:50%;flex:0 0 auto}
+  .src.instagram i{background:#e1306c}
+  .src.x i{background:#1a1a1a}
+  .src.powderroom i{background:#f2a0b4}
+  .src.glowpick i{background:#b79cff}
+  .ctag{font-size:10.5px;color:var(--mute);letter-spacing:-.01em}
+  .ctag::before{content:"·";margin:0 4px 0 1px;color:var(--faint)}
+  .dday{
+    margin-left:auto;flex:0 0 auto;padding:3px 6px;border-radius:6px;
+    font-size:10.5px;font-weight:800;letter-spacing:.01em;line-height:1;
+    background:#f1f1f2;color:#5a5a5a;font-variant-numeric:tabular-nums;
+  }
+  .dday.soon{background:#fff0f3;color:var(--accent)}
+  .dday.today{background:var(--accent);color:#fff;letter-spacing:.03em}
+  .dday.over{background:#f1f1f2;color:#b3b3b3}
+
+  .cbrand{margin:9px 0 0;font-size:11.5px;font-weight:700;color:var(--ink);letter-spacing:0}
+  .card.is-over .cbrand{color:#777}
+  .ctitle{
+    margin:2px 0 0;font-size:15.5px;line-height:1.33;font-weight:700;letter-spacing:-.035em;
+    word-break:keep-all;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+  }
+  .cmeta{margin:9px 0 0;font-size:12px;color:#5c5c5c;letter-spacing:-.01em;word-break:keep-all}
+  .cmeta b{font-size:13px;font-weight:800;color:var(--ink);letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+  .cmeta .sep{color:var(--faint);margin:0 3px}
+  .ckw{display:flex;flex-wrap:wrap;gap:4px;margin:9px 0 0}
+  .ckw span{
+    background:#f3f3f4;color:#5f5f5f;border-radius:6px;padding:3px 6px;
+    font-size:10.5px;font-weight:600;line-height:1.3;letter-spacing:-.01em;
+  }
+  .cbtn{display:flex;gap:6px;margin-top:auto;padding-top:12px}
+  .btn{
+    flex:1;display:inline-flex;align-items:center;justify-content:center;gap:4px;height:34px;
+    border-radius:8px;background:var(--ink);color:#fff;font-size:12px;font-weight:700;
+    text-decoration:none;letter-spacing:-.01em;border:1px solid var(--ink);
+    transition:background .16s ease,border-color .16s ease;
+  }
+  .btn:active{background:#333}
+  .btn svg{width:9px;height:9px;stroke:currentColor;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;flex:0 0 auto}
+  .btn.line{flex:0 0 auto;padding:0 12px;background:transparent;color:var(--ink);border-color:var(--line2);font-weight:600}
+  .btn.line:hover{background:#f4f4f4}
+  .card.is-over .btn{background:#e9e9e9;border-color:#e9e9e9;color:#7d7d7d}
+  .card.is-over .btn.line{background:transparent;border-color:var(--line2);color:#8a8a8a}
+
+  /* ── foot ── */
+  footer{padding:26px 0 38px;text-align:center;font-size:11px;color:var(--faint);letter-spacing:0}
+  footer a{color:var(--mute);text-decoration:none}
+  footer a:hover{color:var(--ink)}
+  footer .dot{margin:0 5px;color:var(--line2)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="head">
+    <div class="head-row">
+      <h1>코덕 체험단</h1>
+      <p class="sum">진행중 <b id="statOn">–</b><i>·</i>오늘마감 <b id="statToday" class="hot">–</b></p>
+    </div>
+    <a class="handle" href="https://www.instagram.com/bunnys_pouch__/" target="_blank" rel="noopener">@bunnys_pouch__</a>
+  </header>
+
+  <section class="filters" aria-label="필터">
+    <div class="tabs" id="tabs" role="group" aria-label="출처">
+      <button class="tab is-active" type="button" aria-pressed="true" data-platform="all">전체<b data-count="all"></b></button>
+      <button class="tab" type="button" aria-pressed="false" data-platform="instagram">인스타<b data-count="instagram"></b></button>
+      <button class="tab" type="button" aria-pressed="false" data-platform="x">X<b data-count="x"></b></button>
+      <button class="tab" type="button" aria-pressed="false" data-platform="powderroom">파우더룸<b data-count="powderroom"></b></button>
+      <button class="tab" type="button" aria-pressed="false" data-platform="glowpick">글로우픽<b data-count="glowpick"></b></button>
+    </div>
+    <div class="row2">
+      <div class="cats" id="cats" role="group" aria-label="카테고리">
+        <button class="cat is-active" type="button" aria-pressed="true" data-category="all">전체</button>
+        <button class="cat" type="button" aria-pressed="false" data-category="lip">립·색조</button>
+        <button class="cat" type="button" aria-pressed="false" data-category="skin">스킨케어</button>
+        <button class="cat" type="button" aria-pressed="false" data-category="hair">헤어·바디</button>
+        <button class="cat" type="button" aria-pressed="false" data-category="fragrance">향수</button>
+        <button class="cat" type="button" aria-pressed="false" data-category="multi">멀티·방문</button>
+      </div>
+      <button class="iconbtn" id="searchToggle" type="button" aria-label="검색" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.4 15.4L21 21"/></svg>
+      </button>
+      <select id="sort" aria-label="정렬">
+        <option value="deadline">마감임박순</option>
+        <option value="winners">인원많은순</option>
+        <option value="latest">최신순</option>
+      </select>
+    </div>
+    <div class="searchrow" id="searchRow" hidden>
+      <input id="q" type="search" placeholder="브랜드나 제품으로 찾기" autocomplete="off" enterkeyhint="search" aria-label="브랜드나 제품 검색">
+      <button id="searchClose" type="button">닫기</button>
+    </div>
+  </section>
+
+  <div class="resultline" id="resultline" hidden>
+    <span class="cnt"><b id="resultCount">–</b>개</span>
+    <button class="hidebtn" id="hideOver" type="button" aria-pressed="false">마감 숨기기</button>
+  </div>
+
+  <main class="list" id="list"></main>
+  <div class="empty" id="loading">불러오는 중…</div>
+  <div class="empty" id="empty" hidden>
+    <b>조건에 맞는 체험단이 없어요</b>
+    필터를 바꿔 보세요.
+  </div>
+
+  <footer>
+    <span id="updated">—</span> 업데이트<span class="dot">·</span><a href="https://www.instagram.com/bunnys_pouch__/" target="_blank" rel="noopener">@bunnys_pouch__</a>
+  </footer>
+</div>
+
+<script>
+(function(){
+  'use strict';
+
+  /* D-day는 한국 시간 자정 기준 */
+  function todayKST(){
+    try{
+      var fmt = new Intl.DateTimeFormat('en-US',{timeZone:'Asia/Seoul',year:'numeric',month:'2-digit',day:'2-digit'});
+      var y = 0, m = 0, d = 0;
+      fmt.formatToParts(new Date()).forEach(function(part){
+        if(part.type === 'year') y = Number(part.value);
+        else if(part.type === 'month') m = Number(part.value);
+        else if(part.type === 'day') d = Number(part.value);
+      });
+      if(y && m && d) return Date.UTC(y, m - 1, d);
+      var p = fmt.format(new Date()).replace(/[^0-9]/g, ' ').trim().split(/\s+/);
+      return Date.UTC(Number(p[2]), Number(p[0]) - 1, Number(p[1]));
+    }catch(err){
+      var now = new Date();
+      return Date.UTC(now.getFullYear(), now.getMonth(), now.getDate());
+    }
+  }
+  var BASE_MS = todayKST();
+
+  var CATEGORY = { lip:'립·색조', skin:'스킨케어', hair:'헤어·바디', fragrance:'향수', multi:'멀티·방문' };
+  var PLATFORM = { instagram:'인스타', x:'X', powderroom:'파우더룸', glowpick:'글로우픽' };
+
+  var ITEMS = [];
+  var state = { platform:'all', category:'all', q:'', sort:'deadline', hideOver:false };
+
+  var listEl = document.getElementById('list');
+  var emptyEl = document.getElementById('empty');
+  var loadingEl = document.getElementById('loading');
+  var resultlineEl = document.getElementById('resultline');
+  var countEl = document.getElementById('resultCount');
+  var qEl = document.getElementById('q');
+  var selectEl = document.getElementById('sort');
+  var chipsEl = document.getElementById('cats');
+  var tabsEl = document.getElementById('tabs');
+  var hideBtn = document.getElementById('hideOver');
+  var searchRow = document.getElementById('searchRow');
+  var searchToggle = document.getElementById('searchToggle');
+
+  var ICON_UP = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7"/><path d="M9 7h8v8"/></svg>';
+
+  function dayDiff(iso){
+    if(!iso) return NaN;
+    var p = iso.split('-');
+    return Math.round((Date.UTC(Number(p[0]), Number(p[1]) - 1, Number(p[2])) - BASE_MS) / 86400000);
+  }
+  function fmtDate(iso){
+    if(!iso) return '';
+    var p = iso.split('-');
+    return Number(p[1]) + '.' + String(Number(p[2])).padStart(2,'0');
+  }
+  function isOver(it){ return dayDiff(it.end) < 0; }
+
+  function ddayHTML(it){
+    var d = dayDiff(it.end);
+    if(d < 0) return '<span class="dday over">마감</span>';
+    if(d === 0) return '<span class="dday today">D-DAY</span>';
+    return '<span class="dday' + (d <= 2 ? ' soon' : '') + '">D-' + d + '</span>';
+  }
+  function metaHTML(it){
+    var parts = [];
+    if(typeof it.winners === 'number') parts.push('<b>' + it.winners + '명</b> 모집');
+    else if(it.winners) parts.push('<b>' + it.winners + '</b> 모집');
+    else parts.push('인원 미정');
+    parts.push('~' + fmtDate(it.end) + ' 마감');
+    parts.push(it.announce ? '발표 ' + fmtDate(it.announce) : '발표 미정');
+    return parts.join('<span class="sep">·</span>');
+  }
+  function keywordsHTML(it){
+    var kw = it.keywords && it.keywords.length ? it.keywords : [];
+    if(!kw.length) return '';
+    return '<div class="ckw">' + kw.map(function(k){ return '<span>' + esc(k) + '</span>'; }).join('') + '</div>';
+  }
+  function esc(s){
+    return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  function cardHTML(it){
+    var over = isOver(it);
+    var applyUrl = it.apply && it.apply.url;
+    var sameTarget = !applyUrl || applyUrl === it.origin;
+    var actions = sameTarget
+      ? '<a class="btn" href="' + esc(it.origin) + '" target="_blank" rel="noopener noreferrer">원문에서 참여 ' + ICON_UP + '</a>'
+      : '<a class="btn line" href="' + esc(it.origin) + '" target="_blank" rel="noopener noreferrer">원문 ' + ICON_UP + '</a>'
+        + '<a class="btn" href="' + esc(applyUrl) + '" target="_blank" rel="noopener noreferrer">신청 폼 ' + ICON_UP + '</a>';
+
+    return '<article class="card' + (over ? ' is-over' : '') + '">'
+      + '<div class="ctop">'
+      +   '<span class="src ' + it.platform + '"><i></i>' + (PLATFORM[it.platform] || it.platform) + '</span>'
+      +   '<span class="ctag">' + (CATEGORY[it.category] || '') + '</span>'
+      +   ddayHTML(it)
+      + '</div>'
+      + '<p class="cbrand">' + esc(it.brand) + '</p>'
+      + '<h2 class="ctitle">' + esc(it.product) + '</h2>'
+      + '<p class="cmeta">' + metaHTML(it) + '</p>'
+      + keywordsHTML(it)
+      + '<div class="cbtn">' + actions + '</div>'
+      + '</article>';
+  }
+
+  function wnum(it){
+    if(typeof it.winners === 'number') return it.winners;
+    if(it.winners) return parseInt(it.winners, 10) || 0;
+    return 0;
+  }
+
+  function sortItems(items){
+    var copy = items.slice();
+    copy.sort(function(a, b){
+      var oa = isOver(a) ? 1 : 0, ob = isOver(b) ? 1 : 0;
+      if(oa !== ob) return oa - ob;              /* 마감된 공고는 항상 뒤로 */
+      var gap = 0;
+      if(state.sort === 'winners'){
+        gap = wnum(b) - wnum(a);
+      }else if(state.sort === 'latest'){
+        var la = a.listed || a.start || '';
+        var lb = b.listed || b.start || '';
+        gap = lb < la ? -1 : (lb > la ? 1 : 0);
+      }
+      if(gap !== 0) return gap;
+      return dayDiff(a.end) - dayDiff(b.end);
+    });
+    return copy;
+  }
+
+  function visibleItems(){
+    var q = state.q.trim().toLowerCase();
+    var out = ITEMS.filter(function(it){
+      if(state.platform !== 'all' && it.platform !== state.platform) return false;
+      if(state.category !== 'all' && it.category !== state.category) return false;
+      if(state.hideOver && isOver(it)) return false;
+      if(q){
+        var hay = [it.brand, it.product, it.handle, (it.keywords || []).join(' '),
+                   CATEGORY[it.category], PLATFORM[it.platform]].join(' ').toLowerCase();
+        if(hay.indexOf(q) === -1) return false;
+      }
+      return true;
+    });
+    return sortItems(out);
+  }
+
+  function updateSummary(){
+    var ongoing = 0, today = 0;
+    ITEMS.forEach(function(it){
+      var d = dayDiff(it.end);
+      if(d >= 0) ongoing++;
+      if(d === 0) today++;
+    });
+    document.getElementById('statOn').textContent = ongoing;
+    document.getElementById('statToday').textContent = today;
+  }
+
+  function updateCounts(){
+    var counts = { all: ITEMS.length, instagram:0, x:0, powderroom:0, glowpick:0 };
+    ITEMS.forEach(function(it){ if(counts[it.platform] !== undefined) counts[it.platform]++; });
+    tabsEl.querySelectorAll('[data-count]').forEach(function(el){
+      el.textContent = counts[el.getAttribute('data-count')] || 0;
+    });
+  }
+
+  function render(){
+    var items = visibleItems();
+    listEl.innerHTML = items.map(cardHTML).join('');
+    emptyEl.hidden = items.length > 0;
+    countEl.textContent = items.length;
+  }
+
+  function wire(){
+    tabsEl.addEventListener('click', function(e){
+      var btn = e.target.closest('.tab');
+      if(!btn) return;
+      state.platform = btn.getAttribute('data-platform');
+      tabsEl.querySelectorAll('.tab').forEach(function(b){
+        var on = b === btn;
+        b.classList.toggle('is-active', on);
+        b.setAttribute('aria-pressed', on ? 'true' : 'false');
+      });
+      render();
+    });
+
+    chipsEl.addEventListener('click', function(e){
+      var chip = e.target.closest('.cat');
+      if(!chip) return;
+      state.category = chip.getAttribute('data-category');
+      chipsEl.querySelectorAll('.cat').forEach(function(c){
+        var on = c === chip;
+        c.classList.toggle('is-active', on);
+        c.setAttribute('aria-pressed', on ? 'true' : 'false');
+      });
+      render();
+    });
+
+    qEl.addEventListener('input', function(){ state.q = qEl.value; render(); });
+    selectEl.addEventListener('change', function(){ state.sort = selectEl.value; render(); });
+
+    hideBtn.addEventListener('click', function(){
+      state.hideOver = !state.hideOver;
+      hideBtn.setAttribute('aria-pressed', state.hideOver ? 'true' : 'false');
+      render();
+    });
+
+    searchToggle.addEventListener('click', function(){
+      var open = searchRow.hidden;
+      searchRow.hidden = !open;
+      searchToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      if(open) qEl.focus();
+    });
+    document.getElementById('searchClose').addEventListener('click', function(){
+      qEl.value = '';
+      state.q = '';
+      searchRow.hidden = true;
+      searchToggle.setAttribute('aria-expanded', 'false');
+      render();
+    });
+  }
+
+  function fail(){
+    loadingEl.hidden = true;
+    resultlineEl.hidden = true;
+    emptyEl.innerHTML = '<b>목록을 못 불러왔어요</b>잠시 뒤 새로고침 해 주세요.';
+    emptyEl.hidden = false;
+  }
+
+  function boot(){
+    fetch('./data-test.json?v=' + Date.now(), { cache:'no-store' })
+      .then(function(res){
+        if(!res.ok) throw new Error('HTTP ' + res.status);
+        return res.json();
+      })
+      .then(function(data){
+        ITEMS = Array.isArray(data) ? data : (data && Array.isArray(data.items) ? data.items : []);
+        if(!ITEMS.length) throw new Error('empty data');
+        if(data && data.updated){
+          document.getElementById('updated').textContent = fmtDate(data.updated) + ' 기준';
+        }
+        loadingEl.hidden = true;
+        resultlineEl.hidden = false;
+        updateCounts();
+        updateSummary();
+        wire();
+        render();
+      })
+      .catch(function(err){
+        console.error('[codek-tester] data load failed', err);
+        fail();
+      });
+  }
+
+  boot();
+})();
+</script>
+</body>
+</html>
