@@ -3,194 +3,211 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#FFFFFF">
-<title>코덕 체험단 모음 · BUNNYS POUCH ARCHIVE</title>
-<meta name="description" content="지금 응모할 수 있는 뷰티 브랜드 체험단을 한 페이지에. 모집 인원, 응모 기간, 당첨 발표일까지 원문 기준으로 정리한 코덕용 아카이브.">
+<meta name="theme-color" content="#F5F5F6">
+<title>코덕 체험단</title>
+<meta name="description" content="지금 신청할 수 있는 뷰티 체험단 모음">
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <style>
   :root{
     --ink:#111111;
-    --sub:#555555;
-    --mute:#8f8f8f;
-    --faint:#b7b7b7;
-    --line:#e5e5e5;
-    --line-strong:#111111;
+    --sub:#666666;
+    --mute:#9a9a9a;
+    --faint:#c2c2c2;
+    --line:#ececec;
+    --line2:#e0e0e0;
+    --bg:#f5f5f6;
+    --surface:#ffffff;
     --accent:#ff2e63;
-    --paper:#ffffff;
+    --r:12px;
   }
   *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
-  html,body{margin:0;padding:0;background:var(--paper)}
+  html,body{margin:0;padding:0}
   body{
+    background:var(--bg);
     color:var(--ink);
     font-family:"Pretendard Variable",Pretendard,-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
-    font-size:15px;
-    line-height:1.5;
-    letter-spacing:-.01em;
+    font-size:14px;
+    line-height:1.45;
+    letter-spacing:-.014em;
     -webkit-font-smoothing:antialiased;
-    text-rendering:optimizeLegibility;
   }
   a{color:inherit}
-  .wrap{max-width:1140px;margin:0 auto;padding:0 20px}
-  @media (min-width:760px){ .wrap{padding:0 32px} }
-
-  /* ── masthead ── */
-  .masthead{padding:28px 0 0;border-bottom:1px solid var(--line-strong)}
-  .kicker{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:4px 12px;
-    font-family:Georgia,"Times New Roman",serif;font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--ink)}
-  @media (max-width:520px){
-    .kicker{font-size:9.5px;letter-spacing:.18em}
-    .kicker .issue{letter-spacing:.1em}
-  }
-  .kicker .issue{letter-spacing:.14em;color:var(--mute);white-space:nowrap}
-  h1{margin:20px 0 0;font-size:clamp(38px,8.4vw,70px);line-height:.94;letter-spacing:-.055em;font-weight:800}
-  h1 em{font-style:normal;color:var(--accent)}
-  .dek{margin:16px 0 0;max-width:620px;color:var(--sub);font-size:13.5px;line-height:1.65;word-break:keep-all}
-  .metaline{display:flex;align-items:center;flex-wrap:wrap;gap:10px;padding:20px 0 18px;font-size:11.5px;letter-spacing:.02em;color:var(--ink)}
-  .metaline b{font-weight:800;font-variant-numeric:tabular-nums}
-  .metaline .dot{width:3px;height:3px;border-radius:50%;background:var(--faint)}
-  .metaline .sig{color:var(--mute);letter-spacing:0}
-
-  /* ── toolbar ── */
-  .toolbar{position:sticky;top:0;z-index:30;background:var(--paper);border-bottom:1px solid var(--line)}
-  .toolbar-inner{display:flex;flex-wrap:wrap;align-items:center;gap:8px 22px;padding:0 0 12px}
-  .tabs{display:flex;gap:20px;overflow-x:auto;scrollbar-width:none;padding-top:12px}
-  .tabs::-webkit-scrollbar{display:none}
-  .tab{appearance:none;border:0;background:none;padding:4px 0 10px;font:inherit;font-size:13px;font-weight:600;
-    color:var(--mute);cursor:pointer;white-space:nowrap;position:relative;letter-spacing:-.01em}
-  .tab .n{font-size:9.5px;font-weight:600;color:var(--faint);margin-left:2px;font-variant-numeric:tabular-nums}
-  .tab:hover{color:var(--ink)}
-  .tab.is-active{color:var(--ink);font-weight:700}
-  .tab.is-active::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--ink)}
-  .tab.is-active .n{color:var(--accent)}
-  .toolbar-right{display:flex;align-items:center;gap:10px;margin-left:auto;padding-top:12px;order:2}
-  @media (max-width:719px){
-    .toolbar-right{margin-left:0;width:100%;gap:14px}
-    .search{flex:1}
-    .search input{width:100%}
-    .tabs{gap:16px}
-  }
-  .cats{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;padding-top:10px;flex-basis:100%;order:3}
-  .cats::-webkit-scrollbar{display:none}
-  .cat{appearance:none;flex:0 0 auto;border:1px solid var(--line);background:var(--paper);padding:5px 10px;border-radius:999px;
-    font:inherit;font-size:10.5px;font-weight:600;color:#6c6c6c;cursor:pointer;letter-spacing:0}
-  .cat:hover{border-color:#bdbdbd;color:var(--ink)}
-  .cat.is-active{background:var(--ink);border-color:var(--ink);color:#fff}
-  .search{position:relative}
-  .search input{width:150px;border:0;border-bottom:1px solid var(--line);background:transparent;padding:5px 2px;
-    font:inherit;font-size:11.5px;color:var(--ink);outline:none;border-radius:0}
-  .search input::placeholder{color:var(--faint)}
-  .search input:focus{border-bottom-color:var(--ink)}
-  #sort{appearance:none;-webkit-appearance:none;border:0;border-bottom:1px solid var(--line);background:transparent;
-    padding:5px 18px 5px 2px;font:inherit;font-size:11.5px;font-weight:600;color:var(--ink);cursor:pointer;outline:none;border-radius:0;
-    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%23111' stroke-width='1.4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
-    background-repeat:no-repeat;background-position:right 4px center}
-  #sort:focus{border-bottom-color:var(--ink)}
-
-  /* ── result line ── */
-  .resultline{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 0 0;font-size:11px;color:var(--mute)}
-  .resultline .count b{color:var(--ink);font-weight:800;font-variant-numeric:tabular-nums}
-  .hidebtn{appearance:none;border:0;background:none;padding:0;font:inherit;font-size:11px;color:var(--mute);cursor:pointer;
-    border-bottom:1px solid var(--line);padding-bottom:1px}
-  .hidebtn[aria-pressed="true"]{color:var(--ink);border-bottom-color:var(--ink);font-weight:700}
-
-  /* ── list ── */
-  .list{display:grid;grid-template-columns:1fr;gap:14px;padding:14px 0 8px}
-  @media (min-width:820px){ .list{grid-template-columns:1fr 1fr;gap:16px} }
-  .empty{padding:70px 10px;text-align:center;color:var(--mute);font-size:12.5px;line-height:1.8}
-  .empty b{display:block;margin-bottom:6px;font-size:15px;color:var(--ink);font-weight:700}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 14px}
+  @media (min-width:760px){ .wrap{padding:0 24px} }
   [hidden]{display:none!important}
 
+  /* ── head ── */
+  .head{padding:20px 0 10px}
+  .head-row{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+  h1{margin:0;font-size:21px;line-height:1.15;font-weight:800;letter-spacing:-.05em}
+  .sum{margin:0;font-size:11.5px;color:var(--sub);white-space:nowrap;letter-spacing:0}
+  .sum b{font-weight:800;color:var(--ink);font-variant-numeric:tabular-nums}
+  .sum b.hot{color:var(--accent)}
+  .sum i{font-style:normal;color:var(--faint);margin:0 3px}
+  .handle{display:inline-block;margin-top:4px;font-size:11.5px;color:var(--mute);text-decoration:none;letter-spacing:0}
+  .handle:hover{color:var(--ink)}
+
+  /* ── filters ── */
+  .filters{
+    position:sticky;top:0;z-index:20;
+    margin:0 -14px;padding:6px 14px 8px;
+    background:rgba(245,245,246,.94);
+    -webkit-backdrop-filter:saturate(180%) blur(12px);
+    backdrop-filter:saturate(180%) blur(12px);
+    border-bottom:1px solid var(--line);
+  }
+  @media (min-width:760px){ .filters{margin:0 -24px;padding:6px 24px 8px} }
+  .tabs{display:flex;gap:16px;overflow-x:auto;scrollbar-width:none;padding:2px 0 0}
+  .tabs::-webkit-scrollbar{display:none}
+  .tab{
+    appearance:none;border:0;background:none;padding:4px 0 8px;font:inherit;
+    font-size:13px;font-weight:600;color:var(--mute);white-space:nowrap;cursor:pointer;
+    position:relative;letter-spacing:-.01em;
+  }
+  .tab b{margin-left:3px;font-size:10px;font-weight:700;color:var(--faint);font-variant-numeric:tabular-nums}
+  .tab:hover{color:var(--ink)}
+  .tab.is-active{color:var(--ink);font-weight:800}
+  .tab.is-active b{color:var(--accent)}
+  .tab.is-active::after{content:"";position:absolute;left:0;right:0;bottom:2px;height:2px;border-radius:2px;background:var(--ink)}
+
+  .row2{display:flex;align-items:center;gap:8px;padding-top:8px}
+  .cats{display:flex;gap:5px;overflow-x:auto;scrollbar-width:none;flex:1;min-width:0;padding:1px 0}
+  .cats::-webkit-scrollbar{display:none}
+  .cat{
+    appearance:none;flex:0 0 auto;border:1px solid var(--line2);background:var(--surface);
+    padding:5px 10px;border-radius:999px;font:inherit;font-size:11px;font-weight:600;
+    color:#6c6c6c;cursor:pointer;letter-spacing:-.01em;line-height:1.3;
+  }
+  .cat:hover{color:var(--ink);border-color:#cfcfcf}
+  .cat.is-active{background:var(--ink);border-color:var(--ink);color:#fff}
+  .iconbtn{
+    appearance:none;flex:0 0 auto;width:30px;height:30px;border:1px solid var(--line2);
+    background:var(--surface);border-radius:8px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;padding:0;
+  }
+  .iconbtn svg{width:13px;height:13px;stroke:#555;fill:none;stroke-width:2;stroke-linecap:round}
+  .iconbtn[aria-expanded="true"]{border-color:var(--ink)}
+  #sort{
+    appearance:none;-webkit-appearance:none;flex:0 0 auto;height:30px;
+    border:1px solid var(--line2);background:var(--surface);border-radius:8px;
+    padding:0 20px 0 8px;font:inherit;font-size:11px;font-weight:600;color:#555;
+    cursor:pointer;outline:none;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='5' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%23888' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat:no-repeat;background-position:right 7px center;
+  }
+  .searchrow{display:flex;gap:6px;padding-top:8px}
+  .searchrow input{
+    flex:1;min-width:0;height:32px;border:1px solid var(--line2);border-radius:8px;
+    background:var(--surface);padding:0 10px;font:inherit;font-size:12.5px;color:var(--ink);outline:none;
+  }
+  .searchrow input::placeholder{color:var(--faint)}
+  .searchrow input:focus{border-color:var(--ink)}
+  .searchrow button{
+    appearance:none;border:0;background:none;padding:0 4px;font:inherit;font-size:11.5px;color:var(--mute);cursor:pointer;
+  }
+
+  /* ── result line ── */
+  .resultline{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 2px 2px}
+  .resultline .cnt{font-size:11.5px;color:var(--mute);letter-spacing:0}
+  .resultline .cnt b{color:var(--ink);font-weight:800;font-variant-numeric:tabular-nums}
+  .hidebtn{
+    appearance:none;border:1px solid var(--line2);background:var(--surface);border-radius:999px;
+    padding:4px 9px;font:inherit;font-size:10.5px;font-weight:600;color:var(--sub);cursor:pointer;letter-spacing:-.01em;
+  }
+  .hidebtn[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+
+  /* ── list ── */
+  .list{display:grid;grid-template-columns:1fr;gap:10px;padding:8px 0 4px}
+  @media (min-width:720px){ .list{grid-template-columns:1fr 1fr;gap:12px} }
+  @media (min-width:1040px){ .list{grid-template-columns:1fr 1fr 1fr} }
+  .empty{padding:64px 12px;text-align:center;color:var(--mute);font-size:12.5px;line-height:1.7}
+  .empty b{display:block;margin-bottom:4px;font-size:14px;color:var(--ink);font-weight:700}
+
   /* ── card ── */
-  .card{border:1px solid var(--line);background:var(--paper);padding:18px 18px 18px;display:flex;flex-direction:column;
-    transition:border-color .18s ease,box-shadow .18s ease}
-  @media (min-width:820px){ .card{padding:22px 22px 20px} }
-  .card:hover{border-color:#c8c8c8}
-  .card.is-over{background:#fcfcfc}
-  .card.is-over .product,.card.is-over .brand{color:#6d6d6d}
-  .card-top{display:flex;align-items:center;gap:8px;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);font-weight:700}
-  .idx{font-family:Georgia,"Times New Roman",serif;font-size:11px;letter-spacing:.06em;color:var(--faint);font-weight:400}
-  .src{letter-spacing:.14em}
-  .tag{margin-left:auto;flex:0 0 auto;padding:4px 7px 3px;border:1px solid var(--ink);font-size:10px;font-weight:700;
-    letter-spacing:.04em;line-height:1;font-variant-numeric:tabular-nums;text-transform:none}
-  .tag.today{background:var(--accent);border-color:var(--accent);color:#fff;letter-spacing:.06em}
-  .tag.soon{color:var(--accent);border-color:var(--accent)}
-  .tag.over{color:#a3a3a3;border-color:#dedede}
+  .card{
+    position:relative;display:flex;flex-direction:column;
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--r);
+    padding:13px 13px 12px;
+    box-shadow:0 1px 2px rgba(17,17,17,.035);
+    transition:box-shadow .16s ease,transform .16s ease,border-color .16s ease;
+  }
+  @media (hover:hover){ .card:hover{box-shadow:0 4px 14px rgba(17,17,17,.07);border-color:#dedede;transform:translateY(-1px)} }
+  .card.is-over{background:#fafafa;box-shadow:none}
+  .card.is-over .ctitle{color:#8a8a8a}
 
-  .brandline{display:flex;align-items:baseline;gap:7px;flex-wrap:wrap;margin-top:15px}
-  .brand{font-size:12.5px;font-weight:700;letter-spacing:.02em}
-  .handle{font-size:10.5px;color:var(--faint);letter-spacing:0}
-  .product{margin:5px 0 0;font-size:19px;line-height:1.34;letter-spacing:-.035em;font-weight:700;word-break:keep-all}
-  @media (min-width:820px){ .product{font-size:20px} }
+  .ctop{display:flex;align-items:center;gap:6px;min-height:18px}
+  .src{display:inline-flex;align-items:center;gap:5px;font-size:10.5px;font-weight:700;color:#3f3f3f;letter-spacing:-.01em}
+  .src i{width:5px;height:5px;border-radius:50%;flex:0 0 auto}
+  .src.instagram i{background:#e1306c}
+  .src.x i{background:#1a1a1a}
+  .src.powderroom i{background:#f2a0b4}
+  .src.glowpick i{background:#b79cff}
+  .ctag{font-size:10.5px;color:var(--mute);letter-spacing:-.01em}
+  .ctag::before{content:"·";margin-right:5px;color:var(--faint)}
+  .dday{
+    margin-left:auto;flex:0 0 auto;padding:3px 6px;border-radius:6px;
+    font-size:10.5px;font-weight:800;letter-spacing:.01em;line-height:1;
+    background:#f1f1f2;color:#5a5a5a;font-variant-numeric:tabular-nums;
+  }
+  .dday.soon{background:#fff0f3;color:var(--accent)}
+  .dday.today{background:var(--accent);color:#fff;letter-spacing:.03em}
+  .dday.over{background:#f1f1f2;color:#b3b3b3}
 
-  .specs{display:grid;grid-template-columns:auto 1fr 1fr;gap:0;margin:16px 0 0;padding:11px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-  .spec{padding:0 12px;border-left:1px solid var(--line);min-width:0}
-  .spec:first-child{padding-left:0;border-left:0}
-  .spec dt{margin:0;font-size:9px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--mute)}
-  .spec dd{margin:4px 0 0;font-size:13px;font-weight:700;letter-spacing:-.02em;color:var(--ink);white-space:nowrap;font-variant-numeric:tabular-nums}
-  .spec.win dd{font-size:18px;font-weight:800;letter-spacing:-.03em}
-  .spec.win dd small{font-size:11px;font-weight:700;margin-left:1px}
-  .spec dd .warn{color:#8f8f8f;font-weight:600;font-size:11.5px;letter-spacing:0}
+  .cbrand{margin:9px 0 0;font-size:11.5px;font-weight:700;color:var(--ink);letter-spacing:0}
+  .card.is-over .cbrand{color:#777}
+  .ctitle{
+    margin:2px 0 0;font-size:15.5px;line-height:1.33;font-weight:700;letter-spacing:-.035em;
+    word-break:keep-all;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+  }
+  .cmeta{margin:9px 0 0;font-size:12px;color:#5c5c5c;letter-spacing:-.01em;word-break:keep-all}
+  .cmeta b{font-size:13px;font-weight:800;color:var(--ink);letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+  .cmeta .sep{color:var(--faint);margin:0 2px}
+  .ckw{display:flex;flex-wrap:wrap;gap:4px;margin:9px 0 0}
+  .ckw span{
+    background:#f3f3f4;color:#5f5f5f;border-radius:6px;padding:3px 6px;
+    font-size:10.5px;font-weight:600;line-height:1.3;letter-spacing:-.01em;
+  }
+  .cbtn{display:flex;gap:6px;margin-top:auto;padding-top:12px}
+  .btn{
+    flex:1;display:inline-flex;align-items:center;justify-content:center;gap:4px;height:34px;
+    border-radius:8px;background:var(--ink);color:#fff;font-size:12px;font-weight:700;
+    text-decoration:none;letter-spacing:-.01em;border:1px solid var(--ink);
+    transition:background .16s ease,border-color .16s ease;
+  }
+  .btn:active{background:#333}
+  .btn svg{width:9px;height:9px;stroke:currentColor;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;flex:0 0 auto}
+  .btn.line{flex:0 0 auto;padding:0 12px;background:transparent;color:var(--ink);border-color:var(--line2);font-weight:600}
+  .btn.line:hover{background:#f4f4f4}
+  .card.is-over .btn{background:#e9e9e9;border-color:#e9e9e9;color:#7d7d7d}
+  .card.is-over .btn.line{background:transparent;border-color:var(--line2);color:#8a8a8a}
 
-  .cond{margin:12px 0 0;font-size:12px;line-height:1.6;color:#4d4d4d;word-break:keep-all}
-  .cond .lbl{font-size:9px;font-weight:700;letter-spacing:.16em;color:var(--mute);margin-right:7px;text-transform:uppercase}
-  .actions{display:flex;gap:8px;margin-top:auto;padding-top:16px}
-  .btn{flex:1;display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:11px 8px;
-    border:1px solid var(--ink);font-size:11.5px;font-weight:700;letter-spacing:-.01em;text-decoration:none;
-    transition:background .18s ease,color .18s ease,border-color .18s ease}
-  .btn svg{width:10px;height:10px;stroke:currentColor;fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round;flex:0 0 auto}
-  .btn.solid{background:var(--ink);color:#fff}
-  .btn.solid:hover{background:var(--accent);border-color:var(--accent)}
-  .btn.line{background:transparent;color:var(--ink);flex:.8}
-  .btn.line:hover{background:var(--ink);color:#fff}
-
-  /* ── footer ── */
-  footer{margin:44px 0 0;border-top:1px solid var(--ink);padding:22px 0 46px}
-  .footgrid{display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between}
-  .note{max-width:640px;font-size:11px;line-height:1.75;color:var(--mute);word-break:keep-all}
-  .note strong{color:var(--ink);font-weight:700}
-  .fmark{font-family:Georgia,"Times New Roman",serif;font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--ink);white-space:nowrap}
-  .fmark span{display:block;margin-top:6px;font-family:inherit;font-size:10px;letter-spacing:0;color:var(--mute);text-transform:none}
+  /* ── foot ── */
+  footer{padding:26px 0 38px;text-align:center;font-size:11px;color:var(--faint);letter-spacing:0}
+  footer a{color:var(--mute);text-decoration:none}
+  footer a:hover{color:var(--ink)}
+  footer .dot{margin:0 5px;color:var(--line2)}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <header class="masthead">
-    <div class="kicker">
-      <span>BUNNYS POUCH ARCHIVE</span>
-      <span class="issue" id="issue">VOL. 01 / <span id="issueDate">—</span></span>
+  <header class="head">
+    <div class="head-row">
+      <h1>코덕 체험단</h1>
+      <p class="sum">진행중 <b id="statOn">–</b><i>·</i>오늘마감 <b id="statToday" class="hot">–</b></p>
     </div>
-    <h1>코덕 체험단 모음<em>.</em></h1>
-    <p class="dek">지금 응모할 수 있는 뷰티 브랜드 체험단을 한 페이지에. 모집 인원과 마감일, 당첨 발표일까지 공고 원문 기준으로 정리했습니다.</p>
-    <div class="metaline">
-      <span>진행 중 <b id="statOngoing">–</b>건</span>
-      <span class="dot" aria-hidden="true"></span>
-      <span>오늘 마감 <b id="statToday">–</b>건</span>
-      <span class="dot" aria-hidden="true"></span>
-      <span class="sig">@bunnys_pouch__ · 인스타그램 · X · 파우더룸 · 글로우픽</span>
-    </div>
+    <a class="handle" href="https://www.instagram.com/bunnys_pouch__/" target="_blank" rel="noopener">@bunnys_pouch__</a>
   </header>
 
-  <section class="toolbar" aria-label="필터와 검색">
-    <div class="toolbar-inner">
-      <div class="tabs" role="group" aria-label="출처">
-        <button class="tab is-active" type="button" aria-pressed="true" data-platform="all">전체 <span class="n" data-count="all"></span></button>
-        <button class="tab" type="button" aria-pressed="false" data-platform="instagram">인스타 <span class="n" data-count="instagram"></span></button>
-        <button class="tab" type="button" aria-pressed="false" data-platform="x">X <span class="n" data-count="x"></span></button>
-        <button class="tab" type="button" aria-pressed="false" data-platform="powderroom">파우더룸 <span class="n" data-count="powderroom"></span></button>
-        <button class="tab" type="button" aria-pressed="false" data-platform="glowpick">글로우픽 <span class="n" data-count="glowpick"></span></button>
-      </div>
-      <div class="toolbar-right">
-        <div class="search">
-          <input id="q" type="search" placeholder="브랜드·제품 검색" autocomplete="off" enterkeyhint="search" aria-label="브랜드·제품 검색">
-        </div>
-        <select id="sort" aria-label="정렬">
-          <option value="deadline">마감 임박순</option>
-          <option value="winners">모집 인원 많은순</option>
-          <option value="latest">최신 등록순</option>
-        </select>
-      </div>
-      <div class="cats" id="categoryChips" role="group" aria-label="카테고리">
+  <section class="filters" aria-label="필터">
+    <div class="tabs" id="tabs" role="group" aria-label="출처">
+      <button class="tab is-active" type="button" aria-pressed="true" data-platform="all">전체<b data-count="all"></b></button>
+      <button class="tab" type="button" aria-pressed="false" data-platform="instagram">인스타<b data-count="instagram"></b></button>
+      <button class="tab" type="button" aria-pressed="false" data-platform="x">X<b data-count="x"></b></button>
+      <button class="tab" type="button" aria-pressed="false" data-platform="powderroom">파우더룸<b data-count="powderroom"></b></button>
+      <button class="tab" type="button" aria-pressed="false" data-platform="glowpick">글로우픽<b data-count="glowpick"></b></button>
+    </div>
+    <div class="row2">
+      <div class="cats" id="cats" role="group" aria-label="카테고리">
         <button class="cat is-active" type="button" aria-pressed="true" data-category="all">전체</button>
         <button class="cat" type="button" aria-pressed="false" data-category="lip">립·색조</button>
         <button class="cat" type="button" aria-pressed="false" data-category="skin">스킨케어</button>
@@ -198,30 +215,35 @@
         <button class="cat" type="button" aria-pressed="false" data-category="fragrance">향수</button>
         <button class="cat" type="button" aria-pressed="false" data-category="multi">멀티·방문</button>
       </div>
+      <button class="iconbtn" id="searchToggle" type="button" aria-label="검색" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.4 15.4L21 21"/></svg>
+      </button>
+      <select id="sort" aria-label="정렬">
+        <option value="deadline">마감임박순</option>
+        <option value="winners">인원많은순</option>
+        <option value="latest">최신순</option>
+      </select>
+    </div>
+    <div class="searchrow" id="searchRow" hidden>
+      <input id="q" type="search" placeholder="브랜드나 제품으로 찾기" autocomplete="off" enterkeyhint="search" aria-label="브랜드나 제품 검색">
+      <button id="searchClose" type="button">닫기</button>
     </div>
   </section>
 
-  <main>
-    <div class="resultline">
-      <span class="count"><b id="resultCount">–</b>건 <span id="resultSort">· 마감 임박순</span></span>
-      <button class="hidebtn" id="hideOver" type="button" aria-pressed="false">마감된 공고 숨기기</button>
-    </div>
-    <div class="list" id="list"></div>
-    <div class="empty" id="empty" hidden>
-      <b>조건에 맞는 공고가 없어요</b>
-      검색어나 출처·카테고리 필터를 바꿔 보세요.
-    </div>
-  </main>
+  <div class="resultline" id="resultline" hidden>
+    <span class="cnt"><b id="resultCount">–</b>개</span>
+    <button class="hidebtn" id="hideOver" type="button" aria-pressed="false">마감 숨기기</button>
+  </div>
+
+  <main class="list" id="list"></main>
+  <div class="empty" id="loading">불러오는 중…</div>
+  <div class="empty" id="empty" hidden>
+    <b>조건에 맞는 체험단이 없어요</b>
+    필터를 바꿔 보세요.
+  </div>
 
   <footer>
-    <div class="footgrid">
-      <p class="note">
-        <strong id="footDate">2026.11.19</strong> 확인 기준. D-day는 한국 시간 자정에 새로 계산됩니다.
-        ‘공고 내 확인’은 공고에 해당 항목(발표일·인원)이 적혀 있지 않아 원문에서 직접 확인해야 하는 곳입니다.
-        신청 전 공고 원문에서 마감 시간과 참여 조건을 한 번 더 확인해 주세요. 마감이 지난 공고는 ‘마감’으로 표시되고 목록 맨 뒤로 정렬됩니다.
-      </p>
-      <div class="fmark">BUNNYS POUCH<span>made for @bunnys_pouch__</span></div>
-    </div>
+    <span id="updated">—</span> 업데이트<span class="dot">·</span><a href="https://www.instagram.com/bunnys_pouch__/" target="_blank" rel="noopener">@bunnys_pouch__</a>
   </footer>
 </div>
 
@@ -229,19 +251,17 @@
 (function(){
   'use strict';
 
-  /* ── 기준일: 접속 시점의 한국 시간(KST) 오늘 날짜로 자동 계산 ── */
+  /* D-day는 한국 시간 자정 기준 */
   function todayKST(){
     try{
       var fmt = new Intl.DateTimeFormat('en-US',{timeZone:'Asia/Seoul',year:'numeric',month:'2-digit',day:'2-digit'});
       var y = 0, m = 0, d = 0;
-      if(fmt.formatToParts){
-        fmt.formatToParts(new Date()).forEach(function(part){
-          if(part.type === 'year') y = Number(part.value);
-          else if(part.type === 'month') m = Number(part.value);
-          else if(part.type === 'day') d = Number(part.value);
-        });
-        if(y && m && d) return Date.UTC(y, m - 1, d);
-      }
+      fmt.formatToParts(new Date()).forEach(function(part){
+        if(part.type === 'year') y = Number(part.value);
+        else if(part.type === 'month') m = Number(part.value);
+        else if(part.type === 'day') d = Number(part.value);
+      });
+      if(y && m && d) return Date.UTC(y, m - 1, d);
       var p = fmt.format(new Date()).replace(/[^0-9]/g, ' ').trim().split(/\s+/);
       return Date.UTC(Number(p[2]), Number(p[0]) - 1, Number(p[1]));
     }catch(err){
@@ -250,295 +270,101 @@
     }
   }
   var BASE_MS = todayKST();
-  var BASE_D = new Date(BASE_MS);
-  var WEEKDAY = ['일','월','화','수','목','금','토'];
 
   var CATEGORY = { lip:'립·색조', skin:'스킨케어', hair:'헤어·바디', fragrance:'향수', multi:'멀티·방문' };
-  var PLATFORM = { instagram:'Instagram', x:'X', powderroom:'파우더룸', glowpick:'글로우픽' };
-  var SORT_LABEL = { deadline:'마감 임박순', winners:'모집 인원 많은순', latest:'최신 등록순' };
+  var PLATFORM = { instagram:'인스타', x:'X', powderroom:'파우더룸', glowpick:'글로우픽' };
 
-  /* 기록·공고 원문에서 확인된 값만 사용. null = 공고에 없음 → '공고 내 확인' */
-  var ITEMS = [
-    {
-      id:'hince-jam', brand:'힌스', handle:'@hince_official', platform:'x', category:'lip',
-      product:'잼 스토어 오픈 기념 히알잼 체험단',
-      start:'2026-11-19', end:'2026-11-22', announce:'2026-11-24', winners:50,
-      condition:'구글폼으로 신청 · 제품 수령 후 12/03~12/05 SNS 리뷰',
-      origin:'https://x.com/hince_official/status/2123293855449772248',
-      apply:{ url:'https://forms.gle/8KfX51eW1D5WdFxm8' },
-      listed:'2026-11-19'
-    },
-    {
-      id:'ondirev-ectoin', brand:'온디레브', handle:'', platform:'glowpick', category:'skin',
-      product:'인 리플 액토인 세럼 신제품 평가단',
-      start:'2026-11-19', end:'2026-11-26', announce:'2026-11-25', winners:30,
-      condition:'글로우픽 리뷰 10개 작성 후 응모 · 인스타그램 사진 3장 + 텍스트 리뷰',
-      origin:'https://www.glowpick.com/events/15416',
-      apply:{ url:'https://www.glowpick.com/events/15416' },
-      listed:'2026-11-19'
-    },
-    {
-      id:'soakedhouse-milk', brand:'소크드하우스', handle:'', platform:'glowpick', category:'fragrance',
-      product:'센트 밀크 [베일드 얼스] 신제품 평가단',
-      start:'2026-11-19', end:'2026-11-26', announce:'2026-11-25', winners:30,
-      condition:'글로우픽 리뷰 10개 작성 후 응모 · 인스타그램 사진 3장 + 텍스트 리뷰',
-      origin:'https://www.glowpick.com/events/15417',
-      apply:{ url:'https://www.glowpick.com/events/15417' },
-      listed:'2026-11-19'
-    },
-    {
-      id:'foblangshi', brand:'포블랑시', handle:'@foblangshi', platform:'x', category:'hair',
-      product:'천연성분 유기농 여성청결제 체험단',
-      start:null, end:'2026-11-25', announce:'2026-11-30', winners:'15명~',
-      condition:'X 팔로우 + RT + 댓글에 “포블랑시 여성청결제 칸디다균 99% 감소” · 별도 가이드 없이 솔직 후기',
-      origin:'https://x.com/foblangshi/status/2123292225643991211',
-      apply:{ url:'https://x.com/foblangshi/status/2123292225643991211' },
-      listed:'2026-11-19'
-    },
-    {
-      id:'holika-ig', brand:'홀리카홀리카', handle:'@holikaholika_official', platform:'instagram', category:'lip',
-      product:'NEW 아기깜고 컬렉션 체험단 (소프트 롤링 글로스 4컬러 + 글로우 라이즈 밤 2컬러)',
-      start:null, end:'2026-11-22', announce:'2026-11-24', winners:10,
-      condition:'인스타 팔로우 + 댓글에 아기깜고 컬러명 남기기 · 수령 후 14일 내 SNS 후기',
-      origin:'https://www.instagram.com/p/DftIzlyEcpU/',
-      apply:{ url:'https://www.instagram.com/p/DftIzlyEcpU/' },
-      listed:'2026-11-19'
-    },
-    {
-      id:'glowpick-award', brand:'글로우픽', handle:'@glowpick_official', platform:'glowpick', category:'multi',
-      product:'2026 글로우픽 어워드 박스 인스타그램 리뷰어 (수상템 최대 4종)',
-      start:'2026-11-18', end:'2026-11-23', announce:'2026-11-23', winners:100,
-      condition:'인스타그램 이용자 누구나 · 어워드 박스 단체컷+단독컷 사진, 텍스트 리뷰',
-      origin:'https://www.glowpick.com/events/15415',
-      apply:{ url:'https://www.glowpick.com/events/15415' },
-      listed:'2026-11-19'
-    },
-    {
-      id:'naming-glaze', brand:'네이밍', handle:'', platform:'powderroom', category:'lip',
-      product:'아카이브 하이 듀 립 글레이즈 NEW 컬러',
-      start:'2026-11-17', end:'2026-11-20', announce:'2026-11-24', winners:40,
-      condition:'파우더룸 이벤트 응모 · 인스타그램 릴스 후기 (미션 11/26~12/01)',
-      origin:'https://www.powderroom.co.kr/event/87912332',
-      apply:{ url:'https://www.powderroom.co.kr/event/87912332' },
-      listed:'2026-11-17'
-    },
-    {
-      id:'fillimilli-viewer', brand:'필리밀리', handle:'@Fillimilli_kr', platform:'powderroom', category:'lip',
-      product:'히팅뷰러 인스타그램 체험단',
-      start:'2026-11-17', end:'2026-11-20', announce:'2026-11-24', winners:100,
-      condition:'파우더룸 이벤트 응모 · 인스타그램 후기 작성 (미션 11/26~12/01)',
-      origin:'https://www.powderroom.co.kr/event/87912341',
-      apply:{ url:'https://www.powderroom.co.kr/event/87912341' },
-      listed:'2026-11-17'
-    },
-    {
-      id:'headshoulders', brand:'헤드앤숄더', handle:'@headandshoulders.korea', platform:'powderroom', category:'hair',
-      product:'딥 클린 약산성 두피 샴푸 850ml',
-      start:'2026-11-17', end:'2026-11-20', announce:'2026-11-24', winners:100,
-      condition:'파우더룸 이벤트 응모 · 인스타그램 후기 작성 (미션 11/26~12/01)',
-      origin:'https://www.powderroom.co.kr/event/87912338',
-      apply:{ url:'https://www.powderroom.co.kr/event/87912338' },
-      listed:'2026-11-17'
-    },
-    {
-      id:'offon-shampoo', brand:'오프온', handle:'', platform:'powderroom', category:'hair',
-      product:'다시마바이옴 샴푸 500g 인스타그램 릴스 체험단',
-      start:'2026-11-17', end:'2026-11-20', announce:'2026-11-24', winners:50,
-      condition:'파우더룸 이벤트 응모 · 인스타그램 릴스 후기 (미션 11/26~12/01) · 등드름 바디워시 증정',
-      origin:'https://www.powderroom.co.kr/event/87912340',
-      apply:{ url:'https://www.powderroom.co.kr/event/87912340' },
-      listed:'2026-11-17'
-    },
-    {
-      id:'powderroom-jbeauty', brand:'파우더룸', handle:'', platform:'powderroom', category:'multi',
-      product:'J-beauty 팬밋업 방문형 체험단 (캔메이크·비오레·루루룬 4종)',
-      start:'2026-11-14', end:'2026-11-20', announce:'2026-11-25', winners:50,
-      condition:'파우더룸 이벤트 응모 · 11/28~11/29 서울 강남 방문 후 제품별 인스타 후기',
-      origin:'https://www.powderroom.co.kr/event/87911622',
-      apply:{ url:'https://www.powderroom.co.kr/event/87911622' },
-      listed:'2026-11-14'
-    },
-    {
-      id:'bbia-ig', brand:'삐아', handle:'@bbia.official', platform:'instagram', category:'lip',
-      product:'오버 글레이즈 연말결산 기획세트 2종',
-      start:'2026-11-17', end:'2026-11-19', announce:null, winners:100,
-      condition:'인스타 팔로우 + 기대평 댓글 + 프로필 링크 구글폼 제출',
-      origin:'https://www.instagram.com/bbia.official/',
-      apply:{ url:'https://www.instagram.com/bbia.official/' },
-      listed:'2026-11-17'
-    },
-    {
-      id:'bbia-x', brand:'삐아', handle:'@bbia_official', platform:'x', category:'lip',
-      product:'라스트 오토 젤 아이라이너 + 미출시 젤 섀도우',
-      start:'2026-11-17', end:'2026-11-19', announce:null, winners:60,
-      condition:'X 팔로우 + 구글폼 제출',
-      origin:'https://x.com/bbia_official',
-      apply:{ url:'https://forms.gle/kPrpnDCnygJzUovc6' },
-      listed:'2026-11-17'
-    },
-    {
-      id:'alt-caramel', brand:'얼터너티브스테레오', handle:'@alternativestereo', platform:'instagram', category:'lip',
-      product:'카라멜 글레이즈 뉴컬러 댓글 이벤트',
-      start:'2026-11-16', end:'2026-11-19', announce:'2026-11-23', winners:5,
-      condition:'댓글로 원하는 뉴컬러 남기기',
-      origin:'https://www.instagram.com/p/Dfy4L6royLH/',
-      apply:{ url:'https://www.instagram.com/p/Dfy4L6royLH/' },
-      listed:'2026-11-16'
-    },
-    {
-      id:'alt-dipping', brand:'얼터너티브스테레오', handle:'@alternativestereo', platform:'instagram', category:'lip',
-      product:'NEW 디핑 컬렉션 사전 체험단 (시딩키트 3종 구성)',
-      start:'2026-11-17', end:'2026-11-20', announce:'2026-11-23', winners:15,
-      condition:'프로필 링크 구글폼 제출 후 리뷰 미션 · 제품 발송 11/23 · 피드/릴스 업로드 11/26~28 (스토리만 업로드 미인정)',
-      origin:'https://www.instagram.com/alternativestereo/',
-      apply:{ url:'https://forms.gle/1E9iK4Gu4zRmUU2B6' },
-      listed:'2026-11-17'
-    },
-    {
-      id:'holika-x', brand:'홀리카홀리카', handle:'@holikaholikakr', platform:'x', category:'lip',
-      product:'NEW 아기깜고 컬렉션 · 소프트 롤링 글로스 4종 + 글로우 라이즈 밤 2종',
-      start:'2026-11-18', end:'2026-11-22', announce:'2026-11-25', winners:30,
-      condition:'X 팔로우 + 폼 작성 + 인용으로 #홀리카아기깜고 기대평 · X 리뷰 12/5까지',
-      origin:'https://x.com/holikaholikakr/status/2122932840929353952',
-      apply:{ url:'https://x.com/holikaholikakr/status/2122932840929353952' },
-      listed:'2026-11-18'
-    },
-    {
-      id:'amtree-x', brand:'에이엠트리', handle:'@AmTree_official', platform:'x', category:'skin',
-      product:'앰플 체험단',
-      start:'2026-11-18', end:'2026-11-22', announce:'2026-11-23', winners:10,
-      condition:"X 팔로우 + RT + '앰플이 궁금한 이유' 댓글 · SNS 리뷰 12/1까지",
-      origin:'https://x.com/AmTree_official/status/2122936749995520480',
-      apply:{ url:'https://x.com/AmTree_official/status/2122936749995520480' },
-      listed:'2026-11-18'
-    },
-    {
-      id:'etude-ig', brand:'에뛰드', handle:'@etudeofficial', platform:'instagram', category:'lip',
-      product:'글로이 구미 밤 시딩 키트',
-      start:null, end:'2026-11-22', announce:'2026-11-24', winners:5,
-      condition:'인스타 팔로우 필수 + 댓글로 원하는 호수 · 비공개 계정 불가 · 발표는 개별 DM',
-      origin:'https://www.instagram.com/p/DfzJRVwn7YJ/',
-      apply:{ url:'https://www.instagram.com/p/DfzJRVwn7YJ/' },
-      listed:'2026-11-16'
-    },
-    {
-      id:'wellage-pdrn', brand:'웰라쥬', handle:'@wellage.official', platform:'instagram', category:'skin',
-      product:'PDRN 시딩 키트',
-      start:null, end:'2026-11-23', announce:'2026-11-26', winners:5,
-      condition:'인스타 팔로우 + 댓글에 제품 번호 + 친구 태그',
-      origin:'https://www.instagram.com/reel/Df1h9Q5g2sW/',
-      apply:{ url:'https://www.instagram.com/reel/Df1h9Q5g2sW/' },
-      listed:null
-    },
-    {
-      id:'onsal-x', brand:'온살', handle:'@onsal24284', platform:'x', category:'skin',
-      product:'펩타이드 링클 세럼 체험단',
-      start:'2026-11-18', end:'2026-11-24', announce:'2026-11-25', winners:null,
-      condition:'X 팔로우 + RT + 마음 + 네이버폼 작성',
-      origin:'https://x.com/onsal24284/status/2122962752050491688',
-      apply:{ url:'https://form.naver.com/response/1XK2E7AU6l7' },
-      listed:'2026-11-18'
-    },
-    {
-      id:'afterblow-ig', brand:'애프터블로우', handle:'@afterblow_official', platform:'instagram', category:'fragrance',
-      product:'몬치치 콜라보 프레스 키트',
-      start:null, end:'2026-11-25', announce:'2026-11-26', winners:5,
-      condition:'인스타 팔로우 + 좋아요 + 댓글 (필수 태그 #몬치치 #향수, 공개 계정)',
-      origin:'https://www.instagram.com/afterblow_official/',
-      apply:{ url:'https://www.instagram.com/afterblow_official/' },
-      listed:null
-    }
-  ];
-
-  var ICON_OUT = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7"/><path d="M9 7h8v8"/></svg>';
-  var ICON_FORM = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7"/><path d="M9 7h8v8"/></svg>';
+  var ITEMS = [];
+  var state = { platform:'all', category:'all', q:'', sort:'deadline', hideOver:false };
 
   var listEl = document.getElementById('list');
   var emptyEl = document.getElementById('empty');
+  var loadingEl = document.getElementById('loading');
+  var resultlineEl = document.getElementById('resultline');
   var countEl = document.getElementById('resultCount');
-  var sortLabelEl = document.getElementById('resultSort');
   var qEl = document.getElementById('q');
   var selectEl = document.getElementById('sort');
-  var chipsEl = document.getElementById('categoryChips');
+  var chipsEl = document.getElementById('cats');
+  var tabsEl = document.getElementById('tabs');
   var hideBtn = document.getElementById('hideOver');
-  var segEls = document.querySelectorAll('.tab');
+  var searchRow = document.getElementById('searchRow');
+  var searchToggle = document.getElementById('searchToggle');
 
-  var state = { platform:'all', category:'all', q:'', sort:'deadline', hideOver:false };
+  var ICON_UP = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7"/><path d="M9 7h8v8"/></svg>';
 
   function dayDiff(iso){
+    if(!iso) return NaN;
     var p = iso.split('-');
-    var ms = Date.UTC(Number(p[0]), Number(p[1]) - 1, Number(p[2]));
-    return Math.round((ms - BASE_MS) / 86400000);
+    return Math.round((Date.UTC(Number(p[0]), Number(p[1]) - 1, Number(p[2])) - BASE_MS) / 86400000);
   }
   function fmtDate(iso){
     if(!iso) return '';
     var p = iso.split('-');
     return Number(p[1]) + '.' + String(Number(p[2])).padStart(2,'0');
   }
-  function fmtToday(){
-    return BASE_D.getUTCFullYear() + '.' + String(BASE_D.getUTCMonth()+1).padStart(2,'0') + '.' + String(BASE_D.getUTCDate()).padStart(2,'0');
-  }
-  function periodText(it){
-    if(it.start) return fmtDate(it.start) + ' – ' + fmtDate(it.end);
-    return '~ ' + fmtDate(it.end);
-  }
   function isOver(it){ return dayDiff(it.end) < 0; }
-  function tagHTML(it){
+
+  function ddayHTML(it){
     var d = dayDiff(it.end);
-    if(d < 0) return '<span class="tag over">마감</span>';
-    if(d === 0) return '<span class="tag today">D-DAY</span>';
-    var cls = d <= 2 ? 'tag soon' : 'tag';
-    return '<span class="' + cls + '">D-' + d + '</span>';
+    if(d < 0) return '<span class="dday over">마감</span>';
+    if(d === 0) return '<span class="dday today">D-DAY</span>';
+    return '<span class="dday' + (d <= 2 ? ' soon' : '') + '">D-' + d + '</span>';
   }
-  function announceHTML(it){
-    if(it.announce) return fmtDate(it.announce);
-    return '<span class="warn">공고 내 확인</span>';
+  function metaHTML(it){
+    var parts = [];
+    if(typeof it.winners === 'number') parts.push('<b>' + it.winners + '명</b> 모집');
+    else if(it.winners) parts.push('<b>' + it.winners + '</b> 모집');
+    else parts.push('인원 미정');
+    parts.push('~' + fmtDate(it.end) + ' 마감');
+    parts.push(it.announce ? '발표 ' + fmtDate(it.announce) : '발표 미정');
+    return parts.join('<span class="sep">·</span>');
   }
-  function winnersHTML(it){
-    if(typeof it.winners === 'number') return it.winners + '<small>명</small>';
-    if(it.winners) return it.winners;
-    return '<span class="warn">공고 내 확인</span>';
+  function keywordsHTML(it){
+    var kw = it.keywords && it.keywords.length ? it.keywords : [];
+    if(!kw.length) return '';
+    return '<div class="ckw">' + kw.map(function(k){ return '<span>' + esc(k) + '</span>'; }).join('') + '</div>';
+  }
+  function esc(s){
+    return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
   }
 
-  function cardHTML(it, index){
+  function cardHTML(it){
     var over = isOver(it);
-    var sameTarget = !it.apply || !it.apply.url || it.apply.url === it.origin;
+    var applyUrl = it.apply && it.apply.url;
+    var sameTarget = !applyUrl || applyUrl === it.origin;
     var actions = sameTarget
-      ? '<a class="btn solid" href="' + it.origin + '" target="_blank" rel="noopener noreferrer">원문에서 참여 ' + ICON_OUT + '</a>'
-      : '<a class="btn line" href="' + it.origin + '" target="_blank" rel="noopener noreferrer">원문 ' + ICON_OUT + '</a>'
-        + '<a class="btn solid" href="' + it.apply.url + '" target="_blank" rel="noopener noreferrer">신청 폼 ' + ICON_FORM + '</a>';
+      ? '<a class="btn" href="' + esc(it.origin) + '" target="_blank" rel="noopener noreferrer">원문에서 참여 ' + ICON_UP + '</a>'
+      : '<a class="btn line" href="' + esc(it.origin) + '" target="_blank" rel="noopener noreferrer">원문 ' + ICON_UP + '</a>'
+        + '<a class="btn" href="' + esc(applyUrl) + '" target="_blank" rel="noopener noreferrer">신청 폼 ' + ICON_UP + '</a>';
 
-    return ''
-      + '<article class="card' + (over ? ' is-over' : '') + '" data-id="' + it.id + '">'
-      +   '<div class="card-top">'
-      +     '<span class="idx">' + String(index).padStart(2,'0') + '</span>'
-      +     '<span class="src">' + PLATFORM[it.platform] + '</span>'
-      +     tagHTML(it)
-      +   '</div>'
-      +   '<div class="brandline">'
-      +     '<span class="brand">' + it.brand + '</span>'
-      +     (it.handle ? '<span class="handle">' + it.handle + '</span>' : '')
-      +     '<span class="handle">· ' + CATEGORY[it.category] + '</span>'
-      +   '</div>'
-      +   '<h2 class="product">' + it.product + '</h2>'
-      +   '<dl class="specs">'
-      +     '<div class="spec win"><dt>모집</dt><dd>' + winnersHTML(it) + '</dd></div>'
-      +     '<div class="spec"><dt>기간</dt><dd>' + periodText(it) + '</dd></div>'
-      +     '<div class="spec"><dt>발표</dt><dd>' + announceHTML(it) + '</dd></div>'
-      +   '</dl>'
-      +   '<p class="cond"><span class="lbl">참여</span>' + it.condition + '</p>'
-      +   '<div class="actions">' + actions + '</div>'
+    return '<article class="card' + (over ? ' is-over' : '') + '">'
+      + '<div class="ctop">'
+      +   '<span class="src ' + it.platform + '"><i></i>' + (PLATFORM[it.platform] || it.platform) + '</span>'
+      +   '<span class="ctag">' + (CATEGORY[it.category] || '') + '</span>'
+      +   ddayHTML(it)
+      + '</div>'
+      + '<p class="cbrand">' + esc(it.brand) + '</p>'
+      + '<h2 class="ctitle">' + esc(it.product) + '</h2>'
+      + '<p class="cmeta">' + metaHTML(it) + '</p>'
+      + keywordsHTML(it)
+      + '<div class="cbtn">' + actions + '</div>'
       + '</article>';
+  }
+
+  function wnum(it){
+    if(typeof it.winners === 'number') return it.winners;
+    if(it.winners) return parseInt(it.winners, 10) || 0;
+    return 0;
   }
 
   function sortItems(items){
     var copy = items.slice();
     copy.sort(function(a, b){
       var oa = isOver(a) ? 1 : 0, ob = isOver(b) ? 1 : 0;
-      if(oa !== ob) return oa - ob;               /* 마감은 항상 맨 뒤 */
+      if(oa !== ob) return oa - ob;              /* 마감된 공고는 항상 뒤로 */
       var gap = 0;
       if(state.sort === 'winners'){
-        gap = (Number(b.winners) || 0) - (Number(a.winners) || 0);
+        gap = wnum(b) - wnum(a);
       }else if(state.sort === 'latest'){
         var la = a.listed || a.start || '';
         var lb = b.listed || b.start || '';
@@ -557,7 +383,8 @@
       if(state.category !== 'all' && it.category !== state.category) return false;
       if(state.hideOver && isOver(it)) return false;
       if(q){
-        var hay = [it.brand, it.product, it.handle, it.condition, CATEGORY[it.category], PLATFORM[it.platform]].join(' ').toLowerCase();
+        var hay = [it.brand, it.product, it.handle, (it.keywords || []).join(' '),
+                   CATEGORY[it.category], PLATFORM[it.platform]].join(' ').toLowerCase();
         if(hay.indexOf(q) === -1) return false;
       }
       return true;
@@ -565,71 +392,114 @@
     return sortItems(out);
   }
 
-  function updateStats(){
+  function updateSummary(){
     var ongoing = 0, today = 0;
     ITEMS.forEach(function(it){
       var d = dayDiff(it.end);
       if(d >= 0) ongoing++;
       if(d === 0) today++;
     });
-    document.getElementById('statOngoing').textContent = ongoing;
+    document.getElementById('statOn').textContent = ongoing;
     document.getElementById('statToday').textContent = today;
   }
 
   function updateCounts(){
     var counts = { all: ITEMS.length, instagram:0, x:0, powderroom:0, glowpick:0 };
     ITEMS.forEach(function(it){ if(counts[it.platform] !== undefined) counts[it.platform]++; });
-    document.querySelectorAll('[data-count]').forEach(function(el){
+    tabsEl.querySelectorAll('[data-count]').forEach(function(el){
       el.textContent = counts[el.getAttribute('data-count')] || 0;
     });
   }
 
   function render(){
     var items = visibleItems();
-    listEl.innerHTML = items.map(function(it, i){ return cardHTML(it, i + 1); }).join('');
+    listEl.innerHTML = items.map(cardHTML).join('');
     emptyEl.hidden = items.length > 0;
     countEl.textContent = items.length;
-    sortLabelEl.textContent = '· ' + SORT_LABEL[state.sort];
-    updateStats();
   }
 
-  segEls.forEach(function(btn){
-    btn.addEventListener('click', function(){
+  function wire(){
+    tabsEl.addEventListener('click', function(e){
+      var btn = e.target.closest('.tab');
+      if(!btn) return;
       state.platform = btn.getAttribute('data-platform');
-      segEls.forEach(function(b){
-        var active = b === btn;
-        b.classList.toggle('is-active', active);
-        b.setAttribute('aria-pressed', active ? 'true' : 'false');
+      tabsEl.querySelectorAll('.tab').forEach(function(b){
+        var on = b === btn;
+        b.classList.toggle('is-active', on);
+        b.setAttribute('aria-pressed', on ? 'true' : 'false');
       });
       render();
     });
-  });
 
-  chipsEl.addEventListener('click', function(e){
-    var chip = e.target.closest('.cat');
-    if(!chip) return;
-    state.category = chip.getAttribute('data-category');
-    var all = chipsEl.querySelectorAll('.cat');
-    for(var i = 0; i < all.length; i++){
-      var on = all[i] === chip;
-      all[i].classList.toggle('is-active', on);
-      all[i].setAttribute('aria-pressed', on ? 'true' : 'false');
-    }
-    render();
-  });
+    chipsEl.addEventListener('click', function(e){
+      var chip = e.target.closest('.cat');
+      if(!chip) return;
+      state.category = chip.getAttribute('data-category');
+      chipsEl.querySelectorAll('.cat').forEach(function(c){
+        var on = c === chip;
+        c.classList.toggle('is-active', on);
+        c.setAttribute('aria-pressed', on ? 'true' : 'false');
+      });
+      render();
+    });
 
-  qEl.addEventListener('input', function(){ state.q = qEl.value; render(); });
-  selectEl.addEventListener('change', function(){ state.sort = selectEl.value; render(); });
-  hideBtn.addEventListener('click', function(){
-    state.hideOver = !state.hideOver;
-    hideBtn.setAttribute('aria-pressed', state.hideOver ? 'true' : 'false');
-    render();
-  });
+    qEl.addEventListener('input', function(){ state.q = qEl.value; render(); });
+    selectEl.addEventListener('change', function(){ state.sort = selectEl.value; render(); });
 
-  document.getElementById('issueDate').textContent = fmtToday() + ' (' + WEEKDAY[BASE_D.getUTCDay()] + ')';
-  document.getElementById('footDate').textContent = fmtToday();
-  updateCounts();
-  render();
+    hideBtn.addEventListener('click', function(){
+      state.hideOver = !state.hideOver;
+      hideBtn.setAttribute('aria-pressed', state.hideOver ? 'true' : 'false');
+      render();
+    });
+
+    searchToggle.addEventListener('click', function(){
+      var open = searchRow.hidden;
+      searchRow.hidden = !open;
+      searchToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      if(open) qEl.focus();
+    });
+    document.getElementById('searchClose').addEventListener('click', function(){
+      qEl.value = '';
+      state.q = '';
+      searchRow.hidden = true;
+      searchToggle.setAttribute('aria-expanded', 'false');
+      render();
+    });
+  }
+
+  function fail(){
+    loadingEl.hidden = true;
+    resultlineEl.hidden = true;
+    emptyEl.innerHTML = '<b>목록을 못 불러왔어요</b>잠시 뒤 새로고침 해 주세요.';
+    emptyEl.hidden = false;
+  }
+
+  function boot(){
+    fetch('./data.json?v=' + Date.now(), { cache:'no-store' })
+      .then(function(res){
+        if(!res.ok) throw new Error('HTTP ' + res.status);
+        return res.json();
+      })
+      .then(function(data){
+        ITEMS = Array.isArray(data) ? data : (data && Array.isArray(data.items) ? data.items : []);
+        if(!ITEMS.length) throw new Error('empty data');
+        if(data && data.updated){
+          document.getElementById('updated').textContent = fmtDate(data.updated) + ' 기준';
+        }
+        loadingEl.hidden = true;
+        resultlineEl.hidden = false;
+        updateCounts();
+        updateSummary();
+        wire();
+        render();
+      })
+      .catch(function(err){
+        console.error('[codek-tester] data load failed', err);
+        fail();
+      });
+  }
+
+  boot();
 })();
 </script>
 </body>

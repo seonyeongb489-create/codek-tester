@@ -1,0 +1,461 @@
+{
+  "updated": "2026-11-19",
+  "items": [
+    {
+      "id": "hince-jam",
+      "brand": "힌스",
+      "handle": "@hince_official",
+      "platform": "x",
+      "category": "lip",
+      "product": "잼 스토어 오픈 히알잼 체험단",
+      "start": "2026-11-19",
+      "end": "2026-11-22",
+      "announce": "2026-11-24",
+      "winners": 50,
+      "keywords": [
+        "구글폼",
+        "SNS 리뷰 12/03~05"
+      ],
+      "origin": "https://x.com/hince_official/status/2123293855449772248",
+      "apply": {
+        "url": "https://forms.gle/8KfX51eW1D5WdFxm8"
+      },
+      "listed": "2026-11-19"
+    },
+    {
+      "id": "ondirev-ectoin",
+      "brand": "온디레브",
+      "handle": "",
+      "platform": "glowpick",
+      "category": "skin",
+      "product": "인 리플 액토인 세럼 평가단",
+      "start": "2026-11-19",
+      "end": "2026-11-26",
+      "announce": "2026-11-25",
+      "winners": 30,
+      "keywords": [
+        "리뷰 10개 필요",
+        "사진 3장 + 텍스트 리뷰"
+      ],
+      "origin": "https://www.glowpick.com/events/15416",
+      "apply": {
+        "url": "https://www.glowpick.com/events/15416"
+      },
+      "listed": "2026-11-19"
+    },
+    {
+      "id": "soakedhouse-milk",
+      "brand": "소크드하우스",
+      "handle": "",
+      "platform": "glowpick",
+      "category": "fragrance",
+      "product": "센트 밀크 [베일드 얼스] 평가단",
+      "start": "2026-11-19",
+      "end": "2026-11-26",
+      "announce": "2026-11-25",
+      "winners": 30,
+      "keywords": [
+        "리뷰 10개 필요",
+        "사진 3장 + 텍스트 리뷰"
+      ],
+      "origin": "https://www.glowpick.com/events/15417",
+      "apply": {
+        "url": "https://www.glowpick.com/events/15417"
+      },
+      "listed": "2026-11-19"
+    },
+    {
+      "id": "foblangshi",
+      "brand": "포블랑시",
+      "handle": "@foblangshi",
+      "platform": "x",
+      "category": "hair",
+      "product": "유기농 여성청결제 체험단",
+      "start": null,
+      "end": "2026-11-25",
+      "announce": "2026-11-30",
+      "winners": "15명 이상",
+      "keywords": [
+        "팔로우",
+        "RT",
+        "댓글",
+        "솔직 후기"
+      ],
+      "origin": "https://x.com/foblangshi/status/2123292225643991211",
+      "apply": {
+        "url": "https://x.com/foblangshi/status/2123292225643991211"
+      },
+      "listed": "2026-11-19"
+    },
+    {
+      "id": "holika-ig",
+      "brand": "홀리카홀리카",
+      "handle": "@holikaholika_official",
+      "platform": "instagram",
+      "category": "lip",
+      "product": "아기깜고 컬렉션 체험단 (글로스 4 + 밤 2)",
+      "start": null,
+      "end": "2026-11-22",
+      "announce": "2026-11-24",
+      "winners": 10,
+      "keywords": [
+        "팔로우",
+        "댓글",
+        "14일 내 후기"
+      ],
+      "origin": "https://www.instagram.com/p/DftIzlyEcpU/",
+      "apply": {
+        "url": "https://www.instagram.com/p/DftIzlyEcpU/"
+      },
+      "listed": "2026-11-19"
+    },
+    {
+      "id": "glowpick-award",
+      "brand": "글로우픽",
+      "handle": "@glowpick_official",
+      "platform": "glowpick",
+      "category": "multi",
+      "product": "2026 글로우픽 어워드 박스 리뷰어",
+      "start": "2026-11-18",
+      "end": "2026-11-23",
+      "announce": "2026-11-23",
+      "winners": 100,
+      "keywords": [
+        "누구나 응모",
+        "사진 2컷",
+        "텍스트 리뷰"
+      ],
+      "origin": "https://www.glowpick.com/events/15415",
+      "apply": {
+        "url": "https://www.glowpick.com/events/15415"
+      },
+      "listed": "2026-11-19"
+    },
+    {
+      "id": "naming-glaze",
+      "brand": "네이밍",
+      "handle": "",
+      "platform": "powderroom",
+      "category": "lip",
+      "product": "하이 듀 립 글레이즈 뉴 컬러",
+      "start": "2026-11-17",
+      "end": "2026-11-20",
+      "announce": "2026-11-24",
+      "winners": 40,
+      "keywords": [
+        "파우더룸 응모",
+        "릴스 미션"
+      ],
+      "origin": "https://www.powderroom.co.kr/event/87912332",
+      "apply": {
+        "url": "https://www.powderroom.co.kr/event/87912332"
+      },
+      "listed": "2026-11-17"
+    },
+    {
+      "id": "fillimilli-viewer",
+      "brand": "필리밀리",
+      "handle": "@Fillimilli_kr",
+      "platform": "powderroom",
+      "category": "lip",
+      "product": "히팅뷰러 체험단",
+      "start": "2026-11-17",
+      "end": "2026-11-20",
+      "announce": "2026-11-24",
+      "winners": 100,
+      "keywords": [
+        "파우더룸 응모",
+        "인스타 후기"
+      ],
+      "origin": "https://www.powderroom.co.kr/event/87912341",
+      "apply": {
+        "url": "https://www.powderroom.co.kr/event/87912341"
+      },
+      "listed": "2026-11-17"
+    },
+    {
+      "id": "headshoulders",
+      "brand": "헤드앤숄더",
+      "handle": "@headandshoulders.korea",
+      "platform": "powderroom",
+      "category": "hair",
+      "product": "딥 클린 약산성 두피 샴푸 850ml",
+      "start": "2026-11-17",
+      "end": "2026-11-20",
+      "announce": "2026-11-24",
+      "winners": 100,
+      "keywords": [
+        "파우더룸 응모",
+        "인스타 후기"
+      ],
+      "origin": "https://www.powderroom.co.kr/event/87912338",
+      "apply": {
+        "url": "https://www.powderroom.co.kr/event/87912338"
+      },
+      "listed": "2026-11-17"
+    },
+    {
+      "id": "offon-shampoo",
+      "brand": "오프온",
+      "handle": "",
+      "platform": "powderroom",
+      "category": "hair",
+      "product": "다시마바이옴 샴푸 500g 릴스 체험단",
+      "start": "2026-11-17",
+      "end": "2026-11-20",
+      "announce": "2026-11-24",
+      "winners": 50,
+      "keywords": [
+        "파우더룸 응모",
+        "릴스 미션",
+        "바디워시 증정"
+      ],
+      "origin": "https://www.powderroom.co.kr/event/87912340",
+      "apply": {
+        "url": "https://www.powderroom.co.kr/event/87912340"
+      },
+      "listed": "2026-11-17"
+    },
+    {
+      "id": "powderroom-jbeauty",
+      "brand": "파우더룸",
+      "handle": "",
+      "platform": "powderroom",
+      "category": "multi",
+      "product": "J-beauty 팬밋업 방문 체험단",
+      "start": "2026-11-14",
+      "end": "2026-11-20",
+      "announce": "2026-11-25",
+      "winners": 50,
+      "keywords": [
+        "파우더룸 응모",
+        "오프라인 방문"
+      ],
+      "origin": "https://www.powderroom.co.kr/event/87911622",
+      "apply": {
+        "url": "https://www.powderroom.co.kr/event/87911622"
+      },
+      "listed": "2026-11-14"
+    },
+    {
+      "id": "bbia-ig",
+      "brand": "삐아",
+      "handle": "@bbia.official",
+      "platform": "instagram",
+      "category": "lip",
+      "product": "오버 글레이즈 연말결산 기획세트 2종",
+      "start": "2026-11-17",
+      "end": "2026-11-19",
+      "announce": null,
+      "winners": 100,
+      "keywords": [
+        "팔로우",
+        "댓글",
+        "구글폼"
+      ],
+      "origin": "https://www.instagram.com/bbia.official/",
+      "apply": {
+        "url": "https://www.instagram.com/bbia.official/"
+      },
+      "listed": "2026-11-17"
+    },
+    {
+      "id": "bbia-x",
+      "brand": "삐아",
+      "handle": "@bbia_official",
+      "platform": "x",
+      "category": "lip",
+      "product": "라스트 오토 젤 아이라이너 + 미출시 젤 섀도우",
+      "start": "2026-11-17",
+      "end": "2026-11-19",
+      "announce": null,
+      "winners": 60,
+      "keywords": [
+        "팔로우",
+        "구글폼"
+      ],
+      "origin": "https://x.com/bbia_official",
+      "apply": {
+        "url": "https://forms.gle/kPrpnDCnygJzUovc6"
+      },
+      "listed": "2026-11-17"
+    },
+    {
+      "id": "alt-caramel",
+      "brand": "얼터너티브스테레오",
+      "handle": "@alternativestereo",
+      "platform": "instagram",
+      "category": "lip",
+      "product": "카라멜 글레이즈 뉴컬러 댓글 이벤트",
+      "start": "2026-11-16",
+      "end": "2026-11-19",
+      "announce": "2026-11-23",
+      "winners": 5,
+      "keywords": [
+        "댓글"
+      ],
+      "origin": "https://www.instagram.com/p/Dfy4L6royLH/",
+      "apply": {
+        "url": "https://www.instagram.com/p/Dfy4L6royLH/"
+      },
+      "listed": "2026-11-16"
+    },
+    {
+      "id": "alt-dipping",
+      "brand": "얼터너티브스테레오",
+      "handle": "@alternativestereo",
+      "platform": "instagram",
+      "category": "lip",
+      "product": "디핑 컬렉션 사전 체험단",
+      "start": "2026-11-17",
+      "end": "2026-11-20",
+      "announce": "2026-11-23",
+      "winners": 15,
+      "keywords": [
+        "구글폼",
+        "피드·릴스 업로드"
+      ],
+      "origin": "https://www.instagram.com/alternativestereo/",
+      "apply": {
+        "url": "https://forms.gle/1E9iK4Gu4zRmUU2B6"
+      },
+      "listed": "2026-11-17"
+    },
+    {
+      "id": "holika-x",
+      "brand": "홀리카홀리카",
+      "handle": "@holikaholikakr",
+      "platform": "x",
+      "category": "lip",
+      "product": "아기깜고 컬렉션 (글로스 4 + 밤 2)",
+      "start": "2026-11-18",
+      "end": "2026-11-22",
+      "announce": "2026-11-25",
+      "winners": 30,
+      "keywords": [
+        "팔로우",
+        "폼 작성",
+        "인용 기대평",
+        "12/5까지 리뷰"
+      ],
+      "origin": "https://x.com/holikaholikakr/status/2122932840929353952",
+      "apply": {
+        "url": "https://x.com/holikaholikakr/status/2122932840929353952"
+      },
+      "listed": "2026-11-18"
+    },
+    {
+      "id": "amtree-x",
+      "brand": "에이엠트리",
+      "handle": "@AmTree_official",
+      "platform": "x",
+      "category": "skin",
+      "product": "앰플 체험단",
+      "start": "2026-11-18",
+      "end": "2026-11-22",
+      "announce": "2026-11-23",
+      "winners": 10,
+      "keywords": [
+        "팔로우",
+        "RT",
+        "댓글",
+        "12/1까지 리뷰"
+      ],
+      "origin": "https://x.com/AmTree_official/status/2122936749995520480",
+      "apply": {
+        "url": "https://x.com/AmTree_official/status/2122936749995520480"
+      },
+      "listed": "2026-11-18"
+    },
+    {
+      "id": "etude-ig",
+      "brand": "에뛰드",
+      "handle": "@etudeofficial",
+      "platform": "instagram",
+      "category": "lip",
+      "product": "글로이 구미 밤 시딩 키트",
+      "start": null,
+      "end": "2026-11-22",
+      "announce": "2026-11-24",
+      "winners": 5,
+      "keywords": [
+        "팔로우",
+        "댓글",
+        "공개 계정"
+      ],
+      "origin": "https://www.instagram.com/p/DfzJRVwn7YJ/",
+      "apply": {
+        "url": "https://www.instagram.com/p/DfzJRVwn7YJ/"
+      },
+      "listed": "2026-11-16"
+    },
+    {
+      "id": "wellage-pdrn",
+      "brand": "웰라쥬",
+      "handle": "@wellage.official",
+      "platform": "instagram",
+      "category": "skin",
+      "product": "PDRN 시딩 키트",
+      "start": null,
+      "end": "2026-11-23",
+      "announce": "2026-11-26",
+      "winners": 5,
+      "keywords": [
+        "팔로우",
+        "댓글",
+        "친구 태그"
+      ],
+      "origin": "https://www.instagram.com/reel/Df1h9Q5g2sW/",
+      "apply": {
+        "url": "https://www.instagram.com/reel/Df1h9Q5g2sW/"
+      },
+      "listed": null
+    },
+    {
+      "id": "onsal-x",
+      "brand": "온살",
+      "handle": "@onsal24284",
+      "platform": "x",
+      "category": "skin",
+      "product": "펩타이드 링클 세럼 체험단",
+      "start": "2026-11-18",
+      "end": "2026-11-24",
+      "announce": "2026-11-25",
+      "winners": null,
+      "keywords": [
+        "팔로우",
+        "RT",
+        "마음",
+        "네이버폼"
+      ],
+      "origin": "https://x.com/onsal24284/status/2122962752050491688",
+      "apply": {
+        "url": "https://form.naver.com/response/1XK2E7AU6l7"
+      },
+      "listed": "2026-11-18"
+    },
+    {
+      "id": "afterblow-ig",
+      "brand": "애프터블로우",
+      "handle": "@afterblow_official",
+      "platform": "instagram",
+      "category": "fragrance",
+      "product": "몬치치 콜라보 프레스 키트",
+      "start": null,
+      "end": "2026-11-25",
+      "announce": "2026-11-26",
+      "winners": 5,
+      "keywords": [
+        "팔로우",
+        "좋아요",
+        "댓글",
+        "공개 계정"
+      ],
+      "origin": "https://www.instagram.com/afterblow_official/",
+      "apply": {
+        "url": "https://www.instagram.com/afterblow_official/"
+      },
+      "listed": null
+    }
+  ]
+}
