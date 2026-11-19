@@ -8,7 +8,13 @@
 </style></head>
 <body>
 <div class="stage">
-  <iframe class="phone" src="./index.html"></iframe>
-  <iframe class="phone" src="./test.html"></iframe>
+  <iframe class="phone" data-src="./index.html"></iframe>
+  <iframe class="phone" data-src="./test.html"></iframe>
 </div>
+<script>
+  var t = Date.now();
+  document.querySelectorAll('iframe[data-src]').forEach(function(f){
+    f.src = f.getAttribute('data-src') + '?t=' + t;
+  });
+</script>
 </body></html>
