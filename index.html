@@ -36,8 +36,12 @@
 
   /* ── masthead ── */
   .masthead{padding:28px 0 0;border-bottom:1px solid var(--line-strong)}
-  .kicker{display:flex;align-items:baseline;justify-content:space-between;gap:12px;
+  .kicker{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:4px 12px;
     font-family:Georgia,"Times New Roman",serif;font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--ink)}
+  @media (max-width:520px){
+    .kicker{font-size:9.5px;letter-spacing:.18em}
+    .kicker .issue{letter-spacing:.1em}
+  }
   .kicker .issue{letter-spacing:.14em;color:var(--mute);white-space:nowrap}
   h1{margin:20px 0 0;font-size:clamp(38px,8.4vw,70px);line-height:.94;letter-spacing:-.055em;font-weight:800}
   h1 em{font-style:normal;color:var(--accent)}
@@ -228,12 +232,21 @@
   /* ── 기준일: 접속 시점의 한국 시간(KST) 오늘 날짜로 자동 계산 ── */
   function todayKST(){
     try{
-      var s = new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Seoul',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
-      var p = s.split('-');
-      return Date.UTC(Number(p[0]), Number(p[1]) - 1, Number(p[2]));
+      var fmt = new Intl.DateTimeFormat('en-US',{timeZone:'Asia/Seoul',year:'numeric',month:'2-digit',day:'2-digit'});
+      var y = 0, m = 0, d = 0;
+      if(fmt.formatToParts){
+        fmt.formatToParts(new Date()).forEach(function(part){
+          if(part.type === 'year') y = Number(part.value);
+          else if(part.type === 'month') m = Number(part.value);
+          else if(part.type === 'day') d = Number(part.value);
+        });
+        if(y && m && d) return Date.UTC(y, m - 1, d);
+      }
+      var p = fmt.format(new Date()).replace(/[^0-9]/g, ' ').trim().split(/\s+/);
+      return Date.UTC(Number(p[2]), Number(p[0]) - 1, Number(p[1]));
     }catch(err){
-      var d = new Date();
-      return Date.UTC(d.getFullYear(), d.getMonth(), d.getDate());
+      var now = new Date();
+      return Date.UTC(now.getFullYear(), now.getMonth(), now.getDate());
     }
   }
   var BASE_MS = todayKST();
