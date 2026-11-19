@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#FFFBF7">
+<title>코덕 체험단 줍줍 · bunnys_pouch</title>
+<meta name="description" content="X·인스타에서 모집 중인 뷰티 브랜드 체험단을 한 페이지에서 보는 코덕용 모음. 응모 기간, 당첨 발표, 인원, 신청 링크까지.">
+<style>
+  :root{
+    --cream:#FFFBF7;
+    --ink:#2A2220;
+    --muted:#8E8079;
+    --line:#F1E5DD;
+    --coral:#FF6B5A;
+    --coral-deep:#E0503C;
+    --pink-soft:#FFF0F3;
+    --pink-line:#FFD6DE;
+    --r:18px;
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  html,body{margin:0;padding:0}
+  body{
+    background:
+      radial-gradient(1100px 460px at 50% -8%, #FFEDEA 0%, rgba(255,237,234,0) 62%),
+      linear-gradient(180deg,#FFF9F5 0%,#FFFDFB 45%,#FFF7F3 100%);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard","Malgun Gothic",system-ui,"Segoe UI",Roboto,sans-serif;
+    font-size:15px;
+    line-height:1.45;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+  .app{
+    position:relative;
+    max-width:480px;
+    margin:0 auto;
+    min-height:100vh;
+    background:rgba(255,255,255,.55);
+    box-shadow:0 0 0 1px rgba(240,225,216,.65);
+    padding-bottom:26px;
+  }
+  @media (min-width:560px){
+    body{padding:24px 16px 48px}
+    .app{
+      min-height:auto;
+      border-radius:26px;
+      overflow:clip;
+      box-shadow:0 24px 60px rgba(190,140,120,.16), 0 0 0 1px rgba(240,225,216,.85);
+    }
+  }
+
+  /* ── hero ── */
+  .hero{position:relative;padding:20px 18px 4px;overflow:hidden}
+  .hero::after{
+    content:"";position:absolute;width:190px;height:190px;right:-64px;top:-96px;border-radius:50%;
+    background:radial-gradient(circle,#FFD9E2 0%,rgba(255,217,226,0) 70%);
+    pointer-events:none;
+  }
+  .hero-top{display:flex;align-items:center;gap:10px;position:relative;z-index:1}
+  .logo{
+    flex:0 0 auto;width:38px;height:38px;border-radius:13px;display:grid;place-items:center;
+    background:linear-gradient(145deg,#FFE3E8,#FFD5C9);font-size:19px;
+    box-shadow:inset 0 0 0 1px rgba(255,255,255,.75), 0 4px 10px rgba(255,150,150,.18);
+  }
+  .titles{flex:1;min-width:0}
+  .titles h1{margin:0;font-size:19px;font-weight:800;letter-spacing:-.035em;line-height:1.25}
+  .titles p{margin:3px 0 0;font-size:11.5px;color:var(--muted);letter-spacing:-.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .stamp{
+    flex:0 0 auto;font-size:10.5px;font-weight:800;color:#8A7A72;letter-spacing:-.01em;
+    background:rgba(255,255,255,.85);border:1px solid var(--line);border-radius:999px;padding:5px 9px;
+  }
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:16px;position:relative;z-index:1}
+  .stat{background:rgba(255,255,255,.88);border:1px solid var(--line);border-radius:14px;padding:9px 11px}
+  .stat b{display:block;font-size:19px;font-weight:800;letter-spacing:-.03em;line-height:1.15}
+  .stat span{display:block;margin-top:1px;font-size:10.5px;font-weight:700;color:var(--muted)}
+  .stat.accent b{color:var(--coral-deep)}
+  .stat.applied b{color:#C24E7B}
+
+  /* ── controls ── */
+  .controls{
+    position:sticky;top:0;z-index:20;
+    margin-top:14px;padding:10px 18px 12px;
+    background:rgba(255,251,247,.9);
+    -webkit-backdrop-filter:saturate(1.4) blur(14px);
+    backdrop-filter:saturate(1.4) blur(14px);
+    border-bottom:1px solid rgba(241,229,221,.9);
+  }
+  .seg{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;background:#F7EDE8;border-radius:12px;padding:4px}
+  .seg-btn{
+    appearance:none;border:0;background:transparent;border-radius:9px;padding:8px 0;
+    font:inherit;font-size:12.5px;font-weight:700;color:#977F75;cursor:pointer;
+    transition:background .18s ease,color .18s ease,box-shadow .18s ease;
+  }
+  .seg-btn .n{font-size:10.5px;font-weight:700;color:#B9A69C;margin-left:3px}
+  .seg-btn.is-active{background:#fff;color:#3A2C27;box-shadow:0 2px 6px rgba(170,120,100,.14)}
+  .seg-btn.is-active .n{color:#D98D7E}
+  .chips{display:flex;gap:6px;overflow-x:auto;margin-top:9px;padding-bottom:2px;scrollbar-width:none}
+  .chips::-webkit-scrollbar{display:none}
+  .chip{
+    flex:0 0 auto;appearance:none;border:1px solid var(--line);background:#fff;border-radius:999px;
+    padding:6px 12px;font:inherit;font-size:11.5px;font-weight:700;color:#8A766D;cursor:pointer;
+    transition:background .18s ease,color .18s ease,border-color .18s ease;
+  }
+  .chip.is-active{background:#2F2523;border-color:#2F2523;color:#FFF6F2}
+  .searchrow{display:flex;gap:8px;margin-top:9px}
+  .search{position:relative;flex:1;min-width:0}
+  .search svg{
+    position:absolute;left:11px;top:50%;transform:translateY(-50%);
+    width:15px;height:15px;stroke:#B5A39A;fill:none;stroke-width:2;stroke-linecap:round;pointer-events:none;
+  }
+  .search input{
+    width:100%;border:1px solid var(--line);background:#fff;border-radius:11px;
+    padding:10px 12px 10px 33px;font:inherit;font-size:12.5px;color:var(--ink);outline:none;
+    transition:border-color .18s ease,box-shadow .18s ease;
+  }
+  .search input::placeholder{color:#B7A69D}
+  .search input:focus{border-color:var(--pink-line);box-shadow:0 0 0 3px rgba(255,214,222,.45)}
+  #sort{
+    flex:0 0 auto;appearance:none;-webkit-appearance:none;
+    border:1px solid var(--line);border-radius:11px;background:#fff;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%23A2918A' stroke-width='1.6' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat:no-repeat;background-position:right 10px center;
+    padding:10px 26px 10px 11px;font:inherit;font-size:11.5px;font-weight:700;color:#6F5C54;outline:none;cursor:pointer;
+  }
+  #sort:focus{border-color:var(--pink-line)}
+
+  /* ── list ── */
+  .resultline{
+    display:flex;align-items:baseline;justify-content:space-between;gap:8px;
+    padding:12px 20px 2px;font-size:11.5px;color:var(--muted);
+  }
+  .resultline b{color:#4A3931;font-weight:800}
+  .resultline .sep{color:#CFBDB4}
+  .resultline .base{font-size:10.5px;color:#B4A199}
+  .list{padding:8px 14px 0}
+  .empty{padding:40px 24px;text-align:center;color:#A8968D;font-size:12.5px;line-height:1.7}
+  .empty b{display:block;margin-bottom:4px;font-size:14px;color:#6E5B52}
+  [hidden]{display:none!important}
+
+  /* ── card ── */
+  .card{
+    position:relative;background:#fff;border:1px solid var(--line);border-radius:var(--r);
+    padding:14px;margin-bottom:11px;
+    box-shadow:0 8px 20px rgba(190,150,130,.07);
+    transition:border-color .2s ease,box-shadow .2s ease,transform .12s ease;
+  }
+  .card:active{transform:scale(.995)}
+  .card.is-applied{border-color:var(--pink-line);box-shadow:0 8px 22px rgba(230,140,165,.12)}
+  .card-head{display:flex;align-items:center;gap:5px;flex-wrap:wrap}
+  .badge{font-size:10px;font-weight:800;letter-spacing:-.01em;padding:3.5px 7px;border-radius:7px;white-space:nowrap;border:1px solid transparent}
+  .dday{background:#FFF1ED;color:#E2603F;border-color:#FFDCCF}
+  .dday.soon{background:#FFF0F2;color:#D8455F;border-color:#FFD2DA}
+  .dday.today{
+    background:linear-gradient(135deg,#FF7E66,#FF5C74);color:#fff;border-color:transparent;
+    letter-spacing:.03em;box-shadow:0 4px 10px rgba(255,92,116,.3);
+  }
+  .dday.over{background:#F4F0ED;color:#9C8C84;border-color:#E9E0DA}
+  .plat{display:inline-flex;align-items:center;gap:3px;background:#FBF0F5;color:#B33A75;border-color:#F6DDE9}
+  .plat.x{background:#F4F1EF;color:#211B18;border-color:#E7DED8}
+  .cat{background:#FFF9F0;color:#9B7A46;border-color:#F6E7CB}
+  .mark{
+    margin-left:auto;display:inline-flex;align-items:center;gap:4px;
+    appearance:none;border:1px solid #EDE1D9;background:#fff;border-radius:999px;
+    padding:4px 9px;font:inherit;font-size:10px;font-weight:800;color:#A2928A;cursor:pointer;
+    transition:background .18s ease,color .18s ease,border-color .18s ease;
+  }
+  .mark svg{width:11px;height:11px;stroke:currentColor;fill:none;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+  .mark[aria-pressed="true"]{background:var(--pink-soft);border-color:#FFBECE;color:#D9436A}
+  .mark[aria-pressed="true"] svg{fill:currentColor;stroke:none}
+
+  .brandline{display:flex;align-items:baseline;gap:6px;margin-top:11px;flex-wrap:wrap}
+  .brand{font-size:12.5px;font-weight:800;color:#4A3A34;letter-spacing:-.02em}
+  .handle{font-size:11px;color:#A9978E;letter-spacing:-.01em}
+  .product{margin:3px 0 0;font-size:15.5px;font-weight:700;line-height:1.38;letter-spacing:-.025em;color:#241C19}
+
+  .info{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:11px 0 0;padding:0}
+  .cell{background:#FFFBF8;border:1px solid #F7EDE6;border-radius:11px;padding:8px 9px;min-width:0}
+  .cell dt{font-size:9.5px;font-weight:800;color:#B09B92;letter-spacing:.02em;margin:0 0 2px}
+  .cell dd{margin:0;font-size:11.5px;font-weight:700;color:#4C3B34;line-height:1.4;word-break:keep-all}
+  .cell dd .warn{color:#B39A8F;font-weight:700}
+  .cell.wide{grid-column:1/-1;background:#FFF7F4;border-color:#FBE9DF}
+
+  .actions{display:flex;gap:7px;margin-top:11px}
+  .btn{
+    flex:1;display:inline-flex;align-items:center;justify-content:center;gap:5px;
+    text-decoration:none;border-radius:11px;padding:10px 8px;border:1px solid transparent;
+    font-size:12px;font-weight:800;letter-spacing:-.01em;
+    transition:background .18s ease,transform .12s ease,box-shadow .18s ease;
+  }
+  .btn svg{width:12px;height:12px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:0 0 auto}
+  .btn.ghost{flex:.92;background:#fff;border-color:#EBDCD3;color:#7A665D}
+  .btn.ghost:active{background:#FFF5F0}
+  .btn.primary{
+    flex:1.08;color:#fff;background:linear-gradient(135deg,#FF7F68,#FF5C74);
+    box-shadow:0 6px 14px rgba(255,100,110,.24);
+  }
+  .btn.primary:active{transform:translateY(1px);box-shadow:0 3px 8px rgba(255,100,110,.22)}
+  .linknote{margin:7px 2px 0;font-size:10.5px;color:#AE9A90;line-height:1.45;word-break:keep-all}
+
+  footer{margin:18px 14px 0;padding:14px 4px 0;border-top:1px dashed #F0E2D9;font-size:10.5px;color:#A8968D;line-height:1.65}
+  footer p{margin:0 0 6px}
+  footer strong{color:#7B6A62;font-weight:800}
+  footer .sig{margin-top:8px;color:#B7A69D}
+</style>
+</head>
+<body>
+<div class="app">
+  <header class="hero">
+    <div class="hero-top">
+      <div class="logo" aria-hidden="true">🐰</div>
+      <div class="titles">
+        <h1>코덕 체험단 줍줍</h1>
+        <p>@bunnys_pouch__ · X &amp; 인스타 뷰티 체험단 모음</p>
+      </div>
+      <div class="stamp">2026.11.19</div>
+    </div>
+    <div class="stats" aria-label="요약">
+      <div class="stat"><b id="statOngoing">–</b><span>진행 중</span></div>
+      <div class="stat accent"><b id="statToday">–</b><span>오늘 마감</span></div>
+      <div class="stat applied"><b id="statApplied">–</b><span>내 신청</span></div>
+    </div>
+  </header>
+
+  <section class="controls" aria-label="필터와 검색">
+    <div class="seg" role="group" aria-label="플랫폼">
+      <button class="seg-btn is-active" type="button" aria-pressed="true" data-platform="all">전체 <span class="n">10</span></button>
+      <button class="seg-btn" type="button" aria-pressed="false" data-platform="instagram">인스타 <span class="n">6</span></button>
+      <button class="seg-btn" type="button" aria-pressed="false" data-platform="x">X <span class="n">4</span></button>
+    </div>
+    <div class="chips" id="categoryChips" role="group" aria-label="카테고리">
+      <button class="chip is-active" type="button" aria-pressed="true" data-category="all">전체</button>
+      <button class="chip" type="button" aria-pressed="false" data-category="lip">립·색조</button>
+      <button class="chip" type="button" aria-pressed="false" data-category="skin">스킨케어</button>
+      <button class="chip" type="button" aria-pressed="false" data-category="fragrance">향수</button>
+    </div>
+    <div class="searchrow">
+      <div class="search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+        <input id="q" type="search" placeholder="브랜드·제품명 검색" autocomplete="off" enterkeyhint="search" aria-label="브랜드·제품명 검색">
+      </div>
+      <select id="sort" aria-label="정렬">
+        <option value="deadline">마감 임박순</option>
+        <option value="winners">당첨 인원 많은순</option>
+        <option value="latest">최신 등록순</option>
+      </select>
+    </div>
+  </section>
+
+  <main>
+    <div class="resultline">
+      <span><b id="resultCount">–</b><span class="sep"> · </span><span id="resultSort">마감 임박순</span></span>
+      <span class="base">D-day는 2026.11.19 기준</span>
+    </div>
+    <div class="list" id="list"></div>
+    <div class="empty" id="empty" hidden>
+      <b>조건에 맞는 체험단이 없어요</b>
+      검색어나 플랫폼·카테고리 필터를 바꿔 보세요.
+    </div>
+  </main>
+
+  <footer>
+    <p><strong>2026.11.19 확인 기준</strong> · 매일 아침 X·인스타에서 모은 공고 중 실제 기록에 남아 있는 정보만 담았어요.</p>
+    <p>'공고 내 확인'은 모아둔 기록에 해당 항목(발표일·인원)이 없어 원문에서 직접 확인해야 하는 곳이에요. 신청 전에 공고 원문에서 마감 시간과 조건을 한 번 더 봐 주세요.</p>
+    <p>'신청 완료' 표시는 이 기기 브라우저에 저장돼 새로고침해도 그대로 남아요. 11/18에 실제 신청을 마친 3건(얼터너티브스테레오 사전체험단·카라멜 댓글, 웰라쥬 PDRN 댓글)은 처음부터 체크되어 있어요.</p>
+    <p class="sig">made for @bunnys_pouch__ 🎀</p>
+  </footer>
+</div>
+
+<script>
+(function(){
+  'use strict';
+
+  /* 기준일: 2026-11-19. 실제 배포에서는 BASE_MS를 오늘 날짜로 바꾸면 D-day가 자동 계산됩니다. */
+  var BASE_MS = Date.UTC(2026, 10, 19);
+  var STORAGE_KEY = 'codek-applied-v1';
+  var DEFAULT_APPLIED = ['alt-dipping', 'alt-caramel', 'wellage-pdrn'];
+
+  var CATEGORY = { lip: '립·색조', skin: '스킨케어', fragrance: '향수' };
+  var SORT_LABEL = { deadline: '마감 임박순', winners: '당첨 인원 많은순', latest: '최신 등록순' };
+
+  /* 기록(memory/history, scheduled-actions/💄-뷰티-브랜드-체험단-모음-알림/notes.md)에서 확인된 값만 사용.
+     null = 기록에 없음 → 화면에 '공고 내 확인'으로 표시 */
+  var ITEMS = [
+    {
+      id: 'bbia-ig',
+      brand: '삐아', handle: '@bbia.official', platform: 'instagram', category: 'lip',
+      product: '오버 글레이즈 연말결산 기획세트 2종',
+      start: '2026-11-17', end: '2026-11-19',
+      announce: null, winners: 100,
+      condition: '인스타 팔로우 + 기대평 댓글 + 프로필 링크 구글폼 제출',
+      origin: 'https://www.instagram.com/bbia.official/',
+      apply: { url: 'https://www.instagram.com/bbia.official/', label: '신청 바로가기' },
+      note: '게시물·구글폼 링크는 기록에 없어 인스타 프로필로 연결했어요. 폼은 프로필 링크에서 열려요.',
+      listed: '2026-11-17'
+    },
+    {
+      id: 'bbia-x',
+      brand: '삐아', handle: '@bbia_official', platform: 'x', category: 'lip',
+      product: '라스트 오토 젤 아이라이너 + 미출시 젤 섀도우',
+      start: '2026-11-17', end: '2026-11-19',
+      announce: null, winners: 60,
+      condition: 'X 팔로우 + 구글폼 제출',
+      origin: 'https://x.com/bbia_official',
+      apply: { url: 'https://forms.gle/kPrpnDCnygJzUovc6', label: '신청 바로가기' },
+      note: '신청은 구글폼으로 받아요. X 게시물 링크는 기록에 없어 계정으로 연결했어요.',
+      listed: '2026-11-17'
+    },
+    {
+      id: 'alt-caramel',
+      brand: '얼터너티브스테레오', handle: '@alternativestereo', platform: 'instagram', category: 'lip',
+      product: '카라멜 글레이즈 뉴컬러 댓글 이벤트',
+      start: '2026-11-16', end: '2026-11-19',
+      announce: '2026-11-23', winners: 5,
+      condition: '댓글로 원하는 뉴컬러 남기기',
+      origin: 'https://www.instagram.com/p/Dfy4L6royLH/',
+      apply: { url: 'https://www.instagram.com/p/Dfy4L6royLH/', label: '댓글로 신청' },
+      note: '',
+      listed: '2026-11-16'
+    },
+    {
+      id: 'alt-dipping',
+      brand: '얼터너티브스테레오', handle: '@alternativestereo', platform: 'instagram', category: 'lip',
+      product: 'NEW 디핑 컬렉션 사전 체험단 (시딩키트 3종 구성)',
+      start: '2026-11-17', end: '2026-11-20',
+      announce: '2026-11-23', winners: 15,
+      condition: '프로필 링크 구글폼 제출 후 리뷰 미션 · 제품 발송 11/23 · 피드/릴스 업로드 11/26~28',
+      origin: 'https://www.instagram.com/alternativestereo/',
+      apply: { url: 'https://forms.gle/1E9iK4Gu4zRmUU2B6', label: '신청 바로가기' },
+      note: '발표는 11/23 개별 DM · 스토리만 올리는 건 인정되지 않아요.',
+      listed: '2026-11-17'
+    },
+    {
+      id: 'holika-x',
+      brand: '홀리카홀리카', handle: '@holikaholikakr', platform: 'x', category: 'lip',
+      product: 'NEW 아기깜고 컬렉션 · 소프트 롤링 글로스 4종 + 글로우 라이즈 밤 2종',
+      start: '2026-11-18', end: '2026-11-22',
+      announce: '2026-11-25', winners: 30,
+      condition: 'X 팔로우 + 폼 작성 + 인용으로 #홀리카아기깜고 기대평 · X 리뷰 12/5까지',
+      origin: 'https://x.com/holikaholikakr/status/2122932840929353952',
+      apply: { url: 'https://x.com/holikaholikakr/status/2122932840929353952', label: '게시물로 신청' },
+      note: '',
+      listed: '2026-11-18'
+    },
+    {
+      id: 'amtree-x',
+      brand: '에이엠트리', handle: '@AmTree_official', platform: 'x', category: 'skin',
+      product: '앰플 체험단',
+      start: '2026-11-18', end: '2026-11-22',
+      announce: '2026-11-23', winners: 10,
+      condition: "X 팔로우 + RT + '앰플이 궁금한 이유' 댓글 · SNS 리뷰 12/1까지",
+      origin: 'https://x.com/AmTree_official/status/2122936749995520480',
+      apply: { url: 'https://x.com/AmTree_official/status/2122936749995520480', label: '댓글로 신청' },
+      note: '',
+      listed: '2026-11-18'
+    },
+    {
+      id: 'etude-ig',
+      brand: '에뛰드', handle: '@etudeofficial', platform: 'instagram', category: 'lip',
+      product: '글로이 구미 밤 시딩 키트',
+      start: null, end: '2026-11-22',
+      announce: '2026-11-24', winners: 5,
+      condition: '인스타 팔로우 필수 + 댓글로 원하는 호수 · 비공개 계정 불가',
+      origin: 'https://www.instagram.com/p/DfzJRVwn7YJ/',
+      apply: { url: 'https://www.instagram.com/p/DfzJRVwn7YJ/', label: '댓글로 신청' },
+      note: '발표는 11/24 개별 DM이에요.',
+      listed: '2026-11-16'
+    },
+    {
+      id: 'wellage-pdrn',
+      brand: '웰라쥬', handle: '@wellage.official', platform: 'instagram', category: 'skin',
+      product: 'PDRN 시딩 키트',
+      start: null, end: '2026-11-23',
+      announce: '2026-11-26', winners: 5,
+      condition: '인스타 팔로우 + 댓글에 제품 번호 + 친구 태그',
+      origin: 'https://www.instagram.com/reel/Df1h9Q5g2sW/',
+      apply: { url: 'https://www.instagram.com/reel/Df1h9Q5g2sW/', label: '댓글로 신청' },
+      note: '',
+      listed: null
+    },
+    {
+      id: 'onsal-x',
+      brand: '온살', handle: '@onsal24284', platform: 'x', category: 'skin',
+      product: '펩타이드 링클 세럼 체험단',
+      start: '2026-11-18', end: '2026-11-24',
+      announce: '2026-11-25', winners: null,
+      condition: 'X 팔로우 + RT + 마음 + 네이버폼 작성',
+      origin: 'https://x.com/onsal24284/status/2122962752050491688',
+      apply: { url: 'https://form.naver.com/response/1XK2E7AU6l7', label: '신청 바로가기' },
+      note: '신청은 네이버폼으로 받아요.',
+      listed: '2026-11-18'
+    },
+    {
+      id: 'afterblow-ig',
+      brand: '애프터블로우', handle: '@afterblow_official', platform: 'instagram', category: 'fragrance',
+      product: '몬치치 콜라보 프레스 키트',
+      start: null, end: '2026-11-25',
+      announce: '2026-11-26', winners: 5,
+      condition: '인스타 팔로우 + 좋아요 + 댓글 (필수 태그 #몬치치 #향수, 공개 계정)',
+      origin: 'https://www.instagram.com/afterblow_official/',
+      apply: { url: 'https://www.instagram.com/afterblow_official/', label: '댓글로 신청' },
+      note: '게시물 링크는 기록에 없어 프로필로 연결했어요. 필수 태그 #몬치치 #향수 잊지 마세요.',
+      listed: null
+    }
+  ];
+
+  var ICON_EXTERNAL = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6"/><path d="M20 4l-8 8"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>';
+  var ICON_ARROW = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13"/><path d="M12 5l7 7-7 7"/></svg>';
+
+  var listEl = document.getElementById('list');
+  var emptyEl = document.getElementById('empty');
+  var countEl = document.getElementById('resultCount');
+  var sortEl = document.getElementById('resultSort');
+  var qEl = document.getElementById('q');
+  var selectEl = document.getElementById('sort');
+  var chipsEl = document.getElementById('categoryChips');
+  var segEls = document.querySelectorAll('.seg-btn');
+
+  var state = { platform: 'all', category: 'all', q: '', sort: 'deadline' };
+  var applied = loadApplied();
+
+  function loadApplied(){
+    try {
+      var raw = localStorage.getItem(STORAGE_KEY);
+      if (raw === null) return new Set(DEFAULT_APPLIED);
+      var arr = JSON.parse(raw);
+      return new Set(Array.isArray(arr) ? arr : []);
+    } catch (err) {
+      return new Set(DEFAULT_APPLIED);
+    }
+  }
+  function saveApplied(){
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(Array.from(applied))); } catch (err) {}
+  }
+
+  function dayDiff(iso){
+    var p = iso.split('-');
+    var ms = Date.UTC(Number(p[0]), Number(p[1]) - 1, Number(p[2]));
+    return Math.round((ms - BASE_MS) / 86400000);
+  }
+  function fmtDate(iso){
+    if (!iso) return '';
+    var p = iso.split('-');
+    return Number(p[1]) + '.' + Number(p[2]);
+  }
+  function periodText(it){
+    if (it.start) return fmtDate(it.start) + ' – ' + fmtDate(it.end);
+    return '~ ' + fmtDate(it.end);
+  }
+  function ddayBadge(it){
+    var d = dayDiff(it.end);
+    if (d < 0) return '<span class="badge dday over">마감</span>';
+    if (d === 0) return '<span class="badge dday today">D-DAY</span>';
+    var cls = d <= 2 ? 'badge dday soon' : 'badge dday';
+    return '<span class="' + cls + '">D-' + d + '</span>';
+  }
+  function announceCell(it){
+    if (it.announce) return fmtDate(it.announce);
+    return '<span class="warn">공고 내 확인</span>';
+  }
+  function winnersCell(it){
+    if (it.winners) return it.winners + '명';
+    return '<span class="warn">공고 내 확인</span>';
+  }
+
+  function cardHTML(it){
+    var on = applied.has(it.id);
+    var plat = it.platform === 'x'
+      ? '<span class="badge plat x">X</span>'
+      : '<span class="badge plat">Instagram</span>';
+    var html = ''
+      + '<article class="card' + (on ? ' is-applied' : '') + '" data-id="' + it.id + '">'
+      +   '<div class="card-head">'
+      +     ddayBadge(it)
+      +     plat
+      +     '<span class="badge cat">' + CATEGORY[it.category] + '</span>'
+      +     '<button class="mark" type="button" data-id="' + it.id + '" aria-pressed="' + (on ? 'true' : 'false') + '" aria-label="' + (on ? '신청 완료 해제' : '신청 완료로 표시') + '">'
+      +       '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span>신청 완료</span>'
+      +     '</button>'
+      +   '</div>'
+      +   '<div class="brandline">'
+      +     '<span class="brand">' + it.brand + '</span>'
+      +     '<span class="handle">' + it.handle + '</span>'
+      +   '</div>'
+      +   '<h2 class="product">' + it.product + '</h2>'
+      +   '<dl class="info">'
+      +     '<div class="cell"><dt>응모 기간</dt><dd>' + periodText(it) + '</dd></div>'
+      +     '<div class="cell"><dt>당첨 발표</dt><dd>' + announceCell(it) + '</dd></div>'
+      +     '<div class="cell"><dt>당첨 인원</dt><dd>' + winnersCell(it) + '</dd></div>'
+      +     '<div class="cell wide"><dt>참여 방법</dt><dd>' + it.condition + '</dd></div>'
+      +   '</dl>'
+      +   '<div class="actions">'
+      +     '<a class="btn ghost" href="' + it.origin + '" target="_blank" rel="noopener noreferrer">' + ICON_EXTERNAL + '원문 보기</a>'
+      +     '<a class="btn primary" href="' + it.apply.url + '" target="_blank" rel="noopener noreferrer">' + it.apply.label + ICON_ARROW + '</a>'
+      +   '</div>'
+      +   (it.note ? '<p class="linknote">' + it.note + '</p>' : '')
+      + '</article>';
+    return html;
+  }
+
+  function sortItems(items){
+    var copy = items.slice();
+    copy.sort(function(a, b){
+      var gap = 0;
+      if (state.sort === 'winners') {
+        gap = (b.winners || 0) - (a.winners || 0);
+      } else if (state.sort === 'latest') {
+        var la = a.listed || a.start || '';
+        var lb = b.listed || b.start || '';
+        gap = lb < la ? -1 : (lb > la ? 1 : 0);
+      }
+      if (gap !== 0) return gap;
+      return dayDiff(a.end) - dayDiff(b.end);
+    });
+    return copy;
+  }
+
+  function visibleItems(){
+    var q = state.q.trim().toLowerCase();
+    var out = ITEMS.filter(function(it){
+      if (state.platform !== 'all' && it.platform !== state.platform) return false;
+      if (state.category !== 'all' && it.category !== state.category) return false;
+      if (q) {
+        var hay = [it.brand, it.product, it.handle, it.condition, CATEGORY[it.category]].join(' ').toLowerCase();
+        if (hay.indexOf(q) === -1) return false;
+      }
+      return true;
+    });
+    return sortItems(out);
+  }
+
+  function updateStats(){
+    var ongoing = 0, today = 0, mine = 0;
+    ITEMS.forEach(function(it){
+      var d = dayDiff(it.end);
+      if (d >= 0) ongoing++;
+      if (d === 0) today++;
+      if (applied.has(it.id)) mine++;
+    });
+    document.getElementById('statOngoing').textContent = ongoing;
+    document.getElementById('statToday').textContent = today;
+    document.getElementById('statApplied').textContent = mine;
+  }
+
+  function render(){
+    var items = visibleItems();
+    listEl.innerHTML = items.map(cardHTML).join('');
+    emptyEl.hidden = items.length > 0;
+    countEl.textContent = items.length + '건';
+    sortEl.textContent = SORT_LABEL[state.sort];
+    updateStats();
+  }
+
+  function toggleApplied(id, btn){
+    if (applied.has(id)) applied.delete(id);
+    else applied.add(id);
+    saveApplied();
+    var on = applied.has(id);
+    btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+    btn.setAttribute('aria-label', on ? '신청 완료 해제' : '신청 완료로 표시');
+    var card = btn.closest('.card');
+    if (card) card.classList.toggle('is-applied', on);
+    updateStats();
+  }
+
+  listEl.addEventListener('click', function(e){
+    var btn = e.target.closest('.mark');
+    if (!btn) return;
+    e.preventDefault();
+    toggleApplied(btn.getAttribute('data-id'), btn);
+  });
+
+  segEls.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      state.platform = btn.getAttribute('data-platform');
+      segEls.forEach(function(b){
+        var active = b === btn;
+        b.classList.toggle('is-active', active);
+        b.setAttribute('aria-pressed', active ? 'true' : 'false');
+      });
+      render();
+    });
+  });
+
+  chipsEl.addEventListener('click', function(e){
+    var chip = e.target.closest('.chip');
+    if (!chip) return;
+    state.category = chip.getAttribute('data-category');
+    var all = chipsEl.querySelectorAll('.chip');
+    for (var i = 0; i < all.length; i++) {
+      var on = all[i] === chip;
+      all[i].classList.toggle('is-active', on);
+      all[i].setAttribute('aria-pressed', on ? 'true' : 'false');
+    }
+    render();
+  });
+
+  qEl.addEventListener('input', function(){
+    state.q = qEl.value;
+    render();
+  });
+
+  selectEl.addEventListener('change', function(){
+    state.sort = selectEl.value;
+    render();
+  });
+
+  render();
+})();
+</script>
+</body>
+</html>
