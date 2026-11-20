@@ -2,6 +2,77 @@
   "updated": "2026-11-20",
   "items": [
     {
+      "id": "fillimilli-guasha",
+      "brand": "필리밀리",
+      "handle": "@Fillimilli_kr",
+      "platform": "x",
+      "category": "multi",
+      "product": "세라믹 바디 괄사 — 체험단 10명 (IG·X 동시 모집)",
+      "start": "2026-11-20",
+      "end": "2026-11-22",
+      "announce": "2026-11-23",
+      "winners": 10,
+      "keywords": [
+        "팔로우",
+        "댓글",
+        "RT",
+        "구글폼",
+        "후기 11/28~29"
+      ],
+      "origin": "https://x.com/Fillimilli_kr/status/2123718193575522458",
+      "apply": {
+        "url": "https://forms.gle/ihDQLt8Q2y47iDaj7"
+      },
+      "listed": "2026-11-20"
+    },
+    {
+      "id": "easea-coconut-sample",
+      "brand": "easea",
+      "handle": "@easea_official",
+      "platform": "x",
+      "category": "skin",
+      "product": "코코넛 세럼&크림 랩 샘플 체험단 (LAB SAMPLE KIT) — 정식 출시 전 샘플",
+      "start": "2026-11-20",
+      "end": "2026-11-22",
+      "announce": "2026-11-23",
+      "winners": null,
+      "keywords": [
+        "카톡 채널 추가",
+        "신청서",
+        "좋아요·RT",
+        "SNS 후기 ~12/6"
+      ],
+      "origin": "https://x.com/easea_official/status/2123702894893449705",
+      "apply": {
+        "url": "https://pf.kakao.com/_xcxnuzX"
+      },
+      "listed": "2026-11-20"
+    },
+    {
+      "id": "wonderbath-heatercream",
+      "brand": "원더바스",
+      "handle": "@wonderbath_kr",
+      "platform": "x",
+      "category": "skin",
+      "product": "어성초 장벽 크림 (히터크림) — 체험단 100명",
+      "start": "2026-11-20",
+      "end": "2026-11-24",
+      "announce": "2026-11-26",
+      "winners": 100,
+      "keywords": [
+        "팔로우",
+        "RT",
+        "기대평 인용·멘션",
+        "구글폼",
+        "업로드 ~12/11"
+      ],
+      "origin": "https://x.com/wonderbath_kr/status/2123687803246580047",
+      "apply": {
+        "url": "https://forms.gle/USffmAvAbwA21NqT6"
+      },
+      "listed": "2026-11-20"
+    },
+    {
       "id": "youngwonhee-bubble-mask",
       "brand": "영원희",
       "handle": "@youngwonhee_official",
