@@ -758,6 +758,52 @@
         "url": "https://www.instagram.com/afterblow_official/"
       },
       "listed": null
+    },
+    {
+      "id": "merzy-eyeliner",
+      "brand": "머지",
+      "handle": null,
+      "platform": "powderroom",
+      "category": "multi",
+      "product": "더 퍼스트 슬림 젤 아이라이너 기획세트 (전 컬러)",
+      "start": "2026-11-16",
+      "end": "2026-11-22",
+      "announce": "2026-11-24",
+      "winners": 20,
+      "keywords": [
+        "인스타그램 릴스",
+        "미션 11.26~12.03",
+        "우수후기 1명"
+      ],
+      "origin": "https://www.powderroom.co.kr/event/87912330",
+      "apply": {
+        "url": "https://www.powderroom.co.kr/event/87912330"
+      },
+      "listed": "2026-11-20"
+    },
+    {
+      "id": "javindeseoul-shadeprimer",
+      "brand": "자빈드서울",
+      "handle": "@javindeseoul_kr",
+      "platform": "x",
+      "category": "multi",
+      "product": "윙크 쿠션 쉐이드 프라이머 #12·#13 신제품 올리브 컬러 2종",
+      "start": "2026-11-19",
+      "end": "2026-11-24",
+      "announce": "2026-11-25",
+      "winners": 15,
+      "keywords": [
+        "팔로우",
+        "RT",
+        "마음",
+        "구글폼",
+        "포토후기 1건"
+      ],
+      "origin": "https://x.com/javindeseoul_kr/status/2123317345905193226",
+      "apply": {
+        "url": "https://x.com/javindeseoul_kr/status/2123317345905193226"
+      },
+      "listed": "2026-11-20"
     }
   ],
   "events": [
@@ -873,6 +919,29 @@
       "origin": "https://x.com/youngwonhee_kr/status/2122558270347022410",
       "apply": {
         "url": "https://x.com/youngwonhee_kr/status/2122558270347022410"
+      },
+      "listed": "2026-11-20"
+    },
+    {
+      "id": "ev-naming-suneung",
+      "brand": "네이밍",
+      "handle": "@naming_cosmetic",
+      "platform": "x",
+      "category": "multi",
+      "kind": "comment",
+      "product": "수능 기념 인용 RT 이벤트 — 네이밍 BEST 메이크업 박스 (수험생 대상)",
+      "start": "2026-11-19",
+      "end": "2026-11-24",
+      "announce": "2026-11-25",
+      "winners": 2,
+      "keywords": [
+        "팔로우",
+        "인용 RT",
+        "수험생 대상"
+      ],
+      "origin": "https://x.com/naming_cosmetic/status/2123371083537551770",
+      "apply": {
+        "url": "https://x.com/naming_cosmetic/status/2123371083537551770"
       },
       "listed": "2026-11-20"
     }
