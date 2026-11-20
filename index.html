@@ -161,6 +161,7 @@
   .src.oliveyoung i{background:#8fce3e}
   .ctag{font-size:10.5px;color:var(--mute);letter-spacing:-.01em}
   .ctag::before{content:"·";margin:0 4px 0 1px;color:var(--faint)}
+  .ctag.ev::before{content:"";margin:0}
   .dday{
     margin-left:auto;flex:0 0 auto;padding:3px 6px;border-radius:6px;
     font-size:10.5px;font-weight:800;letter-spacing:.01em;line-height:1;
@@ -354,6 +355,13 @@
     return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
   }
 
+  function tagText(it){
+    var cat = CATEGORY[it.category] || '';
+    if(state.tab !== 'events') return cat;
+    var kind = KIND[it.kind] || '';
+    return [kind, cat].filter(function(s){ return !!s; }).join(' · ');
+  }
+
   function cardHTML(it){
     var over = isOver(it);
     var applyUrl = it.apply && it.apply.url;
@@ -366,7 +374,7 @@
     return '<article class="card' + (over ? ' is-over' : '') + '">'
       + '<div class="ctop">'
       +   '<span class="src ' + it.platform + '"><i></i>' + (PLATFORM[it.platform] || it.platform) + '</span>'
-      +   '<span class="ctag">' + (CATEGORY[it.category] || '') + '</span>'
+      +   '<span class="ctag' + (state.tab === 'events' ? ' ev' : '') + '">' + tagText(it) + '</span>'
       +   ddayHTML(it)
       + '</div>'
       + '<p class="cbrand">' + esc(it.brand) + '</p>'
@@ -440,12 +448,22 @@
   function updateCounts(){
     var list = currentList();
     var counts = { all: list.length, instagram:0, x:0, powderroom:0, glowpick:0, oliveyoung:0 };
-    list.forEach(function(it){ if(counts[it.platform] !== undefined) counts[it.platform]++; });
+    var cats = { all: list.length, lip:0, skin:0, hair:0, fragrance:0, multi:0 };
+    list.forEach(function(it){
+      if(counts[it.platform] !== undefined) counts[it.platform]++;
+      if(cats[it.category] !== undefined) cats[it.category]++;
+    });
     tabsEl.querySelectorAll('[data-count]').forEach(function(el){
       var key = el.getAttribute('data-count');
       var n = counts[key] || 0;
       el.textContent = n;
       if(key !== 'all') el.parentNode.hidden = n === 0;
+    });
+    chipsEl.querySelectorAll('.cat').forEach(function(el){
+      var key = el.getAttribute('data-category');
+      if(key === 'all') return;
+      var n = cats[key] || 0;
+      el.hidden = n === 0;
     });
   }
 
