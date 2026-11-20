@@ -2,6 +2,72 @@
   "updated": "2026-11-20",
   "items": [
     {
+      "id": "dalba-device",
+      "brand": "달바",
+      "handle": "",
+      "platform": "powderroom",
+      "category": "skin",
+      "product": "디바이스 4X 프로 + 부스터겔 크림 + 시그니처 펩타이드 앰플 50ml",
+      "start": "2026-11-17",
+      "end": "2026-11-22",
+      "announce": "2026-11-24",
+      "winners": 50,
+      "keywords": [
+        "파우더룸 응모",
+        "카페·블로그 후기",
+        "디바이스 회수"
+      ],
+      "origin": "https://www.powderroom.co.kr/event/87912339",
+      "apply": {
+        "url": "https://www.powderroom.co.kr/event/87912339"
+      },
+      "listed": "2026-11-20"
+    },
+    {
+      "id": "bbia-kgaru",
+      "brand": "삐아",
+      "handle": "@bbia_official",
+      "platform": "x",
+      "category": "multi",
+      "product": "K-갸루 에디션 2차 리뷰 체험단 (은우쌤 공동개발)",
+      "start": "2026-11-20",
+      "end": "2026-11-23",
+      "announce": "2026-11-24",
+      "winners": 10,
+      "keywords": [
+        "X 팔로우",
+        "RT·맘찍",
+        "댓글 참여"
+      ],
+      "origin": "https://x.com/bbia_official/status/2123610177224298894",
+      "apply": {
+        "url": "https://x.com/bbia_official/status/2123610177224298894"
+      },
+      "listed": "2026-11-20"
+    },
+    {
+      "id": "naming-awards",
+      "brand": "네이밍",
+      "handle": "@naming_cosmetic",
+      "platform": "x",
+      "category": "lip",
+      "product": "레이어드핏 쿠션 + 블러셔&볼류머 2종 기획 (어워즈심사단)",
+      "start": "2026-11-20",
+      "end": "2026-11-22",
+      "announce": "2026-11-23",
+      "winners": 50,
+      "keywords": [
+        "X RT·댓글",
+        "네이버폼 신청",
+        "후기 12/1까지"
+      ],
+      "origin": "https://x.com/naming_cosmetic/status/2123612042032497074",
+      "apply": {
+        "url": "https://naver.me/GEdHlu1A"
+      },
+      "listed": "2026-11-20"
+    },
+    {
       "id": "vitalbeauty-curator",
       "brand": "바이탈뷰티",
       "handle": "",
