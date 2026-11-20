@@ -4,8 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#F5F5F6">
-<title>코덕 체험단</title>
-<meta name="description" content="지금 신청할 수 있는 뷰티 체험단 모음">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>코덕 체험단 · 이벤트</title>
+<meta name="description" content="지금 신청할 수 있는 뷰티 체험단과 브랜드 이벤트 모음">
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <style>
@@ -71,6 +72,18 @@
   .tab.is-active{color:var(--ink);font-weight:800}
   .tab.is-active b{color:var(--accent)}
   .tab.is-active::after{content:"";position:absolute;left:0;right:0;bottom:2px;height:2px;border-radius:2px;background:var(--ink)}
+
+  /* ── 보기 전환 (체험단 / 이벤트) ── */
+  .seg{display:flex;gap:4px;padding:3px;background:#e9e9ec;border-radius:10px;margin:2px 0 8px}
+  .seg button{
+    flex:1;appearance:none;border:0;background:none;padding:7px 0;border-radius:8px;
+    font:inherit;font-size:12.5px;font-weight:700;color:#6e6e6e;cursor:pointer;letter-spacing:-.01em;
+    display:inline-flex;align-items:center;justify-content:center;gap:4px;
+    transition:background .16s ease,color .16s ease,box-shadow .16s ease;
+  }
+  .seg button b{font-size:10.5px;font-weight:800;color:#9a9a9a;font-variant-numeric:tabular-nums}
+  .seg button.is-active{background:var(--surface);color:var(--ink);box-shadow:0 1px 2px rgba(17,17,17,.08)}
+  .seg button.is-active b{color:var(--accent)}
 
   .cats{display:flex;gap:5px;overflow-x:auto;scrollbar-width:none;padding:6px 0 2px;
     -webkit-mask-image:linear-gradient(to right,#000 calc(100% - 18px),transparent 100%);
@@ -145,6 +158,7 @@
   .src.x i{background:#1a1a1a}
   .src.powderroom i{background:#f2a0b4}
   .src.glowpick i{background:#b79cff}
+  .src.oliveyoung i{background:#8fce3e}
   .ctag{font-size:10.5px;color:var(--mute);letter-spacing:-.01em}
   .ctag::before{content:"·";margin:0 4px 0 1px;color:var(--faint)}
   .dday{
@@ -195,7 +209,7 @@
 <div class="wrap">
   <header class="head">
     <div class="head-row">
-      <h1>코덕 체험단</h1>
+      <h1 id="title">코덕 체험단</h1>
       <div class="head-right">
         <p class="sum">진행중 <b id="statOn">–</b><i>·</i>오늘마감 <b id="statToday" class="hot">–</b></p>
         <button class="iconbtn" id="searchToggle" type="button" aria-label="검색" aria-expanded="false">
@@ -207,12 +221,17 @@
   </header>
 
   <section class="filters" aria-label="필터">
+    <div class="seg" id="seg" role="tablist" aria-label="보기 전환">
+      <button type="button" class="is-active" role="tab" aria-selected="true" data-tab="items">체험단<b id="segCountItems">–</b></button>
+      <button type="button" role="tab" aria-selected="false" data-tab="events">이벤트<b id="segCountEvents">–</b></button>
+    </div>
     <div class="tabs" id="tabs" role="group" aria-label="출처">
       <button class="tab is-active" type="button" aria-pressed="true" data-platform="all">전체<b data-count="all"></b></button>
       <button class="tab" type="button" aria-pressed="false" data-platform="instagram">인스타<b data-count="instagram"></b></button>
       <button class="tab" type="button" aria-pressed="false" data-platform="x">X<b data-count="x"></b></button>
       <button class="tab" type="button" aria-pressed="false" data-platform="powderroom">파우더룸<b data-count="powderroom"></b></button>
       <button class="tab" type="button" aria-pressed="false" data-platform="glowpick">글로우픽<b data-count="glowpick"></b></button>
+      <button class="tab" type="button" aria-pressed="false" data-platform="oliveyoung" hidden>올리브영<b data-count="oliveyoung"></b></button>
     </div>
     <div class="searchrow" id="searchRow" hidden>
       <input id="q" type="search" placeholder="브랜드나 제품으로 찾기" autocomplete="off" enterkeyhint="search" aria-label="브랜드나 제품 검색">
@@ -241,7 +260,7 @@
   <main class="list" id="list"></main>
   <div class="empty" id="loading">불러오는 중…</div>
   <div class="empty" id="empty" hidden>
-    <b>조건에 맞는 체험단이 없어요</b>
+    <b id="emptyTitle">조건에 맞는 체험단이 없어요</b>
     필터를 바꿔 보세요.
   </div>
 
@@ -275,10 +294,12 @@
   var BASE_MS = todayKST();
 
   var CATEGORY = { lip:'립·색조', skin:'스킨케어', hair:'헤어·바디', fragrance:'향수', multi:'멀티·방문' };
-  var PLATFORM = { instagram:'인스타', x:'X', powderroom:'파우더룸', glowpick:'글로우픽' };
+  var PLATFORM = { instagram:'인스타', x:'X', powderroom:'파우더룸', glowpick:'글로우픽', oliveyoung:'올리브영' };
 
-  var ITEMS = [];
-  var state = { platform:'all', category:'all', q:'', sort:'deadline', hideOver:false };
+  var DATA = { items: [], events: [] };
+  var state = { tab:'items', platform:'all', category:'all', q:'', sort:'deadline', hideOver:false };
+
+  function currentList(){ return state.tab === 'events' ? DATA.events : DATA.items; }
 
   var listEl = document.getElementById('list');
   var emptyEl = document.getElementById('empty');
@@ -314,9 +335,11 @@
     return '<span class="dday' + (d <= 2 ? ' soon' : '') + '">D-' + d + '</span>';
   }
   function metaHTML(it){
+    var event = state.tab === 'events';
     var parts = [];
-    if(typeof it.winners === 'number') parts.push('<b>' + it.winners + '명</b> 모집');
-    else if(it.winners) parts.push('<b>' + it.winners + '</b> 모집');
+    if(typeof it.winners === 'number') parts.push('<b>' + it.winners + '명</b> ' + (event ? '추첨' : '모집'));
+    else if(it.winners === '전원' || it.winners === '선착순') parts.push('<b>' + it.winners + '</b> 증정');
+    else if(it.winners) parts.push('<b>' + it.winners + '</b> ' + (event ? '추첨' : '모집'));
     else parts.push('인원 미정');
     parts.push('~' + fmtDate(it.end) + ' 마감');
     parts.push(it.announce ? '발표 ' + fmtDate(it.announce) : '발표 미정');
@@ -381,7 +404,7 @@
 
   function visibleItems(){
     var q = state.q.trim().toLowerCase();
-    var out = ITEMS.filter(function(it){
+    var out = currentList().filter(function(it){
       if(state.platform !== 'all' && it.platform !== state.platform) return false;
       if(state.category !== 'all' && it.category !== state.category) return false;
       if(state.hideOver && isOver(it)) return false;
@@ -397,7 +420,7 @@
 
   function updateSummary(){
     var ongoing = 0, today = 0;
-    ITEMS.forEach(function(it){
+    currentList().forEach(function(it){
       var d = dayDiff(it.end);
       if(d >= 0) ongoing++;
       if(d === 0) today++;
@@ -406,11 +429,23 @@
     document.getElementById('statToday').textContent = today;
   }
 
+  function updateSegment(){
+    var on = 0, ev = 0;
+    DATA.items.forEach(function(it){ if(dayDiff(it.end) >= 0) on++; });
+    DATA.events.forEach(function(it){ if(dayDiff(it.end) >= 0) ev++; });
+    document.getElementById('segCountItems').textContent = on;
+    document.getElementById('segCountEvents').textContent = ev;
+  }
+
   function updateCounts(){
-    var counts = { all: ITEMS.length, instagram:0, x:0, powderroom:0, glowpick:0 };
-    ITEMS.forEach(function(it){ if(counts[it.platform] !== undefined) counts[it.platform]++; });
+    var list = currentList();
+    var counts = { all: list.length, instagram:0, x:0, powderroom:0, glowpick:0, oliveyoung:0 };
+    list.forEach(function(it){ if(counts[it.platform] !== undefined) counts[it.platform]++; });
     tabsEl.querySelectorAll('[data-count]').forEach(function(el){
-      el.textContent = counts[el.getAttribute('data-count')] || 0;
+      var key = el.getAttribute('data-count');
+      var n = counts[key] || 0;
+      el.textContent = n;
+      if(key !== 'all') el.parentNode.hidden = n === 0;
     });
   }
 
@@ -421,7 +456,52 @@
     countEl.textContent = items.length;
   }
 
+  function syncLabels(){
+    var event = state.tab === 'events';
+    document.getElementById('title').textContent = event ? '코덕 이벤트' : '코덕 체험단';
+    document.getElementById('emptyTitle').textContent = event
+      ? '조건에 맞는 이벤트가 없어요'
+      : '조건에 맞는 체험단이 없어요';
+  }
+
+  function setTab(tab, silent){
+    state.tab = tab === 'events' ? 'events' : 'items';
+    state.platform = 'all';
+    state.category = 'all';
+    state.q = '';
+    qEl.value = '';
+    document.querySelectorAll('#seg button').forEach(function(b){
+      var on = b.getAttribute('data-tab') === state.tab;
+      b.classList.toggle('is-active', on);
+      b.setAttribute('aria-selected', on ? 'true' : 'false');
+    });
+    tabsEl.querySelectorAll('.tab').forEach(function(b){
+      var on = b.getAttribute('data-platform') === 'all';
+      b.classList.toggle('is-active', on);
+      b.setAttribute('aria-pressed', on ? 'true' : 'false');
+    });
+    chipsEl.querySelectorAll('.cat').forEach(function(c){
+      var on = c.getAttribute('data-category') === 'all';
+      c.classList.toggle('is-active', on);
+      c.setAttribute('aria-pressed', on ? 'true' : 'false');
+    });
+    syncLabels();
+    updateCounts();
+    updateSummary();
+    if(!silent){ render(); }
+    if(history.replaceState){
+      history.replaceState(null, '', state.tab === 'events' ? '#events' : '#tester');
+    }
+  }
+
   function wire(){
+    document.getElementById('seg').addEventListener('click', function(e){
+      var btn = e.target.closest('button[data-tab]');
+      if(!btn) return;
+      if(btn.getAttribute('data-tab') === state.tab) return;
+      setTab(btn.getAttribute('data-tab'));
+    });
+
     tabsEl.addEventListener('click', function(e){
       var btn = e.target.closest('.tab');
       if(!btn) return;
@@ -484,15 +564,17 @@
         return res.json();
       })
       .then(function(data){
-        ITEMS = Array.isArray(data) ? data : (data && Array.isArray(data.items) ? data.items : []);
-        if(!ITEMS.length) throw new Error('empty data');
+        DATA.items = Array.isArray(data) ? data : (data && Array.isArray(data.items) ? data.items : []);
+        DATA.events = (data && Array.isArray(data.events)) ? data.events : [];
+        if(!DATA.items.length && !DATA.events.length) throw new Error('empty data');
         if(data && data.updated){
           document.getElementById('updated').textContent = fmtDate(data.updated) + ' 기준';
         }
         loadingEl.hidden = true;
         resultlineEl.hidden = false;
-        updateCounts();
-        updateSummary();
+        updateSegment();
+        var wantEvents = (location.hash === '#events');
+        setTab(wantEvents && DATA.events.length ? 'events' : 'items', true);
         wire();
         render();
       })
