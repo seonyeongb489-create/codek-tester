@@ -1,6 +1,219 @@
 {
-  "updated": "2026-11-19",
+  "updated": "2026-11-20",
   "items": [
+    {
+      "id": "vitalbeauty-curator",
+      "brand": "바이탈뷰티",
+      "handle": "",
+      "platform": "powderroom",
+      "category": "multi",
+      "product": "메타그린 젤리 더블컷 2종 (올리브영 큐레이터)",
+      "start": "2026-11-20",
+      "end": "2026-11-23",
+      "announce": "2026-11-25",
+      "winners": 50,
+      "keywords": [
+        "파우더룸 응모",
+        "카페·블로그 후기",
+        "올영 큐레이터 링크"
+      ],
+      "origin": "https://www.powderroom.co.kr/event/87912343",
+      "apply": {
+        "url": "https://www.powderroom.co.kr/event/87912343"
+      },
+      "listed": "2026-11-20"
+    },
+    {
+      "id": "vitalbeauty-reels",
+      "brand": "바이탈뷰티",
+      "handle": "",
+      "platform": "powderroom",
+      "category": "multi",
+      "product": "메타그린 젤리 더블컷 2종",
+      "start": "2026-11-20",
+      "end": "2026-11-23",
+      "announce": "2026-11-25",
+      "winners": 50,
+      "keywords": [
+        "파우더룸 응모",
+        "인스타 릴스"
+      ],
+      "origin": "https://www.powderroom.co.kr/event/87912344",
+      "apply": {
+        "url": "https://www.powderroom.co.kr/event/87912344"
+      },
+      "listed": "2026-11-20"
+    },
+    {
+      "id": "bbia-yearend",
+      "brand": "삐아",
+      "handle": "",
+      "platform": "powderroom",
+      "category": "lip",
+      "product": "2026 연말결산 BEST템 기획세트 4종",
+      "start": "2026-11-20",
+      "end": "2026-11-23",
+      "announce": "2026-11-25",
+      "winners": 50,
+      "keywords": [
+        "파우더룸 응모",
+        "인스타 후기",
+        "12/2까지"
+      ],
+      "origin": "https://www.powderroom.co.kr/event/87912345",
+      "apply": {
+        "url": "https://www.powderroom.co.kr/event/87912345"
+      },
+      "listed": "2026-11-20"
+    },
+    {
+      "id": "naming-cushion",
+      "brand": "네이밍",
+      "handle": "",
+      "platform": "powderroom",
+      "category": "lip",
+      "product": "레이어드 핏 쿠션 올영 어워즈 한정 기획세트",
+      "start": "2026-11-20",
+      "end": "2026-11-23",
+      "announce": "2026-11-25",
+      "winners": 40,
+      "keywords": [
+        "파우더룸 응모",
+        "인스타 릴스",
+        "@naming.cosmetic 태그"
+      ],
+      "origin": "https://www.powderroom.co.kr/event/87912346",
+      "apply": {
+        "url": "https://www.powderroom.co.kr/event/87912346"
+      },
+      "listed": "2026-11-20"
+    },
+    {
+      "id": "thesaem-concealer",
+      "brand": "더샘",
+      "handle": "",
+      "platform": "glowpick",
+      "category": "lip",
+      "product": "커버 퍼펙션 트리플 팟 컨실러 + 치크팟 기획",
+      "start": "2026-11-20",
+      "end": "2026-11-25",
+      "announce": "2026-11-24",
+      "winners": 20,
+      "keywords": [
+        "인스타 릴스 20초↑",
+        "리뷰 마감 12/01"
+      ],
+      "origin": "https://www.glowpick.com/events/15420",
+      "apply": {
+        "url": "https://www.glowpick.com/events/15420"
+      },
+      "listed": "2026-11-20"
+    },
+    {
+      "id": "madamelash-reels",
+      "brand": "마담래쉬",
+      "handle": "",
+      "platform": "glowpick",
+      "category": "lip",
+      "product": "커브드 노글루 속눈썹 [도쿄글램]",
+      "start": "2026-11-20",
+      "end": "2026-11-25",
+      "announce": "2026-11-24",
+      "winners": 10,
+      "keywords": [
+        "인스타 릴스 20초↑",
+        "리뷰 마감 12/01"
+      ],
+      "origin": "https://www.glowpick.com/events/15421",
+      "apply": {
+        "url": "https://www.glowpick.com/events/15421"
+      },
+      "listed": "2026-11-20"
+    },
+    {
+      "id": "espoir-grape",
+      "brand": "에스쁘아",
+      "handle": "",
+      "platform": "glowpick",
+      "category": "lip",
+      "product": "그레이 그레이프 컬렉션 스트로빙 하이라이터 & 블러 웨어 블러쉬",
+      "start": "2026-11-20",
+      "end": "2026-11-25",
+      "announce": "2026-11-24",
+      "winners": 30,
+      "keywords": [
+        "인스타 사진 3장↑",
+        "리뷰 마감 12/05"
+      ],
+      "origin": "https://www.glowpick.com/events/15422",
+      "apply": {
+        "url": "https://www.glowpick.com/events/15422"
+      },
+      "listed": "2026-11-20"
+    },
+    {
+      "id": "mediheal-cream-cleanser",
+      "brand": "메디힐",
+      "handle": "",
+      "platform": "glowpick",
+      "category": "skin",
+      "product": "더마 크림 팩 클렌저 마데카소사이드 [진정 장벽]",
+      "start": "2026-11-20",
+      "end": "2026-11-25",
+      "announce": "2026-11-24",
+      "winners": 20,
+      "keywords": [
+        "인스타 사진 3장↑",
+        "리뷰 마감 12/01"
+      ],
+      "origin": "https://www.glowpick.com/events/15423",
+      "apply": {
+        "url": "https://www.glowpick.com/events/15423"
+      },
+      "listed": "2026-11-20"
+    },
+    {
+      "id": "madamelash-photo",
+      "brand": "마담래쉬",
+      "handle": "",
+      "platform": "glowpick",
+      "category": "lip",
+      "product": "커브드 노글루 속눈썹 [도쿄글램]",
+      "start": "2026-11-20",
+      "end": "2026-11-25",
+      "announce": "2026-11-24",
+      "winners": 20,
+      "keywords": [
+        "인스타 사진 3장↑",
+        "리뷰 마감 12/01"
+      ],
+      "origin": "https://www.glowpick.com/events/15424",
+      "apply": {
+        "url": "https://www.glowpick.com/events/15424"
+      },
+      "listed": "2026-11-20"
+    },
+    {
+      "id": "espoir-grape-x",
+      "brand": "에스쁘아",
+      "handle": "",
+      "platform": "x",
+      "category": "lip",
+      "product": "그레이 그레이프 컬렉션 스트로빙 하이라이터 & 블러 웨어 블러쉬",
+      "start": "2026-11-20",
+      "end": "2026-11-25",
+      "announce": "2026-11-24",
+      "winners": 20,
+      "keywords": [
+        "X 체험단",
+        "리뷰 마감 12/05"
+      ],
+      "origin": "https://www.glowpick.com/events/15425",
+      "apply": {
+        "url": "https://www.glowpick.com/events/15425"
+      },
+      "listed": "2026-11-20"
+    },
     {
       "id": "hince-jam",
       "brand": "힌스",
