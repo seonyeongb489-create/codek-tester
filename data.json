@@ -944,6 +944,28 @@
         "url": "https://x.com/naming_cosmetic/status/2123371083537551770"
       },
       "listed": "2026-11-20"
+    },
+    {
+      "id": "ev-isoi-sauna-goods",
+      "brand": "아이소이",
+      "handle": "@isoi_official",
+      "platform": "instagram",
+      "category": "multi",
+      "kind": "comment",
+      "product": "장수진 사우나런 굿즈 세트 — 갖고 싶은 굿즈 댓글 추첨 (가방·수건·칫솔·때밀이)",
+      "start": "2026-11-20",
+      "end": "2026-11-25",
+      "announce": "2026-11-26",
+      "winners": 5,
+      "keywords": [
+        "댓글",
+        "갖고 싶은 굿즈"
+      ],
+      "origin": "https://www.instagram.com/p/Df8WU88Tx-E/",
+      "apply": {
+        "url": "https://www.instagram.com/p/Df8WU88Tx-E/"
+      },
+      "listed": "2026-11-20"
     }
   ]
 }
