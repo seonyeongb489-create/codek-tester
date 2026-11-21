@@ -2,6 +2,54 @@
   "updated": "2026-11-21",
   "items": [
     {
+      "id": "fillimilli-heating-widfit",
+      "brand": "필리밀리",
+      "handle": "@Fillimilli_kr",
+      "platform": "x",
+      "category": "multi",
+      "product": "히팅뷰러 와이드핏 (24R) — 체험단 10명 (IG·X 동시 모집)",
+      "start": "2026-11-21",
+      "end": "2026-11-22",
+      "announce": "2026-11-23",
+      "winners": 10,
+      "keywords": [
+        "팔로우",
+        "RT",
+        "구글폼",
+        "후기 11/27~11/29",
+        "우수후기 3명"
+      ],
+      "origin": "https://x.com/Fillimilli_kr/status/2124033687306301734",
+      "apply": {
+        "url": "https://forms.gle/tuzschA1TdBsjefT9"
+      },
+      "listed": "2026-11-21"
+    },
+    {
+      "id": "mocres-moodyred",
+      "brand": "모크레스",
+      "handle": "@mocresofficial",
+      "platform": "x",
+      "category": "lip",
+      "product": "이지 스터닝 틴티드 립듀오 00 무디 레드 — 체험단 100명",
+      "start": "2026-11-21",
+      "end": "2026-11-25",
+      "announce": "2026-11-26",
+      "winners": 100,
+      "keywords": [
+        "팔로우",
+        "RT·좋아요",
+        "신청서(구글폼)",
+        "사전검수 없음",
+        "후기 11/28~12/5"
+      ],
+      "origin": "https://x.com/mocresofficial/status/2124022824331313494",
+      "apply": {
+        "url": "https://forms.gle/pMJouqv32qTc39V78"
+      },
+      "listed": "2026-11-21"
+    },
+    {
       "id": "hotel-dawson-perfume",
       "brand": "호텔도슨",
       "handle": "",
