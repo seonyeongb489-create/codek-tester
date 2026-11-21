@@ -1,6 +1,52 @@
 {
-  "updated": "2026-11-20",
+  "updated": "2026-11-21",
   "items": [
+    {
+      "id": "hotel-dawson-perfume",
+      "brand": "호텔도슨",
+      "handle": "",
+      "platform": "powderroom",
+      "category": "fragrance",
+      "product": "오 드 퍼퓸 미스드앤번트 (올리브영 큐레이터)",
+      "start": "2026-11-21",
+      "end": "2026-11-24",
+      "announce": "2026-11-26",
+      "winners": 100,
+      "keywords": [
+        "파우더룸 응모",
+        "카페·블로그 후기",
+        "올영 큐레이터 링크",
+        "미션 11/30~12/05"
+      ],
+      "origin": "https://www.powderroom.co.kr/event/87912347",
+      "apply": {
+        "url": "https://www.powderroom.co.kr/event/87912347"
+      },
+      "listed": "2026-11-21"
+    },
+    {
+      "id": "nuse-lijiu-cushion",
+      "brand": "누즈",
+      "handle": "@nuse_official",
+      "platform": "x",
+      "category": "skin",
+      "product": "리쥬 토닝 선 쿠션 100% 무담보 체험단 — 아이보리 10명 + 04 버베나 10명",
+      "start": "2026-11-20",
+      "end": "2026-11-22",
+      "announce": "2026-11-24",
+      "winners": 20,
+      "keywords": [
+        "팔로우",
+        "RT",
+        "구글폼",
+        "미션 11/25~12/04"
+      ],
+      "origin": "https://x.com/nuse_official/status/2123687805691797715",
+      "apply": {
+        "url": "https://forms.gle/L3PJLHHXWNpYRcBJ8"
+      },
+      "listed": "2026-11-21"
+    },
     {
       "id": "fillimilli-guasha",
       "brand": "필리밀리",
@@ -1037,6 +1083,29 @@
         "url": "https://www.instagram.com/p/Df8WU88Tx-E/"
       },
       "listed": "2026-11-20"
+    },
+    {
+      "id": "ev-nuse-quiz",
+      "brand": "누즈",
+      "handle": "@nuse_official",
+      "platform": "x",
+      "category": "skin",
+      "kind": "comment",
+      "product": "리쥬 토닝 선 쿠션 본품 숨은 위치 찾기 인용 이벤트 (색상 랜덤)",
+      "start": "2026-11-19",
+      "end": "2026-11-22",
+      "announce": "2026-11-23",
+      "winners": 1,
+      "keywords": [
+        "팔로우",
+        "인용 RT",
+        "정답 표시"
+      ],
+      "origin": "https://x.com/nuse_official/status/2123372037020471469",
+      "apply": {
+        "url": "https://x.com/nuse_official/status/2123372037020471469"
+      },
+      "listed": "2026-11-21"
     }
   ]
 }
