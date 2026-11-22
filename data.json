@@ -1,6 +1,56 @@
 {
-  "updated": "2026-11-21",
+  "updated": "2026-11-22",
   "items": [
+    {
+      "id": "fillimilli-lash-mission02",
+      "brand": "필리밀리",
+      "handle": "@Fillimilli_kr",
+      "platform": "x",
+      "category": "multi",
+      "product": "노글루 포인트 가닥 속눈썹 — 체험단 10명 (Mission 02)",
+      "start": "2026-11-21",
+      "end": "2026-11-22",
+      "announce": "2026-11-23",
+      "winners": 10,
+      "keywords": [
+        "팔로우",
+        "RT",
+        "댓글(아이템+필리밀리)",
+        "구글폼",
+        "후기 11/27~11/29",
+        "우수후기 3명"
+      ],
+      "origin": "https://x.com/Fillimilli_kr/status/2124042842989535433",
+      "apply": {
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSeu-KdZDMIWv8VSajbPWmoT394M8wMf9EmlcFpmsi1USOuFZg/viewform"
+      },
+      "listed": "2026-11-22"
+    },
+    {
+      "id": "fillimilli-brush-mission03",
+      "brand": "필리밀리",
+      "handle": "@Fillimilli_kr",
+      "platform": "x",
+      "category": "multi",
+      "product": "아이브러시 프로 컬렉션 (5종) — 체험단 10명 (Mission 03)",
+      "start": "2026-11-21",
+      "end": "2026-11-22",
+      "announce": "2026-11-23",
+      "winners": 10,
+      "keywords": [
+        "팔로우",
+        "RT",
+        "댓글(파우치/키링/없다+필리밀리)",
+        "구글폼",
+        "후기 11/27~11/29",
+        "우수후기 3명"
+      ],
+      "origin": "https://x.com/Fillimilli_kr/status/2124050338642805156",
+      "apply": {
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLScsHWs96b6A-6Y_4Ua61lrL5kDaWQbewDo1Ku1hzj1_OnOJiw/viewform"
+      },
+      "listed": "2026-11-22"
+    },
     {
       "id": "fillimilli-heating-widfit",
       "brand": "필리밀리",
@@ -703,69 +753,6 @@
         "url": "https://www.powderroom.co.kr/event/87911622"
       },
       "listed": "2026-11-14"
-    },
-    {
-      "id": "bbia-ig",
-      "brand": "삐아",
-      "handle": "@bbia.official",
-      "platform": "instagram",
-      "category": "lip",
-      "product": "오버 글레이즈 연말결산 기획세트 2종",
-      "start": "2026-11-17",
-      "end": "2026-11-19",
-      "announce": null,
-      "winners": 100,
-      "keywords": [
-        "팔로우",
-        "댓글",
-        "구글폼"
-      ],
-      "origin": "https://www.instagram.com/bbia.official/",
-      "apply": {
-        "url": "https://www.instagram.com/bbia.official/"
-      },
-      "listed": "2026-11-17"
-    },
-    {
-      "id": "bbia-x",
-      "brand": "삐아",
-      "handle": "@bbia_official",
-      "platform": "x",
-      "category": "lip",
-      "product": "라스트 오토 젤 아이라이너 + 미출시 젤 섀도우",
-      "start": "2026-11-17",
-      "end": "2026-11-19",
-      "announce": null,
-      "winners": 60,
-      "keywords": [
-        "팔로우",
-        "구글폼"
-      ],
-      "origin": "https://x.com/bbia_official",
-      "apply": {
-        "url": "https://forms.gle/kPrpnDCnygJzUovc6"
-      },
-      "listed": "2026-11-17"
-    },
-    {
-      "id": "alt-caramel",
-      "brand": "얼터너티브스테레오",
-      "handle": "@alternativestereo",
-      "platform": "instagram",
-      "category": "lip",
-      "product": "카라멜 글레이즈 뉴컬러 댓글 이벤트",
-      "start": "2026-11-16",
-      "end": "2026-11-19",
-      "announce": "2026-11-23",
-      "winners": 5,
-      "keywords": [
-        "댓글"
-      ],
-      "origin": "https://www.instagram.com/p/Dfy4L6royLH/",
-      "apply": {
-        "url": "https://www.instagram.com/p/Dfy4L6royLH/"
-      },
-      "listed": "2026-11-16"
     },
     {
       "id": "alt-dipping",
