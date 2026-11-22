@@ -22,7 +22,7 @@
       "id": "bbia-x",
       "brand": "삐아",
       "handle": "@bbia_official",
-      "platform": "x",                 // instagram | x | powderroom | glowpick | oliveyoung
+      "platform": "x",                 // instagram | x | powderroom | glowpick | musinsa | stylec | oliveyoung
       "category": "lip",               // lip | skin | hair | fragrance | multi
       "product": "라스트 오토 젤 아이라이너 + 미출시 젤 섀도우",
       "start": "2026-11-17",           // 없으면 null
@@ -65,3 +65,10 @@
 - `platform` 값이 처음 보는 것이면 상단 출처 탭에 자동으로 나타납니다(0건이면 숨김). 새 출처를 쓰려면 `index.html`의 `PLATFORM`·`.src` 색상만 추가하면 됩니다.
 
 `codek-tester/data.json`·`codek-tester/index.html`은 같은 내용의 사본입니다.
+
+## 출처(platform) 값
+
+- `instagram`·`x`·`powderroom`·`glowpick`·`oliveyoung` — 기존 수집 루틴이 채우는 출처.
+- `musinsa` — 무신사 프리유저 체험단(`https://www.musinsa.com/preuser/events/{eventId}`). 2026-11-22 수동 등록.
+- `stylec` — 스타일씨 제공형 캠페인(`https://www.stylec.co.kr/trials/{wr_id}`). 2026-11-22 수동 등록.
+- 출처 탭은 `index.html`의 `#tabs` 버튼과 `PLATFORM`·`counts`·`.src.<platform>` 색상을 함께 추가해야 보입니다.
