@@ -2,6 +2,28 @@
   "updated": "2026-11-22",
   "items": [
     {
+      "id": "romand-duallip-peonycandy",
+      "brand": "롬앤",
+      "handle": "@romandyou",
+      "platform": "instagram",
+      "category": "lip",
+      "product": "NEW 커버 코팅 듀얼립 03 피오니 캔디 — 사전 체험단 (2027-01-11 올리브영 출시)",
+      "start": "2026-11-18",
+      "end": "2026-11-27",
+      "announce": "2026-12-03",
+      "winners": 200,
+      "keywords": [
+        "구글폼",
+        "SNS 후기",
+        "사전 스포일러 12/11~12/28"
+      ],
+      "origin": "https://www.instagram.com/p/DgByi9EgfeO/",
+      "apply": {
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSeeKxEssfo6fEjfBffmaEWbI1z2ZcbztEzsF7NYF2k_KcSNaQ/viewform"
+      },
+      "listed": "2026-11-22"
+    },
+    {
       "id": "fillimilli-lash-mission02",
       "brand": "필리밀리",
       "handle": "@Fillimilli_kr",
