@@ -158,6 +158,8 @@
   .src.x i{background:#1a1a1a}
   .src.powderroom i{background:#f2a0b4}
   .src.glowpick i{background:#b79cff}
+  .src.musinsa i{background:#111111}
+  .src.stylec i{background:#ff5c39}
   .src.oliveyoung i{background:#8fce3e}
   .ctag{font-size:10.5px;color:var(--mute);letter-spacing:-.01em}
   .ctag::before{content:"·";margin:0 4px 0 1px;color:var(--faint)}
@@ -232,6 +234,8 @@
       <button class="tab" type="button" aria-pressed="false" data-platform="x">X<b data-count="x"></b></button>
       <button class="tab" type="button" aria-pressed="false" data-platform="powderroom">파우더룸<b data-count="powderroom"></b></button>
       <button class="tab" type="button" aria-pressed="false" data-platform="glowpick">글로우픽<b data-count="glowpick"></b></button>
+      <button class="tab" type="button" aria-pressed="false" data-platform="musinsa">무신사<b data-count="musinsa"></b></button>
+      <button class="tab" type="button" aria-pressed="false" data-platform="stylec">스타일씨<b data-count="stylec"></b></button>
       <button class="tab" type="button" aria-pressed="false" data-platform="oliveyoung" hidden>올리브영<b data-count="oliveyoung"></b></button>
     </div>
     <div class="searchrow" id="searchRow" hidden>
@@ -295,7 +299,7 @@
   var BASE_MS = todayKST();
 
   var CATEGORY = { lip:'립·색조', skin:'스킨케어', hair:'헤어·바디', fragrance:'향수', multi:'멀티·방문' };
-  var PLATFORM = { instagram:'인스타', x:'X', powderroom:'파우더룸', glowpick:'글로우픽', oliveyoung:'올리브영' };
+  var PLATFORM = { instagram:'인스타', x:'X', powderroom:'파우더룸', glowpick:'글로우픽', musinsa:'무신사', stylec:'스타일씨', oliveyoung:'올리브영' };
   var KIND = { comment:'댓글', visit:'방문', review:'리뷰', gift:'증정' };
 
   var DATA = { items: [], events: [] };
@@ -448,7 +452,7 @@
 
   function updateCounts(){
     var list = currentList();
-    var counts = { all: list.length, instagram:0, x:0, powderroom:0, glowpick:0, oliveyoung:0 };
+    var counts = { all: list.length, instagram:0, x:0, powderroom:0, glowpick:0, musinsa:0, stylec:0, oliveyoung:0 };
     var cats = { all: list.length, lip:0, skin:0, hair:0, fragrance:0, multi:0 };
     list.forEach(function(it){
       if(counts[it.platform] !== undefined) counts[it.platform]++;
