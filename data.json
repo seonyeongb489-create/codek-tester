@@ -2,6 +2,29 @@
   "updated": "2026-11-22",
   "items": [
     {
+      "id": "freshian-cozymauve-sample",
+      "brand": "프레시안",
+      "handle": "@freshian.official",
+      "platform": "instagram",
+      "category": "multi",
+      "product": "NEW 에그라이크 크림 블러쉬 코지 모브 에디션 2컬러 (18 모브우드·19 헤더 모브) — 샘플 체험단 40명",
+      "start": "2026-11-22",
+      "end": "2026-11-25",
+      "announce": "2026-11-26",
+      "winners": 40,
+      "keywords": [
+        "팔로우+좋아요",
+        "기대평 댓글",
+        "피드·릴스 후기 12/6까지",
+        "우수 리뷰어 5명"
+      ],
+      "origin": "https://www.instagram.com/p/DgBrs7kAQlX/",
+      "apply": {
+        "url": "https://www.instagram.com/p/DgBrs7kAQlX/"
+      },
+      "listed": "2026-11-22"
+    },
+    {
       "id": "romand-duallip-peonycandy",
       "brand": "롬앤",
       "handle": "@romandyou",
@@ -1163,6 +1186,30 @@
         "url": "https://x.com/nuse_official/status/2123372037020471469"
       },
       "listed": "2026-11-21"
+    },
+    {
+      "id": "ev-milktouch-prep-quiz",
+      "brand": "밀크터치",
+      "handle": "@milktouch_skin_official",
+      "platform": "instagram",
+      "category": "skin",
+      "kind": "comment",
+      "product": "아티스트 시크릿 프렙 스킨팩 초성 퀴즈 — 본품 1종 (진정 카밍 / 모공 포어 중 택1)",
+      "start": "2026-11-22",
+      "end": "2026-11-25",
+      "announce": "2026-11-27",
+      "winners": 4,
+      "keywords": [
+        "팔로우 필수",
+        "정답 댓글",
+        "제품 선택",
+        "친구에게 공유"
+      ],
+      "origin": "https://www.instagram.com/p/DgByhiIHdUu/",
+      "apply": {
+        "url": "https://www.instagram.com/p/DgByhiIHdUu/"
+      },
+      "listed": "2026-11-22"
     }
   ]
 }
