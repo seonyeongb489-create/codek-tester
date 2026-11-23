@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22",
+  "updated": "2026-11-23",
   "items": [
     {
       "id": "freshian-cozymauve-sample",
@@ -692,133 +692,6 @@
         "url": "https://www.glowpick.com/events/15415"
       },
       "listed": "2026-11-19"
-    },
-    {
-      "id": "naming-glaze",
-      "brand": "네이밍",
-      "handle": "",
-      "platform": "powderroom",
-      "category": "lip",
-      "product": "하이 듀 립 글레이즈 뉴 컬러",
-      "start": "2026-11-17",
-      "end": "2026-11-20",
-      "announce": "2026-11-24",
-      "winners": 40,
-      "keywords": [
-        "파우더룸 응모",
-        "릴스 미션"
-      ],
-      "origin": "https://www.powderroom.co.kr/event/87912332",
-      "apply": {
-        "url": "https://www.powderroom.co.kr/event/87912332"
-      },
-      "listed": "2026-11-17"
-    },
-    {
-      "id": "fillimilli-viewer",
-      "brand": "필리밀리",
-      "handle": "@Fillimilli_kr",
-      "platform": "powderroom",
-      "category": "lip",
-      "product": "히팅뷰러 체험단",
-      "start": "2026-11-17",
-      "end": "2026-11-20",
-      "announce": "2026-11-24",
-      "winners": 100,
-      "keywords": [
-        "파우더룸 응모",
-        "인스타 후기"
-      ],
-      "origin": "https://www.powderroom.co.kr/event/87912341",
-      "apply": {
-        "url": "https://www.powderroom.co.kr/event/87912341"
-      },
-      "listed": "2026-11-17"
-    },
-    {
-      "id": "headshoulders",
-      "brand": "헤드앤숄더",
-      "handle": "@headandshoulders.korea",
-      "platform": "powderroom",
-      "category": "hair",
-      "product": "딥 클린 약산성 두피 샴푸 850ml",
-      "start": "2026-11-17",
-      "end": "2026-11-20",
-      "announce": "2026-11-24",
-      "winners": 100,
-      "keywords": [
-        "파우더룸 응모",
-        "인스타 후기"
-      ],
-      "origin": "https://www.powderroom.co.kr/event/87912338",
-      "apply": {
-        "url": "https://www.powderroom.co.kr/event/87912338"
-      },
-      "listed": "2026-11-17"
-    },
-    {
-      "id": "offon-shampoo",
-      "brand": "오프온",
-      "handle": "",
-      "platform": "powderroom",
-      "category": "hair",
-      "product": "다시마바이옴 샴푸 500g 릴스 체험단",
-      "start": "2026-11-17",
-      "end": "2026-11-20",
-      "announce": "2026-11-24",
-      "winners": 50,
-      "keywords": [
-        "파우더룸 응모",
-        "릴스 미션",
-        "바디워시 증정"
-      ],
-      "origin": "https://www.powderroom.co.kr/event/87912340",
-      "apply": {
-        "url": "https://www.powderroom.co.kr/event/87912340"
-      },
-      "listed": "2026-11-17"
-    },
-    {
-      "id": "powderroom-jbeauty",
-      "brand": "파우더룸",
-      "handle": "",
-      "platform": "powderroom",
-      "category": "multi",
-      "product": "J-beauty 팬밋업 방문 체험단",
-      "start": "2026-11-14",
-      "end": "2026-11-20",
-      "announce": "2026-11-25",
-      "winners": 50,
-      "keywords": [
-        "파우더룸 응모",
-        "오프라인 방문"
-      ],
-      "origin": "https://www.powderroom.co.kr/event/87911622",
-      "apply": {
-        "url": "https://www.powderroom.co.kr/event/87911622"
-      },
-      "listed": "2026-11-14"
-    },
-    {
-      "id": "alt-dipping",
-      "brand": "얼터너티브스테레오",
-      "handle": "@alternativestereo",
-      "platform": "instagram",
-      "category": "lip",
-      "product": "디핑 컬렉션 사전 체험단",
-      "start": "2026-11-17",
-      "end": "2026-11-20",
-      "announce": "2026-11-23",
-      "winners": 15,
-      "keywords": [
-        "구글폼",
-        "피드·릴스 업로드"
-      ],
-      "origin": "https://www.instagram.com/alternativestereo/",
-      "apply": {
-        "url": "https://forms.gle/1E9iK4Gu4zRmUU2B6"
-      },
-      "listed": "2026-11-17"
     },
     {
       "id": "holika-x",
@@ -3229,6 +3102,757 @@
         "url": "https://www.stylec.co.kr/trials/163941"
       },
       "listed": "2026-11-22"
+    },
+    {
+      "id": "feev-skinveil-bb",
+      "brand": "피브",
+      "handle": "",
+      "platform": "glowpick",
+      "category": "multi",
+      "product": "스킨 베일 틴티드 비비 [SPF50+/PA++++] 신상 프리뷰",
+      "start": "2026-11-23",
+      "end": "2026-11-25",
+      "announce": "2026-11-24",
+      "winners": 5,
+      "keywords": [
+        "리뷰 1개 후 응모",
+        "기대평 댓글",
+        "리뷰 마감 12/01"
+      ],
+      "origin": "https://www.glowpick.com/events/15428",
+      "apply": {
+        "url": "https://www.glowpick.com/events/15428"
+      },
+      "listed": "2026-11-23"
+    },
+    {
+      "id": "musinsa-50445",
+      "brand": "아이다 코스메틱",
+      "handle": null,
+      "platform": "musinsa",
+      "category": "skin",
+      "product": "아이다 코스메틱 판테놀 진정 젤 클렌저 150",
+      "start": "2026-11-23",
+      "end": "2026-11-29",
+      "announce": "2026-12-01",
+      "winners": 10,
+      "keywords": [
+        "무신사 프리유저",
+        "제품 무료 제공",
+        "리뷰 12/05~12/19"
+      ],
+      "origin": "https://www.musinsa.com/preuser/events/50445",
+      "apply": {
+        "url": "https://www.musinsa.com/preuser/events/50445"
+      },
+      "listed": "2026-11-23"
+    },
+    {
+      "id": "musinsa-50440",
+      "brand": "파이코어",
+      "handle": null,
+      "platform": "musinsa",
+      "category": "skin",
+      "product": "파이코어 디퍼런씨 선프로텍터 선크림",
+      "start": "2026-11-23",
+      "end": "2026-11-29",
+      "announce": "2026-12-01",
+      "winners": 50,
+      "keywords": [
+        "무신사 프리유저",
+        "제품 무료 제공",
+        "리뷰 12/05~12/19"
+      ],
+      "origin": "https://www.musinsa.com/preuser/events/50440",
+      "apply": {
+        "url": "https://www.musinsa.com/preuser/events/50440"
+      },
+      "listed": "2026-11-23"
+    },
+    {
+      "id": "musinsa-50439",
+      "brand": "파이코어",
+      "handle": null,
+      "platform": "musinsa",
+      "category": "skin",
+      "product": "파이코어 디퍼런씨 포어세럼 스피큐샷",
+      "start": "2026-11-23",
+      "end": "2026-11-29",
+      "announce": "2026-12-01",
+      "winners": 50,
+      "keywords": [
+        "무신사 프리유저",
+        "제품 무료 제공",
+        "리뷰 12/05~12/19"
+      ],
+      "origin": "https://www.musinsa.com/preuser/events/50439",
+      "apply": {
+        "url": "https://www.musinsa.com/preuser/events/50439"
+      },
+      "listed": "2026-11-23"
+    },
+    {
+      "id": "musinsa-50438",
+      "brand": "파이코어",
+      "handle": null,
+      "platform": "musinsa",
+      "category": "skin",
+      "product": "파이코어 디퍼런씨 수딩크림 블루바이옴",
+      "start": "2026-11-23",
+      "end": "2026-11-29",
+      "announce": "2026-12-01",
+      "winners": 50,
+      "keywords": [
+        "무신사 프리유저",
+        "제품 무료 제공",
+        "리뷰 12/05~12/19"
+      ],
+      "origin": "https://www.musinsa.com/preuser/events/50438",
+      "apply": {
+        "url": "https://www.musinsa.com/preuser/events/50438"
+      },
+      "listed": "2026-11-23"
+    },
+    {
+      "id": "musinsa-50423",
+      "brand": "디어에이",
+      "handle": null,
+      "platform": "musinsa",
+      "category": "multi",
+      "product": "디어에이 봉봉 글로우 치크",
+      "start": "2026-11-23",
+      "end": "2026-11-29",
+      "announce": "2026-12-01",
+      "winners": 30,
+      "keywords": [
+        "무신사 프리유저",
+        "제품 무료 제공",
+        "리뷰 12/05~12/19"
+      ],
+      "origin": "https://www.musinsa.com/preuser/events/50423",
+      "apply": {
+        "url": "https://www.musinsa.com/preuser/events/50423"
+      },
+      "listed": "2026-11-23"
+    },
+    {
+      "id": "musinsa-50417",
+      "brand": "누베어",
+      "handle": null,
+      "platform": "musinsa",
+      "category": "skin",
+      "product": "누베어 누베어 더블 쉴드 톤 업 선 베일",
+      "start": "2026-11-23",
+      "end": "2026-11-29",
+      "announce": "2026-12-01",
+      "winners": 30,
+      "keywords": [
+        "무신사 프리유저",
+        "제품 무료 제공",
+        "리뷰 12/05~12/19"
+      ],
+      "origin": "https://www.musinsa.com/preuser/events/50417",
+      "apply": {
+        "url": "https://www.musinsa.com/preuser/events/50417"
+      },
+      "listed": "2026-11-23"
+    },
+    {
+      "id": "musinsa-50416",
+      "brand": "디오딧",
+      "handle": null,
+      "platform": "musinsa",
+      "category": "skin",
+      "product": "디오딧 301 수분 크림",
+      "start": "2026-11-23",
+      "end": "2026-11-29",
+      "announce": "2026-12-01",
+      "winners": 50,
+      "keywords": [
+        "무신사 프리유저",
+        "제품 무료 제공",
+        "리뷰 12/05~12/19"
+      ],
+      "origin": "https://www.musinsa.com/preuser/events/50416",
+      "apply": {
+        "url": "https://www.musinsa.com/preuser/events/50416"
+      },
+      "listed": "2026-11-23"
+    },
+    {
+      "id": "musinsa-50403",
+      "brand": "멜브",
+      "handle": null,
+      "platform": "musinsa",
+      "category": "lip",
+      "product": "멜브 미러 글레이즈 립 시럽",
+      "start": "2026-11-23",
+      "end": "2026-11-29",
+      "announce": "2026-12-01",
+      "winners": 10,
+      "keywords": [
+        "무신사 프리유저",
+        "제품 무료 제공",
+        "리뷰 12/05~12/19"
+      ],
+      "origin": "https://www.musinsa.com/preuser/events/50403",
+      "apply": {
+        "url": "https://www.musinsa.com/preuser/events/50403"
+      },
+      "listed": "2026-11-23"
+    },
+    {
+      "id": "musinsa-50395",
+      "brand": "세렉소",
+      "handle": null,
+      "platform": "musinsa",
+      "category": "skin",
+      "product": "세렉소 시카 엑소좀 진정 토너",
+      "start": "2026-11-23",
+      "end": "2026-11-29",
+      "announce": "2026-12-01",
+      "winners": 30,
+      "keywords": [
+        "무신사 프리유저",
+        "제품 무료 제공",
+        "리뷰 12/05~12/19"
+      ],
+      "origin": "https://www.musinsa.com/preuser/events/50395",
+      "apply": {
+        "url": "https://www.musinsa.com/preuser/events/50395"
+      },
+      "listed": "2026-11-23"
+    },
+    {
+      "id": "musinsa-50380",
+      "brand": "위글리",
+      "handle": null,
+      "platform": "musinsa",
+      "category": "multi",
+      "product": "위글리 결광 바디스크럽 스파츌라 1종 증정 기획 세트",
+      "start": "2026-11-23",
+      "end": "2026-11-29",
+      "announce": "2026-12-01",
+      "winners": 10,
+      "keywords": [
+        "무신사 프리유저",
+        "제품 무료 제공",
+        "리뷰 12/05~12/19"
+      ],
+      "origin": "https://www.musinsa.com/preuser/events/50380",
+      "apply": {
+        "url": "https://www.musinsa.com/preuser/events/50380"
+      },
+      "listed": "2026-11-23"
+    },
+    {
+      "id": "musinsa-50379",
+      "brand": "닥터비타",
+      "handle": null,
+      "platform": "musinsa",
+      "category": "skin",
+      "product": "닥터비타 프리미엄 비타민 이 크림 히알루론산 보습 크림",
+      "start": "2026-11-23",
+      "end": "2026-11-29",
+      "announce": "2026-12-01",
+      "winners": 10,
+      "keywords": [
+        "무신사 프리유저",
+        "제품 무료 제공",
+        "리뷰 12/05~12/19"
+      ],
+      "origin": "https://www.musinsa.com/preuser/events/50379",
+      "apply": {
+        "url": "https://www.musinsa.com/preuser/events/50379"
+      },
+      "listed": "2026-11-23"
+    },
+    {
+      "id": "musinsa-50378",
+      "brand": "닥터비타",
+      "handle": null,
+      "platform": "musinsa",
+      "category": "skin",
+      "product": "닥터비타 프리미엄 비타에이 크림 저자극 레티놀 크림",
+      "start": "2026-11-23",
+      "end": "2026-11-29",
+      "announce": "2026-12-01",
+      "winners": 10,
+      "keywords": [
+        "무신사 프리유저",
+        "제품 무료 제공",
+        "리뷰 12/05~12/19"
+      ],
+      "origin": "https://www.musinsa.com/preuser/events/50378",
+      "apply": {
+        "url": "https://www.musinsa.com/preuser/events/50378"
+      },
+      "listed": "2026-11-23"
+    },
+    {
+      "id": "musinsa-50376",
+      "brand": "디오크라",
+      "handle": null,
+      "platform": "musinsa",
+      "category": "skin",
+      "product": "디오크라 바이올렛 리얼 스크럽 클렌징젤",
+      "start": "2026-11-23",
+      "end": "2026-11-29",
+      "announce": "2026-12-01",
+      "winners": 50,
+      "keywords": [
+        "무신사 프리유저",
+        "제품 무료 제공",
+        "리뷰 12/05~12/19"
+      ],
+      "origin": "https://www.musinsa.com/preuser/events/50376",
+      "apply": {
+        "url": "https://www.musinsa.com/preuser/events/50376"
+      },
+      "listed": "2026-11-23"
+    },
+    {
+      "id": "musinsa-50375",
+      "brand": "은율",
+      "handle": null,
+      "platform": "musinsa",
+      "category": "skin",
+      "product": "은율 나이아신 판테놀 코어 액티브 세럼",
+      "start": "2026-11-23",
+      "end": "2026-11-29",
+      "announce": "2026-12-01",
+      "winners": 10,
+      "keywords": [
+        "무신사 프리유저",
+        "제품 무료 제공",
+        "리뷰 12/05~12/19"
+      ],
+      "origin": "https://www.musinsa.com/preuser/events/50375",
+      "apply": {
+        "url": "https://www.musinsa.com/preuser/events/50375"
+      },
+      "listed": "2026-11-23"
+    },
+    {
+      "id": "musinsa-50374",
+      "brand": "은율",
+      "handle": null,
+      "platform": "musinsa",
+      "category": "skin",
+      "product": "은율 피디알엔 콜라겐 코어 액티브 세럼",
+      "start": "2026-11-23",
+      "end": "2026-11-29",
+      "announce": "2026-12-01",
+      "winners": 10,
+      "keywords": [
+        "무신사 프리유저",
+        "제품 무료 제공",
+        "리뷰 12/05~12/19"
+      ],
+      "origin": "https://www.musinsa.com/preuser/events/50374",
+      "apply": {
+        "url": "https://www.musinsa.com/preuser/events/50374"
+      },
+      "listed": "2026-11-23"
+    },
+    {
+      "id": "musinsa-50372",
+      "brand": "은율",
+      "handle": null,
+      "platform": "musinsa",
+      "category": "skin",
+      "product": "은율 피디알엔 버블 코어 액티브 세럼",
+      "start": "2026-11-23",
+      "end": "2026-11-29",
+      "announce": "2026-12-01",
+      "winners": 10,
+      "keywords": [
+        "무신사 프리유저",
+        "제품 무료 제공",
+        "리뷰 12/05~12/19"
+      ],
+      "origin": "https://www.musinsa.com/preuser/events/50372",
+      "apply": {
+        "url": "https://www.musinsa.com/preuser/events/50372"
+      },
+      "listed": "2026-11-23"
+    },
+    {
+      "id": "musinsa-50371",
+      "brand": "루벨리",
+      "handle": null,
+      "platform": "musinsa",
+      "category": "skin",
+      "product": "루벨리 멜팅 하이드로겔 마스크팩",
+      "start": "2026-11-23",
+      "end": "2026-11-29",
+      "announce": "2026-12-01",
+      "winners": 10,
+      "keywords": [
+        "무신사 프리유저",
+        "제품 무료 제공",
+        "리뷰 12/05~12/19"
+      ],
+      "origin": "https://www.musinsa.com/preuser/events/50371",
+      "apply": {
+        "url": "https://www.musinsa.com/preuser/events/50371"
+      },
+      "listed": "2026-11-23"
+    },
+    {
+      "id": "musinsa-50359",
+      "brand": "미즈온",
+      "handle": null,
+      "platform": "musinsa",
+      "category": "skin",
+      "product": "미즈온 더블 시너지 랩핑 마스크 3종 택1",
+      "start": "2026-11-23",
+      "end": "2026-11-29",
+      "announce": "2026-12-01",
+      "winners": 20,
+      "keywords": [
+        "무신사 프리유저",
+        "제품 무료 제공",
+        "리뷰 12/05~12/19"
+      ],
+      "origin": "https://www.musinsa.com/preuser/events/50359",
+      "apply": {
+        "url": "https://www.musinsa.com/preuser/events/50359"
+      },
+      "listed": "2026-11-23"
+    },
+    {
+      "id": "musinsa-50358",
+      "brand": "라움오",
+      "handle": null,
+      "platform": "musinsa",
+      "category": "fragrance",
+      "product": "라움오 서울 이스케이프 오 드 퍼퓸",
+      "start": "2026-11-23",
+      "end": "2026-11-29",
+      "announce": "2026-12-01",
+      "winners": 5,
+      "keywords": [
+        "무신사 프리유저",
+        "제품 무료 제공",
+        "리뷰 12/05~12/19"
+      ],
+      "origin": "https://www.musinsa.com/preuser/events/50358",
+      "apply": {
+        "url": "https://www.musinsa.com/preuser/events/50358"
+      },
+      "listed": "2026-11-23"
+    },
+    {
+      "id": "musinsa-50357",
+      "brand": "라움오",
+      "handle": null,
+      "platform": "musinsa",
+      "category": "fragrance",
+      "product": "라움오 서울 그루브 오 드 퍼퓸",
+      "start": "2026-11-23",
+      "end": "2026-11-29",
+      "announce": "2026-12-01",
+      "winners": 5,
+      "keywords": [
+        "무신사 프리유저",
+        "제품 무료 제공",
+        "리뷰 12/05~12/19"
+      ],
+      "origin": "https://www.musinsa.com/preuser/events/50357",
+      "apply": {
+        "url": "https://www.musinsa.com/preuser/events/50357"
+      },
+      "listed": "2026-11-23"
+    },
+    {
+      "id": "musinsa-50355",
+      "brand": "호피걸",
+      "handle": null,
+      "platform": "musinsa",
+      "category": "skin",
+      "product": "호피걸 매직 스킨 톤 업 선크림",
+      "start": "2026-11-23",
+      "end": "2026-11-29",
+      "announce": "2026-12-01",
+      "winners": 10,
+      "keywords": [
+        "무신사 프리유저",
+        "제품 무료 제공",
+        "리뷰 12/05~12/19"
+      ],
+      "origin": "https://www.musinsa.com/preuser/events/50355",
+      "apply": {
+        "url": "https://www.musinsa.com/preuser/events/50355"
+      },
+      "listed": "2026-11-23"
+    },
+    {
+      "id": "musinsa-50354",
+      "brand": "호피걸",
+      "handle": null,
+      "platform": "musinsa",
+      "category": "multi",
+      "product": "호피걸 쓰리디 파우더 블러셔 6컬러 중 1개",
+      "start": "2026-11-23",
+      "end": "2026-11-29",
+      "announce": "2026-12-01",
+      "winners": 10,
+      "keywords": [
+        "무신사 프리유저",
+        "제품 무료 제공",
+        "리뷰 12/05~12/19"
+      ],
+      "origin": "https://www.musinsa.com/preuser/events/50354",
+      "apply": {
+        "url": "https://www.musinsa.com/preuser/events/50354"
+      },
+      "listed": "2026-11-23"
+    },
+    {
+      "id": "musinsa-50351",
+      "brand": "토리든",
+      "handle": null,
+      "platform": "musinsa",
+      "category": "hair",
+      "product": "토리든 더메이징 뽑아쓰는 데일리 마스크 30매 3종 택1",
+      "start": "2026-11-23",
+      "end": "2026-11-29",
+      "announce": "2026-12-01",
+      "winners": 10,
+      "keywords": [
+        "무신사 프리유저",
+        "제품 무료 제공",
+        "리뷰 12/05~12/19"
+      ],
+      "origin": "https://www.musinsa.com/preuser/events/50351",
+      "apply": {
+        "url": "https://www.musinsa.com/preuser/events/50351"
+      },
+      "listed": "2026-11-23"
+    },
+    {
+      "id": "musinsa-50268",
+      "brand": "오아",
+      "handle": null,
+      "platform": "musinsa",
+      "category": "hair",
+      "product": "오아 에어리소닉 플라즈마 헤어 드라이기",
+      "start": "2026-11-23",
+      "end": "2026-11-29",
+      "announce": "2026-12-01",
+      "winners": 5,
+      "keywords": [
+        "무신사 프리유저",
+        "제품 무료 제공",
+        "리뷰 12/05~12/19"
+      ],
+      "origin": "https://www.musinsa.com/preuser/events/50268",
+      "apply": {
+        "url": "https://www.musinsa.com/preuser/events/50268"
+      },
+      "listed": "2026-11-23"
+    },
+    {
+      "id": "musinsa-50267",
+      "brand": "오아",
+      "handle": null,
+      "platform": "musinsa",
+      "category": "hair",
+      "product": "오아 소닉플로우 미니 드라이기",
+      "start": "2026-11-23",
+      "end": "2026-11-29",
+      "announce": "2026-12-01",
+      "winners": 5,
+      "keywords": [
+        "무신사 프리유저",
+        "제품 무료 제공",
+        "리뷰 12/05~12/19"
+      ],
+      "origin": "https://www.musinsa.com/preuser/events/50267",
+      "apply": {
+        "url": "https://www.musinsa.com/preuser/events/50267"
+      },
+      "listed": "2026-11-23"
+    },
+    {
+      "id": "musinsa-50233",
+      "brand": "아로셀",
+      "handle": null,
+      "platform": "musinsa",
+      "category": "skin",
+      "product": "아로셀 톤업 퍼펙트 선",
+      "start": "2026-11-23",
+      "end": "2026-11-29",
+      "announce": "2026-12-01",
+      "winners": 50,
+      "keywords": [
+        "무신사 프리유저",
+        "제품 무료 제공",
+        "리뷰 12/05~12/19"
+      ],
+      "origin": "https://www.musinsa.com/preuser/events/50233",
+      "apply": {
+        "url": "https://www.musinsa.com/preuser/events/50233"
+      },
+      "listed": "2026-11-23"
+    },
+    {
+      "id": "musinsa-50215",
+      "brand": "아로셀",
+      "handle": null,
+      "platform": "musinsa",
+      "category": "skin",
+      "product": "아로셀 히알루론산 수딩 스킨팩 100매",
+      "start": "2026-11-23",
+      "end": "2026-11-29",
+      "announce": "2026-12-01",
+      "winners": 15,
+      "keywords": [
+        "무신사 프리유저",
+        "제품 무료 제공",
+        "리뷰 12/05~12/19"
+      ],
+      "origin": "https://www.musinsa.com/preuser/events/50215",
+      "apply": {
+        "url": "https://www.musinsa.com/preuser/events/50215"
+      },
+      "listed": "2026-11-23"
+    },
+    {
+      "id": "musinsa-49660",
+      "brand": "러븀",
+      "handle": null,
+      "platform": "musinsa",
+      "category": "skin",
+      "product": "러븀 카밍 리페어 어린시카 겔 마스크 5매입",
+      "start": "2026-11-23",
+      "end": "2026-11-29",
+      "announce": "2026-12-01",
+      "winners": 30,
+      "keywords": [
+        "무신사 프리유저",
+        "제품 무료 제공",
+        "리뷰 12/05~12/19"
+      ],
+      "origin": "https://www.musinsa.com/preuser/events/49660",
+      "apply": {
+        "url": "https://www.musinsa.com/preuser/events/49660"
+      },
+      "listed": "2026-11-23"
+    },
+    {
+      "id": "musinsa-49005",
+      "brand": "약손명가 헬스케어",
+      "handle": null,
+      "platform": "musinsa",
+      "category": "skin",
+      "product": "약손명가 헬스케어 듀얼 멜팅 히팅 스팀 클렌징 오일",
+      "start": "2026-11-23",
+      "end": "2026-11-29",
+      "announce": "2026-12-01",
+      "winners": 5,
+      "keywords": [
+        "무신사 프리유저",
+        "제품 무료 제공",
+        "리뷰 12/05~12/19"
+      ],
+      "origin": "https://www.musinsa.com/preuser/events/49005",
+      "apply": {
+        "url": "https://www.musinsa.com/preuser/events/49005"
+      },
+      "listed": "2026-11-23"
+    },
+    {
+      "id": "musinsa-49004",
+      "brand": "약손명가 헬스케어",
+      "handle": null,
+      "platform": "musinsa",
+      "category": "skin",
+      "product": "약손명가 헬스케어 포어 블러링 팩클렌저",
+      "start": "2026-11-23",
+      "end": "2026-11-29",
+      "announce": "2026-12-01",
+      "winners": 5,
+      "keywords": [
+        "무신사 프리유저",
+        "제품 무료 제공",
+        "리뷰 12/05~12/19"
+      ],
+      "origin": "https://www.musinsa.com/preuser/events/49004",
+      "apply": {
+        "url": "https://www.musinsa.com/preuser/events/49004"
+      },
+      "listed": "2026-11-23"
+    },
+    {
+      "id": "stylec-166817",
+      "brand": "마릭스",
+      "handle": null,
+      "platform": "stylec",
+      "category": "skin",
+      "product": "어반 스킨핏 세럼",
+      "start": "2026-11-23",
+      "end": "2026-11-29",
+      "announce": "2026-12-01",
+      "winners": 10,
+      "keywords": [
+        "스타일씨",
+        "제공형",
+        "릴스",
+        "후기 12/10까지"
+      ],
+      "origin": "https://www.stylec.co.kr/trials/166817",
+      "apply": {
+        "url": "https://www.stylec.co.kr/trials/166817"
+      },
+      "listed": "2026-11-23"
+    },
+    {
+      "id": "stylec-166818",
+      "brand": "마릭스",
+      "handle": null,
+      "platform": "stylec",
+      "category": "skin",
+      "product": "어반 스킨핏 세럼",
+      "start": "2026-11-23",
+      "end": "2026-11-29",
+      "announce": "2026-12-01",
+      "winners": 10,
+      "keywords": [
+        "스타일씨",
+        "제공형",
+        "인스타그램",
+        "후기 12/10까지"
+      ],
+      "origin": "https://www.stylec.co.kr/trials/166818",
+      "apply": {
+        "url": "https://www.stylec.co.kr/trials/166818"
+      },
+      "listed": "2026-11-23"
+    },
+    {
+      "id": "sbedt-greentomato",
+      "brand": "성분에디터",
+      "handle": "@sbedt_kr",
+      "platform": "x",
+      "category": "skin",
+      "product": "그린토마토 모공 앰플 아이디어 챌린지 — 참가 전원 더블기획 증정 + 1~3등 상금 10/5/3만원",
+      "start": "2026-11-23",
+      "end": "2026-12-23",
+      "announce": "2027-01-20",
+      "winners": "전원",
+      "keywords": [
+        "SNS 콘텐츠 업로드",
+        "#나만의그토앰플챌린지",
+        "구글폼",
+        "참가상 전원 증정"
+      ],
+      "origin": "https://x.com/sbedt_kr/status/2124669263063511504",
+      "apply": {
+        "url": "https://forms.gle/jGkrWe84BVoSKJtF8"
+      },
+      "listed": "2026-11-23"
     }
   ],
   "events": [
