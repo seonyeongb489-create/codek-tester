@@ -3786,52 +3786,6 @@
       "listed": "2026-11-23"
     },
     {
-      "id": "stylec-166817",
-      "brand": "마릭스",
-      "handle": null,
-      "platform": "stylec",
-      "category": "skin",
-      "product": "어반 스킨핏 세럼",
-      "start": "2026-11-23",
-      "end": "2026-11-29",
-      "announce": "2026-12-01",
-      "winners": 10,
-      "keywords": [
-        "스타일씨",
-        "제공형",
-        "릴스",
-        "후기 12/10까지"
-      ],
-      "origin": "https://www.stylec.co.kr/trials/166817",
-      "apply": {
-        "url": "https://www.stylec.co.kr/trials/166817"
-      },
-      "listed": "2026-11-23"
-    },
-    {
-      "id": "stylec-166818",
-      "brand": "마릭스",
-      "handle": null,
-      "platform": "stylec",
-      "category": "skin",
-      "product": "어반 스킨핏 세럼",
-      "start": "2026-11-23",
-      "end": "2026-11-29",
-      "announce": "2026-12-01",
-      "winners": 10,
-      "keywords": [
-        "스타일씨",
-        "제공형",
-        "인스타그램",
-        "후기 12/10까지"
-      ],
-      "origin": "https://www.stylec.co.kr/trials/166818",
-      "apply": {
-        "url": "https://www.stylec.co.kr/trials/166818"
-      },
-      "listed": "2026-11-23"
-    },
-    {
       "id": "sbedt-greentomato",
       "brand": "성분에디터",
       "handle": "@sbedt_kr",
@@ -3851,6 +3805,75 @@
       "origin": "https://x.com/sbedt_kr/status/2124669263063511504",
       "apply": {
         "url": "https://forms.gle/jGkrWe84BVoSKJtF8"
+      },
+      "listed": "2026-11-23"
+    },
+    {
+      "id": "fwee-allcover-blog",
+      "brand": "퓌",
+      "handle": "",
+      "platform": "powderroom",
+      "category": "lip",
+      "product": "올데이 커버 블랙 쿠션 단품 (네이버 카페·블로그 후기)",
+      "start": "2026-11-23",
+      "end": "2026-11-29",
+      "announce": "2026-12-02",
+      "winners": 200,
+      "keywords": [
+        "파우더룸 응모",
+        "카페·블로그 후기",
+        "색상 선택",
+        "미션 11/30~12/05"
+      ],
+      "origin": "https://www.powderroom.co.kr/event/87912351",
+      "apply": {
+        "url": "https://www.powderroom.co.kr/event/87912351"
+      },
+      "listed": "2026-11-23"
+    },
+    {
+      "id": "fwee-allcover-curator",
+      "brand": "퓌",
+      "handle": "",
+      "platform": "powderroom",
+      "category": "lip",
+      "product": "올데이 커버 블랙 쿠션 단품 (올리브영 큐레이터 · 카페·블로그 후기)",
+      "start": "2026-11-23",
+      "end": "2026-11-29",
+      "announce": "2026-12-02",
+      "winners": 100,
+      "keywords": [
+        "파우더룸 응모",
+        "올영 큐레이터 링크",
+        "카페·블로그 후기",
+        "미션 11/30~12/05"
+      ],
+      "origin": "https://www.powderroom.co.kr/event/87912352",
+      "apply": {
+        "url": "https://www.powderroom.co.kr/event/87912352"
+      },
+      "listed": "2026-11-23"
+    },
+    {
+      "id": "holika-lefs15",
+      "brand": "홀리카홀리카",
+      "handle": "@holikaholikakr",
+      "platform": "x",
+      "category": "lip",
+      "product": "마이페이브 무드 아이 팔레트 NEW 레터프롬스프링 x1.5 + 레터프롬스프링 (2종)",
+      "start": "2026-11-23",
+      "end": "2026-11-26",
+      "announce": "2026-12-01",
+      "winners": 20,
+      "keywords": [
+        "팔로우",
+        "구글폼",
+        "인용 + #레프스프로젝트",
+        "미션 12/13까지"
+      ],
+      "origin": "https://x.com/holikaholikakr/status/2124794950919627028",
+      "apply": {
+        "url": "https://forms.gle/dT1RGCdDnaUCCJbn8"
       },
       "listed": "2026-11-23"
     }
