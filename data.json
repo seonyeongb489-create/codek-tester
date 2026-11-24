@@ -4911,6 +4911,29 @@
         "url": "https://x.com/huxleykorea/status/2124743658629206500"
       },
       "listed": "2026-11-24"
+    },
+    {
+      "id": "ev-bringgreen-mandoo",
+      "brand": "브링그린",
+      "handle": "@bringgreen_kr",
+      "platform": "x",
+      "category": "skin",
+      "kind": "comment",
+      "product": "안경만두 기대평 EVENT — 안경만두 시딩키트 + 안경만두 한정판 양면 담요 (5명)",
+      "start": "2026-11-23",
+      "end": "2026-11-28",
+      "announce": "2026-12-08",
+      "winners": 5,
+      "keywords": [
+        "해시태그 5종 필수",
+        "기대평 댓글",
+        "X"
+      ],
+      "origin": "https://x.com/bringgreen_kr/status/2124786279137390606",
+      "apply": {
+        "url": "https://x.com/bringgreen_kr/status/2124786279137390606"
+      },
+      "listed": "2026-11-24"
     }
   ]
 }
