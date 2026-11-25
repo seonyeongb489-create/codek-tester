@@ -4435,6 +4435,52 @@
         "url": "https://www.glowpick.com/events/15427"
       },
       "listed": "2026-11-25"
+    },
+    {
+      "id": "mude-angelhug-tint",
+      "brand": "뮤드",
+      "handle": "@mude_kr",
+      "platform": "x",
+      "category": "lip",
+      "product": "엔젤 허그 캐시미어 블러 틴트 사전 체험단 — 20명",
+      "start": "2026-11-25",
+      "end": "2026-11-29",
+      "announce": "2026-11-30",
+      "winners": 20,
+      "keywords": [
+        "팔로우",
+        "기대평 댓글",
+        "구글폼",
+        "SNS 후기 업로드"
+      ],
+      "origin": "https://x.com/mude_kr/status/2125514854446325851",
+      "apply": {
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLScxSHGM81kgJXwtwMaG4rhhHTpLHhujEsPvPrsvlYqmBD489Q/viewform?usp=dialog"
+      },
+      "listed": "2026-11-25"
+    },
+    {
+      "id": "mommycare-dermafirm-set",
+      "brand": "마미케어",
+      "handle": "@MOMMYCARE_kr",
+      "platform": "x",
+      "category": "skin",
+      "product": "더마펌 레티노이드 엑소좀 포어 리프팅샷 2X + 마미케어 바다포도 스킨팩 — 마미케어 X 더마펌 공동 체험단 50명",
+      "start": "2026-11-25",
+      "end": "2026-11-29",
+      "announce": "2026-11-30",
+      "winners": 50,
+      "keywords": [
+        "팔로우",
+        "RT",
+        "기대평 댓글·인용",
+        "후기 업로드 필수"
+      ],
+      "origin": "https://x.com/MOMMYCARE_kr/status/2125518165052690465",
+      "apply": {
+        "url": "https://x.com/MOMMYCARE_kr/status/2125518165052690465"
+      },
+      "listed": "2026-11-25"
     }
   ],
   "events": [
