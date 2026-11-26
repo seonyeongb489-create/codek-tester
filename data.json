@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-25",
+  "updated": "2026-11-26",
   "items": [
     {
       "id": "freshian-cozymauve-sample",
@@ -137,115 +137,6 @@
       "origin": "https://www.instagram.com/youngwonhee_official/p/Df1fOzlE-ma/",
       "apply": {
         "url": "https://forms.gle/LXTxLzbfFyKNzk83A"
-      },
-      "listed": "2026-11-20"
-    },
-    {
-      "id": "bbia-kgaru",
-      "brand": "삐아",
-      "handle": "@bbia_official",
-      "platform": "x",
-      "category": "lip",
-      "product": "K-갸루 에디션 2차 리뷰 체험단 (은우쌤 공동개발)",
-      "start": "2026-11-20",
-      "end": "2026-11-23",
-      "announce": "2026-11-24",
-      "winners": 10,
-      "keywords": [
-        "X 팔로우",
-        "RT·맘찍",
-        "댓글 참여"
-      ],
-      "origin": "https://x.com/bbia_official/status/2123610177224298894",
-      "apply": {
-        "url": "https://x.com/bbia_official/status/2123610177224298894"
-      },
-      "listed": "2026-11-20"
-    },
-    {
-      "id": "vitalbeauty-curator",
-      "brand": "바이탈뷰티",
-      "handle": "",
-      "platform": "powderroom",
-      "category": "multi",
-      "product": "메타그린 젤리 더블컷 2종 (올리브영 큐레이터)",
-      "start": "2026-11-20",
-      "end": "2026-11-23",
-      "announce": "2026-11-25",
-      "winners": 50,
-      "keywords": [
-        "파우더룸 응모",
-        "카페·블로그 후기",
-        "올영 큐레이터 링크"
-      ],
-      "origin": "https://www.powderroom.co.kr/event/87912343",
-      "apply": {
-        "url": "https://www.powderroom.co.kr/event/87912343"
-      },
-      "listed": "2026-11-20"
-    },
-    {
-      "id": "vitalbeauty-reels",
-      "brand": "바이탈뷰티",
-      "handle": "",
-      "platform": "powderroom",
-      "category": "multi",
-      "product": "메타그린 젤리 더블컷 2종",
-      "start": "2026-11-20",
-      "end": "2026-11-23",
-      "announce": "2026-11-25",
-      "winners": 50,
-      "keywords": [
-        "파우더룸 응모",
-        "인스타 릴스"
-      ],
-      "origin": "https://www.powderroom.co.kr/event/87912344",
-      "apply": {
-        "url": "https://www.powderroom.co.kr/event/87912344"
-      },
-      "listed": "2026-11-20"
-    },
-    {
-      "id": "bbia-yearend",
-      "brand": "삐아",
-      "handle": "",
-      "platform": "powderroom",
-      "category": "lip",
-      "product": "2026 연말결산 BEST템 기획세트 4종",
-      "start": "2026-11-20",
-      "end": "2026-11-23",
-      "announce": "2026-11-25",
-      "winners": 50,
-      "keywords": [
-        "파우더룸 응모",
-        "인스타 후기",
-        "12/2까지"
-      ],
-      "origin": "https://www.powderroom.co.kr/event/87912345",
-      "apply": {
-        "url": "https://www.powderroom.co.kr/event/87912345"
-      },
-      "listed": "2026-11-20"
-    },
-    {
-      "id": "naming-cushion",
-      "brand": "네이밍",
-      "handle": "",
-      "platform": "powderroom",
-      "category": "lip",
-      "product": "레이어드 핏 쿠션 올영 어워즈 한정 기획세트",
-      "start": "2026-11-20",
-      "end": "2026-11-23",
-      "announce": "2026-11-25",
-      "winners": 40,
-      "keywords": [
-        "파우더룸 응모",
-        "인스타 릴스",
-        "@naming.cosmetic 태그"
-      ],
-      "origin": "https://www.powderroom.co.kr/event/87912346",
-      "apply": {
-        "url": "https://www.powderroom.co.kr/event/87912346"
       },
       "listed": "2026-11-20"
     },
@@ -439,50 +330,6 @@
         "url": "https://x.com/foblangshi/status/2123292225643991211"
       },
       "listed": "2026-11-19"
-    },
-    {
-      "id": "glowpick-award",
-      "brand": "글로우픽",
-      "handle": "@glowpick_official",
-      "platform": "glowpick",
-      "category": "multi",
-      "product": "2026 글로우픽 어워드 박스 리뷰어",
-      "start": "2026-11-18",
-      "end": "2026-11-23",
-      "announce": "2026-11-23",
-      "winners": 100,
-      "keywords": [
-        "누구나 응모",
-        "사진 2컷",
-        "텍스트 리뷰"
-      ],
-      "origin": "https://www.glowpick.com/events/15415",
-      "apply": {
-        "url": "https://www.glowpick.com/events/15415"
-      },
-      "listed": "2026-11-19"
-    },
-    {
-      "id": "wellage-pdrn",
-      "brand": "웰라쥬",
-      "handle": "@wellage.official",
-      "platform": "instagram",
-      "category": "skin",
-      "product": "PDRN 시딩 키트",
-      "start": null,
-      "end": "2026-11-23",
-      "announce": "2026-11-26",
-      "winners": 5,
-      "keywords": [
-        "팔로우",
-        "댓글",
-        "친구 태그"
-      ],
-      "origin": "https://www.instagram.com/reel/Df1h9Q5g2sW/",
-      "apply": {
-        "url": "https://www.instagram.com/reel/Df1h9Q5g2sW/"
-      },
-      "listed": null
     },
     {
       "id": "onsal-x",
@@ -1237,28 +1084,6 @@
       "listed": "2026-11-22"
     },
     {
-      "id": "musinsa-49828",
-      "brand": "더진스",
-      "handle": null,
-      "platform": "musinsa",
-      "category": "skin",
-      "product": "세라듀 아쿠아 샷 크림 50ml (마스크팩 1매 추가 증정)",
-      "start": "2026-11-17",
-      "end": "2026-11-23",
-      "announce": "2026-11-25",
-      "winners": 30,
-      "keywords": [
-        "무신사 프리유저",
-        "제품 무료 제공",
-        "리뷰 11/29~12/13"
-      ],
-      "origin": "https://www.musinsa.com/preuser/events/49828",
-      "apply": {
-        "url": "https://www.musinsa.com/preuser/events/49828"
-      },
-      "listed": "2026-11-22"
-    },
-    {
       "id": "musinsa-49907",
       "brand": "리더스코스메틱",
       "handle": null,
@@ -1365,160 +1190,6 @@
       "origin": "https://www.musinsa.com/preuser/events/50153",
       "apply": {
         "url": "https://www.musinsa.com/preuser/events/50153"
-      },
-      "listed": "2026-11-22"
-    },
-    {
-      "id": "musinsa-50193",
-      "brand": "닥터유아유아",
-      "handle": null,
-      "platform": "musinsa",
-      "category": "skin",
-      "product": "PDRN 바운스 리턴 앰플 30ml",
-      "start": "2026-11-17",
-      "end": "2026-11-23",
-      "announce": "2026-11-25",
-      "winners": 50,
-      "keywords": [
-        "무신사 프리유저",
-        "제품 무료 제공",
-        "리뷰 11/29~12/13"
-      ],
-      "origin": "https://www.musinsa.com/preuser/events/50193",
-      "apply": {
-        "url": "https://www.musinsa.com/preuser/events/50193"
-      },
-      "listed": "2026-11-22"
-    },
-    {
-      "id": "musinsa-50194",
-      "brand": "우레온",
-      "handle": null,
-      "platform": "musinsa",
-      "category": "hair",
-      "product": "우레온 쿨 스케일링 풋 샴푸 500ml",
-      "start": "2026-11-17",
-      "end": "2026-11-23",
-      "announce": "2026-11-25",
-      "winners": 10,
-      "keywords": [
-        "무신사 프리유저",
-        "제품 무료 제공",
-        "리뷰 11/29~12/13"
-      ],
-      "origin": "https://www.musinsa.com/preuser/events/50194",
-      "apply": {
-        "url": "https://www.musinsa.com/preuser/events/50194"
-      },
-      "listed": "2026-11-22"
-    },
-    {
-      "id": "musinsa-50196",
-      "brand": "우레온",
-      "handle": null,
-      "platform": "musinsa",
-      "category": "hair",
-      "product": "우레온 바디 리셋 거품 샤워볼",
-      "start": "2026-11-17",
-      "end": "2026-11-23",
-      "announce": "2026-11-25",
-      "winners": 10,
-      "keywords": [
-        "무신사 프리유저",
-        "제품 무료 제공",
-        "리뷰 11/29~12/13"
-      ],
-      "origin": "https://www.musinsa.com/preuser/events/50196",
-      "apply": {
-        "url": "https://www.musinsa.com/preuser/events/50196"
-      },
-      "listed": "2026-11-22"
-    },
-    {
-      "id": "musinsa-50201",
-      "brand": "어네이즈",
-      "handle": null,
-      "platform": "musinsa",
-      "category": "hair",
-      "product": "프로 헤어 본딩 오일",
-      "start": "2026-11-17",
-      "end": "2026-11-23",
-      "announce": "2026-11-25",
-      "winners": 30,
-      "keywords": [
-        "무신사 프리유저",
-        "제품 무료 제공",
-        "리뷰 11/29~12/13"
-      ],
-      "origin": "https://www.musinsa.com/preuser/events/50201",
-      "apply": {
-        "url": "https://www.musinsa.com/preuser/events/50201"
-      },
-      "listed": "2026-11-22"
-    },
-    {
-      "id": "musinsa-50211",
-      "brand": "브이티코스메틱",
-      "handle": null,
-      "platform": "musinsa",
-      "category": "lip",
-      "product": "VT 리들샷 컬러/글리터 립 플럼퍼 (4종 중 택1)",
-      "start": "2026-11-17",
-      "end": "2026-11-23",
-      "announce": "2026-11-25",
-      "winners": 50,
-      "keywords": [
-        "무신사 프리유저",
-        "제품 무료 제공",
-        "리뷰 11/29~12/13"
-      ],
-      "origin": "https://www.musinsa.com/preuser/events/50211",
-      "apply": {
-        "url": "https://www.musinsa.com/preuser/events/50211"
-      },
-      "listed": "2026-11-22"
-    },
-    {
-      "id": "musinsa-50216",
-      "brand": "브이티코스메틱",
-      "handle": null,
-      "platform": "musinsa",
-      "category": "hair",
-      "product": "[2SET] VT 피디알엔 리들샷 브러쉬 헤어 세럼 2개 (+문어 괄사)",
-      "start": "2026-11-17",
-      "end": "2026-11-23",
-      "announce": "2026-11-25",
-      "winners": 20,
-      "keywords": [
-        "무신사 프리유저",
-        "제품 무료 제공",
-        "리뷰 11/29~12/13"
-      ],
-      "origin": "https://www.musinsa.com/preuser/events/50216",
-      "apply": {
-        "url": "https://www.musinsa.com/preuser/events/50216"
-      },
-      "listed": "2026-11-22"
-    },
-    {
-      "id": "musinsa-50218",
-      "brand": "브이티코스메틱",
-      "handle": null,
-      "platform": "musinsa",
-      "category": "skin",
-      "product": "VT 피디알엔 토너 250ml",
-      "start": "2026-11-17",
-      "end": "2026-11-23",
-      "announce": "2026-11-25",
-      "winners": 20,
-      "keywords": [
-        "무신사 프리유저",
-        "제품 무료 제공",
-        "리뷰 11/29~12/13"
-      ],
-      "origin": "https://www.musinsa.com/preuser/events/50218",
-      "apply": {
-        "url": "https://www.musinsa.com/preuser/events/50218"
       },
       "listed": "2026-11-22"
     },
@@ -1993,52 +1664,6 @@
       "listed": "2026-11-22"
     },
     {
-      "id": "stylec-165017",
-      "brand": "멜라트",
-      "handle": "@mellart_official",
-      "platform": "stylec",
-      "category": "skin",
-      "product": "어글로우 레타민 리페어 롤 온 아이 세럼 30mL",
-      "start": "2026-11-20",
-      "end": "2026-11-23",
-      "announce": "2026-11-25",
-      "winners": 5,
-      "keywords": [
-        "스타일씨",
-        "제공형",
-        "네이버클립",
-        "후기 12/02까지"
-      ],
-      "origin": "https://www.stylec.co.kr/trials/165017",
-      "apply": {
-        "url": "https://www.stylec.co.kr/trials/165017"
-      },
-      "listed": "2026-11-22"
-    },
-    {
-      "id": "stylec-165018",
-      "brand": "멜라트",
-      "handle": "@mellart_official",
-      "platform": "stylec",
-      "category": "skin",
-      "product": "TXA 멜라 토닝 미스트 100mL",
-      "start": "2026-11-20",
-      "end": "2026-11-23",
-      "announce": "2026-11-25",
-      "winners": 5,
-      "keywords": [
-        "스타일씨",
-        "제공형",
-        "네이버클립",
-        "후기 12/02까지"
-      ],
-      "origin": "https://www.stylec.co.kr/trials/165018",
-      "apply": {
-        "url": "https://www.stylec.co.kr/trials/165018"
-      },
-      "listed": "2026-11-22"
-    },
-    {
       "id": "stylec-165543",
       "brand": "루솔브",
       "handle": "@roosolb_official",
@@ -2311,75 +1936,6 @@
       "origin": "https://www.stylec.co.kr/trials/165275",
       "apply": {
         "url": "https://www.stylec.co.kr/trials/165275"
-      },
-      "listed": "2026-11-22"
-    },
-    {
-      "id": "stylec-164976",
-      "brand": "원정요",
-      "handle": "@wonjungyo_korea.official",
-      "platform": "stylec",
-      "category": "lip",
-      "product": "누드 아이래시 3종 (01 시어 블랙·02 시어 브라운·05 딥블랙)",
-      "start": "2026-11-18",
-      "end": "2026-11-23",
-      "announce": "2026-11-25",
-      "winners": 5,
-      "keywords": [
-        "스타일씨",
-        "제공형",
-        "인스타그램",
-        "후기 12/04까지"
-      ],
-      "origin": "https://www.stylec.co.kr/trials/164976",
-      "apply": {
-        "url": "https://www.stylec.co.kr/trials/164976"
-      },
-      "listed": "2026-11-22"
-    },
-    {
-      "id": "stylec-164967",
-      "brand": "원정요",
-      "handle": "@wonjungyo_korea.official",
-      "platform": "stylec",
-      "category": "lip",
-      "product": "프로 퍼펙팅 쿠션 커버 21Y",
-      "start": "2026-11-18",
-      "end": "2026-11-23",
-      "announce": "2026-11-25",
-      "winners": 5,
-      "keywords": [
-        "스타일씨",
-        "제공형",
-        "인스타그램",
-        "후기 12/04까지"
-      ],
-      "origin": "https://www.stylec.co.kr/trials/164967",
-      "apply": {
-        "url": "https://www.stylec.co.kr/trials/164967"
-      },
-      "listed": "2026-11-22"
-    },
-    {
-      "id": "stylec-164987",
-      "brand": "원정요",
-      "handle": "@wonjungyo_korea.official",
-      "platform": "stylec",
-      "category": "lip",
-      "product": "베어블룸 치크 01 밀크피치·02 블라썸 피치",
-      "start": "2026-11-18",
-      "end": "2026-11-23",
-      "announce": "2026-11-25",
-      "winners": 5,
-      "keywords": [
-        "스타일씨",
-        "제공형",
-        "인스타그램",
-        "후기 12/04까지"
-      ],
-      "origin": "https://www.stylec.co.kr/trials/164987",
-      "apply": {
-        "url": "https://www.stylec.co.kr/trials/164987"
       },
       "listed": "2026-11-22"
     },
@@ -4481,6 +4037,552 @@
         "url": "https://x.com/MOMMYCARE_kr/status/2125518165052690465"
       },
       "listed": "2026-11-25"
+    },
+    {
+      "id": "musinsa-50391",
+      "brand": "오브제그랑스",
+      "handle": null,
+      "platform": "musinsa",
+      "category": "fragrance",
+      "product": "퍼퓸 핸드크림 30ml 향 5종 중 2개 선택 (동일 제품 추가증정)",
+      "start": "2026-11-26",
+      "end": "2026-12-02",
+      "announce": "2026-12-04",
+      "winners": 10,
+      "keywords": [
+        "무신사 프리유저",
+        "제품 무료 제공",
+        "리뷰 12/09~12/23"
+      ],
+      "origin": "https://www.musinsa.com/preuser/events/50391",
+      "apply": {
+        "url": "https://www.musinsa.com/preuser/events/50391"
+      },
+      "listed": "2026-11-26"
+    },
+    {
+      "id": "glowpick-15435",
+      "brand": "로우키",
+      "handle": null,
+      "platform": "glowpick",
+      "category": "hair",
+      "product": "트루 바이오 인티메이트 리커버리 겔 세럼 30ml (34,000원) — 신제품 평가단",
+      "start": "2026-11-26",
+      "end": "2026-12-03",
+      "announce": "2026-12-02",
+      "winners": 50,
+      "keywords": [
+        "리뷰 10개 작성 후 응모",
+        "사진·텍스트 리뷰",
+        "리뷰 마감 12/16"
+      ],
+      "origin": "https://www.glowpick.com/events/15435",
+      "apply": {
+        "url": "https://www.glowpick.com/events/15435"
+      },
+      "listed": "2026-11-26"
+    },
+    {
+      "id": "glowpick-15436",
+      "brand": "카미브",
+      "handle": null,
+      "platform": "glowpick",
+      "category": "skin",
+      "product": "PDRN 카밍 크림 80ml (35,000원) — 신제품 평가단",
+      "start": "2026-11-26",
+      "end": "2026-12-03",
+      "announce": "2026-12-02",
+      "winners": 30,
+      "keywords": [
+        "리뷰 10개 작성 후 응모",
+        "사진·텍스트 리뷰",
+        "리뷰 마감 12/16"
+      ],
+      "origin": "https://www.glowpick.com/events/15436",
+      "apply": {
+        "url": "https://www.glowpick.com/events/15436"
+      },
+      "listed": "2026-11-26"
+    },
+    {
+      "id": "glowpick-15437",
+      "brand": "간소",
+      "handle": null,
+      "platform": "glowpick",
+      "category": "hair",
+      "product": "부드러운 손모아 때장갑 2ea + 천연 바디솝 20g (13,000원) — 신제품 평가단",
+      "start": "2026-11-26",
+      "end": "2026-12-03",
+      "announce": "2026-12-02",
+      "winners": 30,
+      "keywords": [
+        "리뷰 10개 작성 후 응모",
+        "사진·텍스트 리뷰",
+        "리뷰 마감 12/16"
+      ],
+      "origin": "https://www.glowpick.com/events/15437",
+      "apply": {
+        "url": "https://www.glowpick.com/events/15437"
+      },
+      "listed": "2026-11-26"
+    },
+    {
+      "id": "glowpick-15438",
+      "brand": "투슬래시포",
+      "handle": null,
+      "platform": "glowpick",
+      "category": "lip",
+      "product": "이레이징 커버 쿠션 [SPF40/PA++] 15g (29,000원) — 신제품 평가단",
+      "start": "2026-11-26",
+      "end": "2026-12-03",
+      "announce": "2026-12-02",
+      "winners": 30,
+      "keywords": [
+        "파운데이션 리뷰 1개 작성 후 응모",
+        "사진·텍스트 리뷰",
+        "리뷰 마감 12/16"
+      ],
+      "origin": "https://www.glowpick.com/events/15438",
+      "apply": {
+        "url": "https://www.glowpick.com/events/15438"
+      },
+      "listed": "2026-11-26"
+    },
+    {
+      "id": "glowpick-15439",
+      "brand": "다소다",
+      "handle": null,
+      "platform": "glowpick",
+      "category": "lip",
+      "product": "베리 글래시 틴트 4g 12컬러 (18,000원) — 신제품 평가단",
+      "start": "2026-11-26",
+      "end": "2026-12-03",
+      "announce": "2026-12-02",
+      "winners": 50,
+      "keywords": [
+        "리뷰 10개 작성 후 응모",
+        "사진·텍스트 리뷰",
+        "리뷰 마감 12/16"
+      ],
+      "origin": "https://www.glowpick.com/events/15439",
+      "apply": {
+        "url": "https://www.glowpick.com/events/15439"
+      },
+      "listed": "2026-11-26"
+    },
+    {
+      "id": "stylec-167918",
+      "brand": "뷰리버리",
+      "handle": "@beaulivery.official",
+      "platform": "stylec",
+      "category": "skin",
+      "product": "듀지리 엉겅퀴 콜라겐 미스트 80mL (출시 전 체험)",
+      "start": "2026-11-26",
+      "end": "2026-11-29",
+      "announce": "2026-12-01",
+      "winners": 15,
+      "keywords": [
+        "스타일씨",
+        "제공형",
+        "인스타그램 릴스",
+        "후기 12/06까지"
+      ],
+      "origin": "https://www.stylec.co.kr/trials/167918",
+      "apply": {
+        "url": "https://www.stylec.co.kr/trials/167918"
+      },
+      "listed": "2026-11-26"
+    },
+    {
+      "id": "stylec-168229",
+      "brand": "에몬트",
+      "handle": "@emnt_official",
+      "platform": "stylec",
+      "category": "hair",
+      "product": "스칼프 인퓨전 코어 스팟 앰플",
+      "start": "2026-11-26",
+      "end": "2026-12-02",
+      "announce": "2026-12-04",
+      "winners": 10,
+      "keywords": [
+        "스타일씨",
+        "제공형",
+        "유튜브 숏츠",
+        "후기 12/13까지"
+      ],
+      "origin": "https://www.stylec.co.kr/trials/168229",
+      "apply": {
+        "url": "https://www.stylec.co.kr/trials/168229"
+      },
+      "listed": "2026-11-26"
+    },
+    {
+      "id": "stylec-168224",
+      "brand": "에몬트",
+      "handle": "@emnt_official",
+      "platform": "stylec",
+      "category": "hair",
+      "product": "스칼프 인퓨전 코어 스팟 앰플",
+      "start": "2026-11-26",
+      "end": "2026-12-02",
+      "announce": "2026-12-04",
+      "winners": 10,
+      "keywords": [
+        "스타일씨",
+        "제공형",
+        "인스타그램 릴스",
+        "후기 12/13까지"
+      ],
+      "origin": "https://www.stylec.co.kr/trials/168224",
+      "apply": {
+        "url": "https://www.stylec.co.kr/trials/168224"
+      },
+      "listed": "2026-11-26"
+    },
+    {
+      "id": "stylec-168222",
+      "brand": "에몬트",
+      "handle": "@emnt_official",
+      "platform": "stylec",
+      "category": "hair",
+      "product": "스칼프 인퓨전 코어 스팟 앰플",
+      "start": "2026-11-26",
+      "end": "2026-12-02",
+      "announce": "2026-12-04",
+      "winners": 10,
+      "keywords": [
+        "스타일씨",
+        "제공형",
+        "인스타그램",
+        "후기 12/13까지"
+      ],
+      "origin": "https://www.stylec.co.kr/trials/168222",
+      "apply": {
+        "url": "https://www.stylec.co.kr/trials/168222"
+      },
+      "listed": "2026-11-26"
+    },
+    {
+      "id": "stylec-168221",
+      "brand": "에몬트",
+      "handle": "@emnt_official",
+      "platform": "stylec",
+      "category": "hair",
+      "product": "스칼프 인퓨전 코어 스팟 앰플",
+      "start": "2026-11-26",
+      "end": "2026-12-02",
+      "announce": "2026-12-04",
+      "winners": 10,
+      "keywords": [
+        "스타일씨",
+        "제공형",
+        "네이버 클립",
+        "후기 12/13까지"
+      ],
+      "origin": "https://www.stylec.co.kr/trials/168221",
+      "apply": {
+        "url": "https://www.stylec.co.kr/trials/168221"
+      },
+      "listed": "2026-11-26"
+    },
+    {
+      "id": "stylec-168218",
+      "brand": "에몬트",
+      "handle": "@emnt_official",
+      "platform": "stylec",
+      "category": "hair",
+      "product": "스칼프 인퓨전 앰플 160ml",
+      "start": "2026-11-26",
+      "end": "2026-12-02",
+      "announce": "2026-12-04",
+      "winners": 10,
+      "keywords": [
+        "스타일씨",
+        "제공형",
+        "인스타그램 릴스",
+        "후기 12/13까지"
+      ],
+      "origin": "https://www.stylec.co.kr/trials/168218",
+      "apply": {
+        "url": "https://www.stylec.co.kr/trials/168218"
+      },
+      "listed": "2026-11-26"
+    },
+    {
+      "id": "stylec-168213",
+      "brand": "에몬트",
+      "handle": "@emnt_official",
+      "platform": "stylec",
+      "category": "hair",
+      "product": "스칼프 인퓨전 앰플 160ml",
+      "start": "2026-11-26",
+      "end": "2026-12-02",
+      "announce": "2026-12-04",
+      "winners": 20,
+      "keywords": [
+        "스타일씨",
+        "제공형",
+        "유튜브 숏츠",
+        "후기 12/13까지"
+      ],
+      "origin": "https://www.stylec.co.kr/trials/168213",
+      "apply": {
+        "url": "https://www.stylec.co.kr/trials/168213"
+      },
+      "listed": "2026-11-26"
+    },
+    {
+      "id": "stylec-167808",
+      "brand": "파이브바이브",
+      "handle": "@fivevibe_official",
+      "platform": "stylec",
+      "category": "lip",
+      "product": "피팅 레이어 립스틱 04 토프로즈·05 돌체브라운 2종 (12/15 무신사 런칭)",
+      "start": "2026-11-26",
+      "end": "2026-12-01",
+      "announce": "2026-12-03",
+      "winners": 10,
+      "keywords": [
+        "스타일씨",
+        "제공형",
+        "인스타그램",
+        "후기 12/13까지"
+      ],
+      "origin": "https://www.stylec.co.kr/trials/167808",
+      "apply": {
+        "url": "https://www.stylec.co.kr/trials/167808"
+      },
+      "listed": "2026-11-26"
+    },
+    {
+      "id": "stylec-167809",
+      "brand": "파이브바이브",
+      "handle": "@fivevibe_official",
+      "platform": "stylec",
+      "category": "lip",
+      "product": "피팅 레이어 립스틱 01 피치무스·02 코랄베어 2종 (12/15 무신사 런칭)",
+      "start": "2026-11-26",
+      "end": "2026-12-01",
+      "announce": "2026-12-03",
+      "winners": 10,
+      "keywords": [
+        "스타일씨",
+        "제공형",
+        "인스타그램",
+        "후기 12/13까지"
+      ],
+      "origin": "https://www.stylec.co.kr/trials/167809",
+      "apply": {
+        "url": "https://www.stylec.co.kr/trials/167809"
+      },
+      "listed": "2026-11-26"
+    },
+    {
+      "id": "stylec-167821",
+      "brand": "맥스클리닉",
+      "handle": "@maxclinic",
+      "platform": "stylec",
+      "category": "skin",
+      "product": "멜라토닌 크림 50g (여배우 톤광 보습 크림)",
+      "start": "2026-11-26",
+      "end": "2026-12-06",
+      "announce": "2026-12-08",
+      "winners": 10,
+      "keywords": [
+        "스타일씨",
+        "제공형",
+        "인스타그램",
+        "후기 12/15까지"
+      ],
+      "origin": "https://www.stylec.co.kr/trials/167821",
+      "apply": {
+        "url": "https://www.stylec.co.kr/trials/167821"
+      },
+      "listed": "2026-11-26"
+    },
+    {
+      "id": "stylec-167834",
+      "brand": "맥스클리닉",
+      "handle": "@maxclinic",
+      "platform": "stylec",
+      "category": "skin",
+      "product": "로즈 비타민 브라이트닝 오일폼 (원스텝 딥클렌징)",
+      "start": "2026-11-26",
+      "end": "2026-12-02",
+      "announce": "2026-12-04",
+      "winners": 20,
+      "keywords": [
+        "스타일씨",
+        "제공형",
+        "인스타그램",
+        "후기 12/11까지"
+      ],
+      "origin": "https://www.stylec.co.kr/trials/167834",
+      "apply": {
+        "url": "https://www.stylec.co.kr/trials/167834"
+      },
+      "listed": "2026-11-26"
+    },
+    {
+      "id": "stylec-167836",
+      "brand": "맥스클리닉",
+      "handle": "@maxclinic",
+      "platform": "stylec",
+      "category": "skin",
+      "product": "로즈 비타민 브라이트닝 오일폼 (원스텝 딥클렌징)",
+      "start": "2026-11-26",
+      "end": "2026-12-02",
+      "announce": "2026-12-04",
+      "winners": 20,
+      "keywords": [
+        "스타일씨",
+        "제공형",
+        "인스타그램 릴스",
+        "후기 12/11까지"
+      ],
+      "origin": "https://www.stylec.co.kr/trials/167836",
+      "apply": {
+        "url": "https://www.stylec.co.kr/trials/167836"
+      },
+      "listed": "2026-11-26"
+    },
+    {
+      "id": "stylec-167969",
+      "brand": "정직한실험실",
+      "handle": "@truelab_official",
+      "platform": "stylec",
+      "category": "hair",
+      "product": "보타닉 히노끼 샴푸 500ml",
+      "start": "2026-11-26",
+      "end": "2026-11-29",
+      "announce": "2026-12-01",
+      "winners": 5,
+      "keywords": [
+        "스타일씨",
+        "제공형",
+        "인스타그램 릴스",
+        "후기 12/10까지"
+      ],
+      "origin": "https://www.stylec.co.kr/trials/167969",
+      "apply": {
+        "url": "https://www.stylec.co.kr/trials/167969"
+      },
+      "listed": "2026-11-26"
+    },
+    {
+      "id": "stylec-167959",
+      "brand": "정직한실험실",
+      "handle": "@truelab_official",
+      "platform": "stylec",
+      "category": "hair",
+      "product": "보타닉 히노끼 샴푸 500ml",
+      "start": "2026-11-26",
+      "end": "2026-11-29",
+      "announce": "2026-12-01",
+      "winners": 5,
+      "keywords": [
+        "스타일씨",
+        "제공형",
+        "인스타그램",
+        "후기 12/10까지"
+      ],
+      "origin": "https://www.stylec.co.kr/trials/167959",
+      "apply": {
+        "url": "https://www.stylec.co.kr/trials/167959"
+      },
+      "listed": "2026-11-26"
+    },
+    {
+      "id": "stylec-167984",
+      "brand": "닥터토비아",
+      "handle": "@doctortobia.official",
+      "platform": "stylec",
+      "category": "hair",
+      "product": "모낭활성제 카페인 헤어인핸싱폼 (64,900원, +5,000C)",
+      "start": "2026-11-26",
+      "end": "2026-11-29",
+      "announce": "2026-12-01",
+      "winners": 3,
+      "keywords": [
+        "스타일씨",
+        "제공형",
+        "인스타그램 릴스",
+        "후기 12/08까지"
+      ],
+      "origin": "https://www.stylec.co.kr/trials/167984",
+      "apply": {
+        "url": "https://www.stylec.co.kr/trials/167984"
+      },
+      "listed": "2026-11-26"
+    },
+    {
+      "id": "stylec-168001",
+      "brand": "닥터토비아",
+      "handle": "@doctortobia.official",
+      "platform": "stylec",
+      "category": "hair",
+      "product": "모낭활성제 카페인 헤어인핸싱폼 (64,900원, +5,000C)",
+      "start": "2026-11-26",
+      "end": "2026-11-29",
+      "announce": "2026-12-01",
+      "winners": 3,
+      "keywords": [
+        "스타일씨",
+        "제공형",
+        "유튜브 숏츠",
+        "후기 12/08까지"
+      ],
+      "origin": "https://www.stylec.co.kr/trials/168001",
+      "apply": {
+        "url": "https://www.stylec.co.kr/trials/168001"
+      },
+      "listed": "2026-11-26"
+    },
+    {
+      "id": "stylec-168076",
+      "brand": "오라즈",
+      "handle": "@auras_kr",
+      "platform": "stylec",
+      "category": "skin",
+      "product": "바나나PDRN 청사비 효소 버블 파우더 토너패드",
+      "start": "2026-11-26",
+      "end": "2026-12-06",
+      "announce": "2026-12-08",
+      "winners": 10,
+      "keywords": [
+        "스타일씨",
+        "제공형",
+        "인스타그램 릴스",
+        "후기 12/14까지"
+      ],
+      "origin": "https://www.stylec.co.kr/trials/168076",
+      "apply": {
+        "url": "https://www.stylec.co.kr/trials/168076"
+      },
+      "listed": "2026-11-26"
+    },
+    {
+      "id": "stylec-168120",
+      "brand": "리온결",
+      "handle": null,
+      "platform": "stylec",
+      "category": "skin",
+      "product": "볼륨원채움 4K 앰플 50ml (볼패임·땅콩형 얼굴)",
+      "start": "2026-11-26",
+      "end": "2026-12-02",
+      "announce": "2026-12-04",
+      "winners": 4,
+      "keywords": [
+        "스타일씨",
+        "제공형",
+        "네이버 클립",
+        "후기 12/18까지"
+      ],
+      "origin": "https://www.stylec.co.kr/trials/168120",
+      "apply": {
+        "url": "https://www.stylec.co.kr/trials/168120"
+      },
+      "listed": "2026-11-26"
     }
   ],
   "events": [
