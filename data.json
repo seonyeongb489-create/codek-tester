@@ -4583,6 +4583,53 @@
         "url": "https://www.stylec.co.kr/trials/168120"
       },
       "listed": "2026-11-26"
+    },
+    {
+      "id": "tfit-best4-200",
+      "brand": "티핏",
+      "handle": "@TFIT_KR",
+      "platform": "x",
+      "category": "multi",
+      "product": "티핏 베스트 4종 중 원하는 1종 — 체험단 200명 대모집",
+      "start": "2026-11-26",
+      "end": "2026-12-01",
+      "announce": "2026-12-02",
+      "winners": 200,
+      "keywords": [
+        "팔로우",
+        "인용(제품 1종+한마디)",
+        "구글폼 필수",
+        "발송 12/4",
+        "X 리뷰 12/18까지"
+      ],
+      "origin": "https://x.com/TFIT_KR/status/2125786653130371150",
+      "apply": {
+        "url": "https://forms.gle/zUEtVBtRdnnQcuLu7"
+      },
+      "listed": "2026-11-26"
+    },
+    {
+      "id": "stylec-168127",
+      "brand": "촉촉미침",
+      "platform": "stylec",
+      "category": "skin",
+      "product": "하이드레이팅 PDRN 콜라겐 수분 크림 10명 (+10,000C) · 릴스",
+      "start": "2026-11-26",
+      "end": "2026-11-29",
+      "announce": "2026-12-01",
+      "winners": 10,
+      "keywords": [
+        "스타일씨",
+        "제공형",
+        "인스타 릴스",
+        "후기 12/08까지",
+        "+10,000C"
+      ],
+      "origin": "https://www.stylec.co.kr/trials/168127",
+      "apply": {
+        "url": "https://www.stylec.co.kr/trials/168127"
+      },
+      "listed": "2026-11-26"
     }
   ],
   "events": [
