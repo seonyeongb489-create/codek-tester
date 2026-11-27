@@ -5788,6 +5788,30 @@
         "url": "https://www.powderroom.co.kr/event/87912353"
       },
       "listed": "2026-11-27"
+    },
+    {
+      "id": "ariul-gelmask-tester",
+      "brand": "아리얼",
+      "handle": "@ariul_mdteam",
+      "platform": "x",
+      "category": "skin",
+      "product": "겔마스크 3종 체험단 (펩타이드·그린세라·엑소좀 중 택1) — 21명",
+      "start": "2026-11-27",
+      "end": "2026-11-30",
+      "announce": "2026-11-30",
+      "winners": 21,
+      "keywords": [
+        "팔로우",
+        "RT",
+        "구글폼",
+        "X 리뷰 필수 12/7~12/8",
+        "제품 발송 12/1"
+      ],
+      "origin": "https://x.com/ariul_mdteam/status/2126194436887720181",
+      "apply": {
+        "url": "https://forms.gle/rCVcULkXUcHwXbfV8"
+      },
+      "listed": "2026-11-27"
     }
   ],
   "events": [
@@ -6114,6 +6138,52 @@
         "url": "https://www.instagram.com/bringgreen_official/"
       },
       "listed": "2026-11-25"
+    },
+    {
+      "id": "ev-naming-haidu-newcolor",
+      "brand": "네이밍",
+      "handle": "@naming_cosmetic",
+      "platform": "x",
+      "category": "lip",
+      "kind": "comment",
+      "product": "하이 듀 NEW 컬러 (뮤티드·유얼·언더톤) 인용 RT 이벤트 — NEW 하이 듀 립 글레이즈 기획세트 1종",
+      "start": "2026-11-27",
+      "end": "2026-11-29",
+      "announce": "2026-11-30",
+      "winners": 3,
+      "keywords": [
+        "팔로우",
+        "인용 RT",
+        "원하는 컬러 남기기"
+      ],
+      "origin": "https://x.com/naming_cosmetic/status/2126203614045889007",
+      "apply": {
+        "url": "https://x.com/naming_cosmetic/status/2126203614045889007"
+      },
+      "listed": "2026-11-27"
+    },
+    {
+      "id": "ev-hince-awards-vote",
+      "brand": "힌스",
+      "handle": "@hince_official",
+      "platform": "x",
+      "category": "lip",
+      "kind": "comment",
+      "product": "올영 어워즈 물먹광(래디언스 밤) 투표 이벤트 — 1위 컬러 본품",
+      "start": "2026-11-27",
+      "end": "2026-11-29",
+      "announce": "2026-11-30",
+      "winners": 2,
+      "keywords": [
+        "팔로우",
+        "RT",
+        "멘션으로 투표"
+      ],
+      "origin": "https://x.com/hince_official/status/2126149028584816745",
+      "apply": {
+        "url": "https://x.com/hince_official/status/2126149028584816745"
+      },
+      "listed": "2026-11-27"
     }
   ]
 }
