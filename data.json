@@ -5921,6 +5921,29 @@
         "url": "https://x.com/too_cool_md/status/2126565430156464342"
       },
       "listed": "2026-11-28"
+    },
+    {
+      "id": "ev-holika-awards-limited",
+      "brand": "홀리카홀리카",
+      "handle": "@holikaholikakr",
+      "platform": "x",
+      "category": "multi",
+      "kind": "gift",
+      "product": "2026 올영 어워즈 MD's PICK 기념 — 어워즈 한정 기획세트 2종(레터 프롬 스프링 & 클래식 포터리, 미출시 습식 블러셔 증정) 팔로우+인용 이벤트",
+      "start": "2026-11-28",
+      "end": "2026-12-04",
+      "announce": "2026-12-04",
+      "winners": 5,
+      "keywords": [
+        "팔로우",
+        "인용 소문내기",
+        "당발 12/4"
+      ],
+      "origin": "https://x.com/holikaholikakr/status/2126511396850717002",
+      "apply": {
+        "url": "https://x.com/holikaholikakr/status/2126511396850717002"
+      },
+      "listed": "2026-11-28"
     }
   ]
 }
